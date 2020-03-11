@@ -38,8 +38,9 @@ function renderPlans(faqData){
 var  myarr = [
     {
       "question": "What is the main teaching of Oshodhara",
-      "answer": " 'Zorba the Buddha' as Osho said —‘Buddha cannot laugh QM cannot dance QM cannot sing QM cannot love. Now what kind of life will it be Hollow! Zorba can sing QM  dance QM enjoy food QM drink QM love. Think of these two becoming one. 'Zorba the Buddha' - sings QM dances…but QM with a grace QM with a beauty. Even silence will become a song for him. That is the main teaching of Oshodhara — 'Zorba the Buddha'."
-    },
+      "answer": " 'Zorba the Buddha' as Osho said —‘Buddha cannot laugh QM cannot dance QM cannot sing QM cannot love. Now what kind of life will it be Hollow! Zorba can sing QM  dance QM enjoy food QM drink QM love. Think of these two becoming one. 'Zorba the Buddha' - sings QM dances…but QM with a grace QM with a beauty. Even silence will become a song for him. That is the main teaching of Oshodhara — 'Zorba the Buddha'.",
+      "remark" : ""
+     },
     {
       "question": "What are the different meditation techniques",
       "answer": "There are number of meditation techniques which one can try. Each individual is different QM but equally unique. Some are physically stronger QM some are emotionally very active and there can be varied personality people. Different meditation techniques are designed for different people. Some will involve physical workout while some will touch your emotions. E.g. – Suprabhat Dhyan QM Brahamnaad Dhyan QM Kirtan Dhyan QM Kundalini Dhyan to name a few. However QM different techniques suit different people. The technique that takes you into your deep consciousness is the most suitable technique for you. To know more contact nearest Oshodhara Dhyan center near you."

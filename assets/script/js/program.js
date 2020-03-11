@@ -3,6 +3,7 @@ var templates = "";
 
 $(document).ready(function() {
   debugger;
+    loadCategory()
   callFragmentText();
   if(!window.localStorage.languageCode){
     window.localStorage.languageCode = 'en';
@@ -14,7 +15,8 @@ $(document).ready(function() {
   if(url){      
       loadProgramData(url);
   }else{
-     url ="programid=1"
+    url ="programid=1"
+    loadProgramData(url);
   }
   eventListener();
 });
