@@ -57,7 +57,7 @@ function loadMasterData(urldata){
 
       }
   };
-  xhttp.open("POST", "/php/api/controller/MasterController.php", true);
+  xhttp.open("POST", "php/api/controller/MasterController.php", true);
   xhttp.send(fd);
 }
 

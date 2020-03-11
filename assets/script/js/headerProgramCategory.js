@@ -45,7 +45,7 @@ function loadHeaderProgramCategoryData(){
 
       }
   };
-  xhttp.open("POST", "/php/api/controller/ProgramCategoryController.php", true);
+  xhttp.open("POST", "php/api/controller/ProgramCategoryController.php", true);
   xhttp.send();
 }
 
@@ -60,7 +60,7 @@ function loadProgramCategoryData(){
 
       }
   };
-  xhttp.open("POST", "/php/api/controller/ProgramController.php", true);
+  xhttp.open("POST", "php/api/controller/ProgramController.php", true);
   xhttp.send();
 }
 

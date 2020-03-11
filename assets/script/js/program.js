@@ -58,7 +58,7 @@ function loadProgramData(urldata){
 
       }
   };
-  xhttp.open("POST", "/php/api/controller/ProgramController.php", true);
+  xhttp.open("POST", "php/api/controller/ProgramController.php", true);
   xhttp.send(fd);
 }
 
