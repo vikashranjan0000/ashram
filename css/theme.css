@@ -8278,7 +8278,7 @@ input[type="checkbox"] {
   border: 1px solid #333333;
   border-bottom: none;
   padding: 18px 30px;
-  background-color: #eeeadf!important;
+  background-color: #f9af1a!important;
 }
 /* line 42, ../sass/theme/gui/_accordion.scss */
 .pgl-panel .panel-title a:after {
