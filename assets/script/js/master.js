@@ -51,8 +51,8 @@ function loadMasterData(urldata){
   xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
           var response = xhttp.responseText;
-          programData = JSON.parse(response);
-          renderProgramData(programData);
+          masterData = JSON.parse(response);
+          renderProgramData(masterData);
       }else{
 
       }

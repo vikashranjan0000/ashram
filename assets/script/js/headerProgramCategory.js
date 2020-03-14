@@ -3,28 +3,21 @@ var headerTemplates = "";
 
 function loadCategory(){
   debugger;
-  callFragmentText();
-  if(!window.localStorage.languageCode){
-    window.localStorage.languageCode = 'en';
-  }else{
-    $('#languageSelector').val(window.localStorage.languageCode);
-  }
+  callfragmentText_HPC(); 
   loadHeaderProgramCategoryData();
-  eventListener();
 }
 
 function eventListener(){
   $('#languageSelector').on('change', setLangaugeCode);
 }
-
+//variable should be unique through out the application, like this page is common for all page
 function setLangaugeCode(){
   window.localStorage.languageCode = $('#languageSelector').val();
-  loadInitialData();
 }
 
-function callFragmentText(){
-  var fragment = '';
-  var xhttp = new XMLHttpRequest();
+function callfragmentText_HPC(){
+  
+  let xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
           headerTemplates = xhttp.responseText;
@@ -35,11 +28,11 @@ function callFragmentText(){
 }
 
 function loadHeaderProgramCategoryData(){
-  var xhttp = new XMLHttpRequest();
+  let xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-          var response = xhttp.responseText;
-          categoryData = JSON.parse(response);
+          let proCatResponse = xhttp.responseText;
+          categoryData = JSON.parse(proCatResponse);
           loadProgramCategoryData();
       }else{
 
@@ -50,12 +43,14 @@ function loadHeaderProgramCategoryData(){
 }
 
 function loadProgramCategoryData(){
-  var xhttp = new XMLHttpRequest();
+  let xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-          var response = xhttp.responseText;
-          programData = JSON.parse(response);
-          renderProgramData(programData);
+          let catProResponsecatProResponse = xhttp.responseText;
+          catProResponse = JSON.parse(catProResponse);
+          if(catProResponse && catProResponse.length  > 0){
+              renderProgramData_HPC(catProResponse);
+          }
       }else{
 
       }
@@ -64,22 +59,22 @@ function loadProgramCategoryData(){
   xhttp.send();
 }
 
-function renderProgramData(programData){
+function renderProgramData_HPC(programListCateData){
   var categoryfragment = $(headerTemplates).filter('#categoryContent').html();
   var progfragment = $(headerTemplates).filter('#programListContent').html();
   var languageCode = window.localStorage.languageCode ?window.localStorage.languageCode : "en" ;
   $('#programCategoryHolder').empty();    
-  for(var key in categoryData){
-    if(categoryData[key]['language']=languageCode){
-      $('#programCategoryHolder').append(Mustache.render(categoryfragment, categoryData[key]));
-      $('#programListHolder_'+categoryData[key].categoryid).empty();    
+  for(var keyCat in categoryData){
+    if(categoryData[keyCat]['language']=languageCode){
+      $('#programCategoryHolder').append(Mustache.render(categoryfragment, categoryData[keyCat]));
+      $('#programListHolder_'+categoryData[keyCat].categoryid).empty();    
     }
   }
-  for(var pgkey in programData){
-      var list =  programData[pgkey].categoryid;
+  for(var pgkey in programListCateData){
+      var list =  programListCateData[pgkey].categoryid;
       list = list.split(",");
       for(var d in list){
-        $('#programListHolder_'+list[d]).append(Mustache.render(progfragment, programData[pgkey]));     
+        $('#programListHolder_'+list[d]).append(Mustache.render(progfragment, programListCateData[pgkey]));     
 
       }
 

@@ -1,4 +1,5 @@
 var planData = {};
+var faqtemplate = "";
 $(document).ready(function(){
 debugger;	
 	callFaqData(); 
@@ -7,11 +8,10 @@ debugger;
 
 
 function callFaqData(){
-	var fragment = '';
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-	        templates = xhttp.responseText;
+	        faqtemplate = xhttp.responseText;
 	        loadInitialData();
 	    }
 	};
@@ -29,17 +29,17 @@ function loadPlansData(){
 
 function renderPlans(faqData){
 	$('#fragmentholder_faq').empty();
-	var fragment = $(templates).filter('#faqcontent').html();
-	for(var key in faqData){
-    faqData[key].key = key;
-		$('#fragmentholder_faq').append(Mustache.render(fragment, faqData[key]));
+	var fragment = $(faqtemplate).filter('#faqcontent').html();
+	for(var faqkey in faqData){
+    faqData[faqkey].key = faqkey;
+		$('#fragmentholder_faq').append(Mustache.render(fragment, faqData[faqkey]));
 	}
 }
 var  myarr = [
     {
       "question": "What is the main teaching of Oshodhara",
       "answer": " 'Zorba the Buddha' as Osho said —‘Buddha cannot laugh QM cannot dance QM cannot sing QM cannot love. Now what kind of life will it be Hollow! Zorba can sing QM  dance QM enjoy food QM drink QM love. Think of these two becoming one. 'Zorba the Buddha' - sings QM dances…but QM with a grace QM with a beauty. Even silence will become a song for him. That is the main teaching of Oshodhara — 'Zorba the Buddha'.",
-      "remark" : ""
+      "title" : ""
      },
     {
       "question": "What are the different meditation techniques",
