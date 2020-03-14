@@ -64,7 +64,6 @@ class ProgramController {
     private function getAllPackages()
     {
         $result = $this->programService->findAll();
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }
@@ -75,7 +74,6 @@ class ProgramController {
         if (! $result) {
             return $this->notFoundResponse();
         }
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }
@@ -84,45 +82,8 @@ class ProgramController {
     {
         $input = json_decode(file_get_contents('php://input'), TRUE);
         $this->PackageService->insert($input);
-        $response['status_code_header'] = 'HTTP/1.1 201 Created';
         $response['body'] = null;
         return $response;
-    }
-
-    private function updatePackageFromRequest($id)
-    {
-        $result = $this->PackageService->find($id);
-        if (! $result) {
-            return $this->notFoundResponse();
-        }
-        $input = json_decode(file_get_contents('php://input'), TRUE);
-        $this->PackageService->update($id, $input);
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
-        $response['body'] = null;
-        return $response;
-    }
-
-    private function deletePackage($id)
-    {
-        $result = $this->PackageService->find($id);
-        if (! $result) {
-            return $this->notFoundResponse();
-        }
-        $this->PackageService->delete($id);
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
-        $response['body'] = null;
-        return $response;
-    }
-
-    private function validatePerson($input)
-    {
-        if (! isset($input['firstname'])) {
-            return false;
-        }
-        if (! isset($input['lastname'])) {
-            return false;
-        }
-        return true;
     }
 
     private function unprocessableEntityResponse()

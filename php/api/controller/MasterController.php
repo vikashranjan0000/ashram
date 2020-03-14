@@ -64,7 +64,6 @@ class MasterController {
     private function getAllMaster()
     {
         $result = $this->masterService->findAll();
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }
@@ -75,7 +74,6 @@ class MasterController {
         if (! $result) {
             return $this->notFoundResponse();
         }
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }

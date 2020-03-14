@@ -42,7 +42,6 @@ class ProgramCategoryController {
                 };
                 break;
             case 'POST':
-                //$data = json_decode($_POST["data"]);
                 if (!empty($_POST["categoryid"])) {
                     $response = $this->getCategory(($_POST["categoryid"]));
                 }else if(!empty($data["categoryid"])){
@@ -64,7 +63,6 @@ class ProgramCategoryController {
     private function getAllPCategory()
     {
         $result = $this->programCategoryService->findAll();
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }
@@ -75,7 +73,6 @@ class ProgramCategoryController {
         if (! $result) {
             return $this->notFoundResponse();
         }
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }

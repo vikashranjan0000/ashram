@@ -66,7 +66,6 @@ class ScheduleController {
     private function getAllSchedule()
     {
         $result = $this->scheduleService->findAll();
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }
@@ -77,7 +76,6 @@ class ScheduleController {
         if (! $result) {
             return $this->notFoundResponse();
         }
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }
