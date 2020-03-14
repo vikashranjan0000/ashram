@@ -42,7 +42,6 @@ class ProgramController {
                 };
                 break;
             case 'POST':
-                //$data = json_decode($_POST["data"]);
                 if (!empty($_POST["programid"])) {
                     $response = $this->getPackage(($_POST["programid"]));
                 }else if(!empty($data["programid"])){
@@ -57,7 +56,7 @@ class ProgramController {
         }
         
         if ($response['body']) {
-            echo $response['body'];
+            echo json_encode($response['body']);
         }
     }
 

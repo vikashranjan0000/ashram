@@ -56,13 +56,14 @@ class ProgramCategoryController {
         }
         
         if ($response['body']) {
-            echo $response['body'];
+            echo json_encode($response['body']);
         }
     }
 
     private function getAllPCategory()
     {
         $result = $this->programCategoryService->findAll();
+        $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }
@@ -73,6 +74,7 @@ class ProgramCategoryController {
         if (! $result) {
             return $this->notFoundResponse();
         }
+        $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }
