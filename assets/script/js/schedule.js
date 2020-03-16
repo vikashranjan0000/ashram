@@ -1,4 +1,4 @@
-var planData = {};
+var planProgramData = {};
 var scheduleTemplates = "";
 
 $(document).ready(function() {
@@ -73,6 +73,7 @@ function programAutoComplete(){
 							labelObj.value = programAC[proAutokey].programid;
 							proAutoResponse.push(labelObj);							
 						}
+						planProgramData[programAC[proAutokey].programid] = programAC[proAutokey];
 					}
 					response(proAutoResponse);
 				}
@@ -131,6 +132,14 @@ function loadVenueData_SPG(){
 }
 
 
+function setProgramName(){
+	var programName_SPG = JSON.parse(window.localStorage.catProResponse);
+	programName_SPG = JSON.parse(programName_SPG);
+	for(var pronameAutokey in programName_SPG){
+		planProgramData[programName_SPG[pronameAutokey].programid] = programName_SPG[pronameAutokey];
+	}
+}
+
 function setLangaugeCode(){
 	window.localStorage.languageCode = $('#languageSelector').val();
 	loadInitialData();
@@ -174,15 +183,20 @@ function callScheduleFragment(){
 
 function loadInitialData(){	
 	loadScheduleListData({});
+	setProgramName();
 }
 
 function loadScheduleListData(searchdata){
   var xhttp = new XMLHttpRequest();
   let fd  = new FormData();
   if(searchdata){
-	fd.append("search", "byFilter");
   	for(var key in searchdata){
-		fd.append(key, searchdata[key]);
+  		if(searchdata[key]){
+			fd.append(key, searchdata[key]);
+  		}
+  	}
+  	if(fd.has.length > 0){
+		fd.append("search", "byFilter");
   	}
   }
 
@@ -202,10 +216,11 @@ function loadScheduleListData(searchdata){
 
 
 function renderScheduleData(renderData){
-  var schedulefragment = $(scheduleTemplates).filter('#programScheduleContent').html();
+  var schedulefragment = $(scheduleTemplates).filter('#programScheduleContent').innerHTML;
   var languageCode = window.localStorage.languageCode ?window.localStorage.languageCode : "en" ;
   $('#programScheduleHolder').empty();    
   for(var key in renderData){
+  	renderData[key].programData =  planProgramData[renderData[key].programid]
     if(renderData[key]['language']=languageCode){
       $('#programScheduleHolder').append(Mustache.render(schedulefragment, renderData[key]));
     }

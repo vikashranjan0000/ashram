@@ -27,13 +27,15 @@ class ScheduleService {
     {
         $query="SELECT * FROM tb_od_programschedule  WHERE  ";
         $response=array();
-        if($reqData[0]['programid'] )
+        if(array_key_exists('programid', $reqData) )
         {
-            $query.="programid=".$reqData[0]['programid'];
+            $query.="programid=".$reqData['programid'];
+        }else{
+            $query.="programid like '%%'";
         }
-        if($reqData['venuId'] )
+        if(array_key_exists('venuId', $reqData))
         {
-            $query.="dhyankendraid=".$reqData[0]['venuId'];
+            $query.="dhyankendraid=".$reqData['venuId'];
         }
         $result=mysqli_query($this->connection, $query);
         if($result){            
@@ -43,10 +45,11 @@ class ScheduleService {
             }
         }else{
             
-            $response =$reqData[0]['programid'];
+            $response =[];
         }
-        header('Content-Type: application/json');
-        echo json_encode($response);
+        /*header('Content-Type: application/json');
+        echo json_encode($response);*/
+        return $response;
     }
     
 }
