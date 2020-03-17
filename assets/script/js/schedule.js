@@ -216,7 +216,7 @@ function loadScheduleListData(searchdata){
 
 
 function renderScheduleData(renderData){
-  var schedulefragment = $(scheduleTemplates).filter('#programScheduleContent').innerHTML;
+  var schedulefragment = $(scheduleTemplates).filter('#programScheduleContent').html();
   var languageCode = window.localStorage.languageCode ?window.localStorage.languageCode : "en" ;
   $('#programScheduleHolder').empty();    
   for(var key in renderData){
