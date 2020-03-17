@@ -52,235 +52,7 @@
 </head>
 
 <body class="front">
-    <aside class="sidebar-left">
-        <nav class="navbar navbar-inverse">
-
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="comingSoon.html"><img src="images/logo.png" class="img-responsive img-logo"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="sidebar-menu">
-                    <li>
-                        <a href="index.html" class="active"> <span>Home</span></a>
-                    </li>
-                    <li>
-                        <a href="knowus.html"> <span>About Us</span></a>
-                    </li>
-                    <li class="treeview">
-                        <a href="master.html">
-                            <span>MASTERS</span>
-                            <i class="fa fa-angle-left pull-right"></i>
-                        </a>
-                        <ul class="treeview-menu">
-
-                            <li>
-                                <a href="master.html?masterid=2"> Param Gurus <i class="fa fa-angle-left pull-right"></i></a>
-                                <ul class="treeview-menu">
-                                    <li><a href="master.html?masterid=2"><i class="fa fa-chevron-right"></i> Param Guru Osho</a></li>
-                                    <li><a href="master.html?masterid=3"><i class="fa fa-chevron-right"></i> Shufi Baba Shah Kalandar</a></li>
-                                    <li><a href="master.html?masterid=4"><i class="fa fa-chevron-right"></i> Guru Nanaak Dev Ji</a></li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="master.html?masterid=1"> Present Master <i class="fa fa-angle-left pull-right"></i></a>
-                                <ul class="treeview-menu">
-                                    <li><a href="master.html?masterid=1"><i class="fa fa-chevron-right"></i> Sadguru Osho Siddharth Auliya</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="programe.html">
-                            <span> Programs</span>
-                            <i class="fa fa-angle-left pull-right"></i>
-                        </a>
-                        <ul id="programCategoryHolder" class="treeview-menu">
-
-                            <li>
-                                <a href="programe.html"> Programs for Beginners<i class="fa fa-angle-left pull-right"></i></a>
-                                <ul id="programListHolder_2" class="treeview-menu">
-                                    <li><a href="programe.html?programid=1"><i class="fa fa-chevron-right"></i> Vivasna Shivir (One day meditation camp)</a></li>
-                                    <li><a href="programe.html?programid=1"><i class="fa fa-chevron-right"></i> Dhyan Samadhi </a></li>
-                                    <li><a href="programe.html?programid=1"><i class="fa fa-chevron-right"></i> Mistic Rose</a></li>
-                                    <li><a href="programe.html?programid=1"><i class="fa fa-chevron-right"></i> Sammohan Pragya</a></li>
-                                    <li><a href="programe.html?programid=1"><i class="fa fa-chevron-right"></i> Mahajeevan Pragya</a></li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="programe.html"> Samadhi Programs<i class="fa fa-angle-left pull-right"></i></a>
-                                <ul id="programListHolder_3" class="treeview-menu">
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Dhyan Samadhi</a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Surati Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Nirati Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Amrit Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Ajapa Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Urja Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Divya Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Chaitanya Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Gyan Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Anand Samadhi</a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Prem Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Adwait Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Kaivalya Samadhi </a></li>
-                                    <li><a href="programe.html?programid=10"><i class="fa fa-chevron-right"></i> Nirvan Samadhi</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"> Sumiran Programs <i class="fa fa-angle-left pull-right"></i></a>
-                                <ul class="treeview-menu">
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Sahaj Sumiran/a></li>
-                      <li><a href="#"><i class="fa fa-chevron-right"></i> Shabd Sumiran </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Chaitanya Sumiran </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Anand Sumiran </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Prem Sumran </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Chaitanya Pad </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Anand Pad </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Prem Pad </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Prabhu Pad </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Govind Pad</a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Brahma Pad </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Param Pad </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Abhay Pad </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Charaiveti</a></li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"> Health Program <i class="fa fa-angle-left pull-right"></i></a>
-                                <ul class="treeview-menu">
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> KayaKalpam</a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Mudra Chikitsa </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Swasth Pragya </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Homyo Pragya </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Reki Pragya</a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Ayurved Pragya </a></li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"> Program for Children & Parents <i class="fa fa-angle-left pull-right"></i></a>
-                                <ul class="treeview-menu">
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Vatsalya Pragya</a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Bal Utsav Pragya </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Kishor Pragya </a></li>
-                                    <li><a href="#"><i class="fa fa-chevron-right"></i> Dampatya Pragya </a></li>
-
-                                </ul>
-                            </li>
-                       </ul>
-                    </li>
-
-                     <li class="treeview">
-                        <a href="#">Pragya Programs</span> <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                        <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Gayan Pragya</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Umang Pragya</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Maitry Pragya</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Jeevan Pragya</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Moksh Pragya</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Ajapa Shivir</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Satori</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                  Faculty (Acharya trening program)</span> <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                        <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Acharya Pragya</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Acharya Shree</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Acharya Youth Empowerment (IIYM Faculty)</a></li>
-                        </ul>
-                    </li>
-
-                   
-                    <li class="treeview">
-                        <a href="schedule.html">SCHEDULE</span> <i class="fa fa-angle-left pull-right"></i>
-                                </a>
-                        <ul class="treeview-menu">
-                            <li><a href="schedule.html"><i class="fa fa-chevron-right"></i>Samadhi Schedule</a></li>
-                            <li><a href="schedule.html"><i class="fa fa-chevron-right"></i>Pragya Schedule</a></li>
-                            <li><a href="schedule.html"><i class="fa fa-chevron-right"></i>Celebration</a></li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="gallery.html">GA-LLERY</span> <i class="fa fa-angle-left pull-right"></i>               </a>
-                        <ul class="treeview-menu">
-                            <li><a href="gallery.html"><i class="fa fa-chevron-right"></i> Photos</a></li>
-                            <li><a href="gallery.html"><i class="fa fa-chevron-right"></i> Videos</a></li>
-                            <li><a href="gallery.html"><i class="fa fa-chevron-right"></i> Audios</a></li>
-                            <li><a href="gallery.html"><i class="fa fa-chevron-right"></i> Books</a></li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">Centres</span> <i class="fa fa-angle-left pull-right"></i>
-                </a>
-                        <ul class="treeview-menu">
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Oshodhara Ashram</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Osho Sadhna Kendras</a></li>
-                            <li><a href="#"><i class="fa fa-chevron-right"></i> Oshodhara Dhyan Kendras</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <span>  Gallery</span>
-                            <i class="fa fa-angle-left pull-right"></i>
-                        </a>
-                        <ul class="treeview-menu">
-
-                            <li>
-                                <a href="#"> Photos <i class="fa fa-angle-left pull-right"></i></a>
-                                <ul class="treeview-menu">
-                                    <li>
-                                        <a href="#"> <i class="fa fa-angle-left pull-right"></i> Masters </a>
-
-                                        <ul class="treeview-menu">
-                                            <li><a href="#"><i class="fa fa-chevron-right"></i> Param Guru Osho </a></li>
-                                            <li><a href="#"><i class="fa fa-chevron-right"></i> Sufi Baba Shah Kalandar</a></li>
-                                            <li><a href="#"><i class="fa fa-chevron-right"></i> Sadguru Osho Siddharth Aulia</a></li>
-
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li> <a href="#"><i class="fa fa-chevron-right"></i> Videos</a> </li>
-                            <li> <a href="#"><i class="fa fa-chevron-right"></i> E-Books  </a> </li>
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="comingSoon.html"> <span> Centers</span></a>
-                    </li>
-                    <li>
-                        <a href="social.html"> <span> Official Social Media Acounts</span></a>
-                    </li>
-                    <li class="treeview">
-                        <a href="faq.html">
-                          FAQ</span> <i class="fa fa-angle-left pull-right"></i>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="faq.html"><i class="fa fa-chevron-right"></i> Reservation Guide Lines</a></li>
-                            <li><a href="faq.html"><i class="fa fa-chevron-right"></i> General Guide Lines    </a></li>
-
-                        </ul>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
-    </aside>
+    <?php include_once 'public_html/includes/sideBarContent.php'; ?>
 <div class="content container-fluid">
 
     <div id="content">
@@ -334,7 +106,7 @@
 
                             <div class="col-md-6">
 
-                                <h5>Program Category<span class="text-danger">*</span></h5>
+                                <h5>Program Category </h5>
                                 <div class="controls">
                                     <input name="programCate_SPG" id="programCate_SPG" placeholder="Program Category" required class="form-control">
 
@@ -343,7 +115,7 @@
 
                             <div class="col-md-6">
 
-                                <h5>Program <span class="text-danger">*</span></h5>
+                                <h5>Program  </h5>
                                 <div class="controls">
                                    <input name="programNameAuto_SPG" id="programNameAuto_SPG" placeholder="Program Name" required class="form-control">
                                 </div>
@@ -355,7 +127,7 @@
 
                             <div class="col-md-6">
 
-                                <h5>Venue <span class="text-danger">*</span></h5>
+                                <h5>Venue  </h5>
                                 <div class="controls">
                                     <input name="venueNameAuto_SPG" id="venueNameAuto_SPG" placeholder="Venu Name" required class="form-control">
                                 </div>
@@ -363,7 +135,7 @@
 
                             <div class="col-md-6">
 
-                                <h5>State <span class="text-danger">*</span></h5>
+                                <h5>State  </h5>
                                 <div class="controls">
                                     <select name="ss" id="ss" required class="form-control">
                                         <option value="">Select an Option</option>
@@ -379,7 +151,7 @@
 <!-- 
                         <div class="form-group">
                             <div class="col-md-12">
-                                <h5>Date <span class="text-danger">*</span></h5>
+                                <h5>Date  </h5>
                                 <div class="controls">
                                     <div class="container22">
 
@@ -416,7 +188,7 @@
                         </div> -->
                         <div class="form-group">
                             <div class="col-md-6">
-                                <h5>From Date <span class="text-danger">*</span></h5>
+                                <h5>From Date  </h5>
                                 <div class="controls">
                                     <input id="startDate_SPG" type="name" name="name" class="form-control" required placeholder="start date" data-validation-required-message="This field is required"> </div>
 
@@ -424,7 +196,7 @@
 
                             <div class="col-md-6">
 
-                                <h5>last Date <span class="text-danger">*</span></h5>
+                                <h5>last Date  </h5>
                                 <div class="controls">
                                     <input id="endDate_SPG" type="name" name="name" class="form-control" required placeholder="end date" data-validation-required-message="This field is required"> </div>
 
@@ -642,23 +414,10 @@
             </div>
         </div>
 
-        <div class="call-action1">
-            <div class="row">
-                <div class="col-md-12">
 
-                    Copyrights © 2020 All Rights Reserved by Oshodhara.
-                    <br>
-
-                    <a href="comingSoon.html">Terms of Use </a>| <a href="comingSoon.html">Privacy Policy</a></div>
-            </div>
-        </div>
     </div>
+    <?php include_once 'public_html/includes/footerPage.php'; ?>
 
-    <div class="col-sm-12">
-        <footer>
-            <p class="footer"> </p>
-        </footer>
-    </div>
 </div>
 
     <!-- Modal -->
