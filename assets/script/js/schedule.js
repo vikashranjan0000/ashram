@@ -92,7 +92,7 @@ function venueAutoComplete(){
 	$(function() {
         $("#venueNameAuto_SPG").autocomplete({
            	source:function(request, response){
-           		$("#venueNameAuto_SPG").attr("venuId", '');
+           		$("#venueNameAuto_SPG").attr("venueId", '');
 				if(window.localStorage.venueSchResponse){
 					var venueAC = JSON.parse(window.localStorage.venueSchResponse);
 					venueAC = JSON.parse(venueAC);
@@ -109,7 +109,7 @@ function venueAutoComplete(){
            	},
            	select: function( event, ui ) {
 	            $("#venueNameAuto_SPG").val( ui.item.label); //ui.item is your object from the array
-	            $("#venueNameAuto_SPG").attr("venuId",  ui.item.value); //ui.item is your object from the array
+	            $("#venueNameAuto_SPG").attr("venueId",  ui.item.value); //ui.item is your object from the array
 	            return false;
 	        }
 
@@ -153,7 +153,8 @@ function resetSearchField(){
 	$('#endDate_SPG').val('');
 	$('#programCate_SPG').attr("categoryid",'');
 	$('#programNameAuto_SPG').attr("programid",'');
-	$('#venueNameAuto_SPG').attr("venuId",'');
+	$('#venueNameAuto_SPG').attr("venueId",'');
+	loadScheduleListData();
 }
 
 
@@ -161,9 +162,15 @@ function handlerSearchSchedule(){
 	var serchInput = {}
 	serchInput.categoryid =  $('#programCate_SPG').attr("categoryid");
 	serchInput.programid =  $('#programNameAuto_SPG').attr("programid");
-	serchInput.venuId =  $('#venueNameAuto_SPG').attr("venuId");
+	serchInput.venueId =  $('#venueNameAuto_SPG').attr("venueId");
 	serchInput.startDate =  $('#startDate_SPG').val();
+	if(serchInput.startDate){
+		serchInput.startDate = moment(serchInput.startDate).format('YYYY-MM-DD');
+	}
 	serchInput.endDate =  $('#endDate_SPG').val();
+	if(serchInput.endDate){
+		serchInput.endDate = moment(serchInput.endDate).format('YYYY-MM-DD');
+	}
 	loadScheduleListData(serchInput);
 
 }
@@ -182,7 +189,7 @@ function callScheduleFragment(){
 }
 
 function loadInitialData(){	
-	loadScheduleListData({});
+	loadScheduleListData();
 	setProgramName();
 }
 
@@ -205,7 +212,11 @@ function loadScheduleListData(searchdata){
           var response = xhttp.responseText;
           var scheduleData = JSON.parse(response);
           //programData = response;
-          renderScheduleData(scheduleData);
+          if(scheduleData){
+          	renderScheduleData(scheduleData);
+          }else{
+          	
+          }
       }else{
 
       }
@@ -220,6 +231,8 @@ function renderScheduleData(renderData){
   var languageCode = window.localStorage.languageCode ?window.localStorage.languageCode : "en" ;
   $('#programScheduleHolder').empty();    
   for(var key in renderData){
+  	renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM, YYYY');
+  	renderData[key].end_date = moment(renderData[key].end_date).format('DD MMM, YYYY');
   	renderData[key].programData =  planProgramData[renderData[key].programid]
     if(renderData[key]['language']=languageCode){
       $('#programScheduleHolder').append(Mustache.render(schedulefragment, renderData[key]));
