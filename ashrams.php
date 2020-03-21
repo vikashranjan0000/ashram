@@ -32,17 +32,7 @@
     <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css' />
     <script defer src="js/solid.js"></script>
 
-    <!-- Head libs -->
     <script src="vendor/modernizr/modernizr.js"></script>
-
-    <!--[if IE]>
-      <link rel="stylesheet" href="css/ie.css">
-    <![endif]-->
-
-    <!--[if lte IE 8]>
-      <script src="vendor/respond/respond.js"></script>
-      <script src="vendor/excanvas/excanvas.js"></script>
-    <![endif]-->
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <style type="text/css">

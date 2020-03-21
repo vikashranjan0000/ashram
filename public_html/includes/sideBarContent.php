@@ -21,7 +21,6 @@
                 <li class="treeview">
                     <a href="master.php">
                         <span>MASTERS</span>
-                        <i class="fa fa-angle-right pull-left"></i>
                     </a>
                     <ul class="treeview-menu">
 
@@ -46,7 +45,6 @@
                 <li class="treeview">
                     <a href="programe.php">
                         <span> Programs</span>
-                        <i class="fa fa-angle-right pull-left"></i>
                     </a>
                     <ul id="programCategoryHolder" class="treeview-menu">
 
@@ -122,8 +120,8 @@
                             </ul>
                         </li>
 
-                        <li class="treeview">
-                            <a href="programe.php?programid=10">Pragya Programs</span> <i class="fa fa-angle-right pull-left"></i></a>
+                        <li>
+                            <a href="programe.php?programid=10">Pragya Programs <i class="fa fa-angle-right pull-left"></i></a>
                             <ul class="treeview-menu">
                                 <li><a href="programe.php?programid=10"><i class="fa fa-angle-right"></i> Gayan Pragya</a></li>
                                 <li><a href="programe.php?programid=10"><i class="fa fa-angle-right"></i> Umang Pragya</a></li>
@@ -136,7 +134,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="programe.php?programid=10">Faculty (Acharya trening program)</span> <i class="fa fa-angle-left pull-right"></i></a>
+                            <a href="programe.php?programid=10">Faculty (Acharya training program) <i class="fa fa-angle-right pull-left"></i></a>
                             <ul class="treeview-menu">
                                 <li><a href="programe.php?programid=10"><i class="fa fa-angle-right"></i> Acharya Pragya</a></li>
                                 <li><a href="programe.php?programid=10"><i class="fa fa-angle-right"></i> Acharya Shree</a></li>
@@ -149,7 +147,7 @@
                     <a href="schedule.php"> <span> Program Schedule</span></a>
                 </li>
                 <li class="treeview">
-                    <a href="centers.php">Centres</span> <i class="fa fa-angle-right pull-left"></i>
+                    <a href="centers.php">Centres</span> 
                                 </a>
                     <ul class="treeview-menu">
                         <li><a href="ashrams.php"><i class="fa fa-angle-right"></i>Oshodhara Ashram</a></li>
@@ -160,7 +158,6 @@
                 <li class="treeview">
                     <a href="gallery.php">
                         <span>  Gallery</span>
-                        <i class="fa fa-angle-right pull-left"></i>
                     </a>
                     <ul class="treeview-menu">
                         <li>
@@ -183,19 +180,16 @@
 
                     </ul>
                 </li>
-                <li>
-                    <a href="centers.php"> <span> Centers</span></a>
-                </li>
+
                 <li>
                     <a href="social.php"> <span> Official Social Media Acounts</span></a>
                 </li>
                 <li class="treeview">
-                    <a href="faq.php">
-                          FAQ</span> <i class="fa fa-angle-right pull-left"></i>
-                        </a>
+                    <a href="faq.php">FAQ</a>
                     <ul class="treeview-menu">
                         <li><a href="faq.php"><i class="fa fa-angle-right"></i> Reservation Guide Lines</a></li>
                         <li><a href="faq.php"><i class="fa fa-angle-right"></i> General Guide Lines    </a></li>
+                        <li><a href="contact.php"><i class="fa fa-angle-right"></i>Contact Us</a></li>
 
                     </ul>
                 </li>

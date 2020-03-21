@@ -12,16 +12,11 @@
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Web Fonts  -->
-
-    <!-- Vendor CSS -->
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css">
     <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.css" media="screen">
     <link rel="stylesheet" href="vendor/owlcarousel/owl.theme.css" media="screen">
     <link href="vendor/owl-carousel/owl.transitions.css" rel="stylesheet" media="screen">
-
-    <!-- Theme CSS -->
+    <link href='css/font-icons.css' media='all' rel='stylesheet' type='text/css' />
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/theme-animate.css">
@@ -67,10 +62,10 @@
 
         <div id="content">
 
+
             <div class="top-contact-info1">
                 <div class="row">
-                    <div class="col-md-5"></div>
-                    <div class="col-md-7">
+                    <div class="col-md-6">
                         <div class="white-from-trs wow fadeInUp">
                             <form action="" method="get">
 
@@ -85,6 +80,25 @@
                             <div class="clearBoth"></div>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div id="top-bar">
+                            <div class="col_half hidden-xs fright col_last nobottommargin">
+                                <div id="top-social">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/oshodharaOSHO" target="_blank" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+                                        <li><a href="https://twitter.com/OSHO_Oshodhara" target="_blank" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+                                        <li><a href="https://www.youtube.com/user/OshodharaVideos?sub_confirmation=1" target="_blank" class="si-youtube"><span class="ts-icon"><i class="icon-youtube"></i></span><span class="ts-text">Youtube</span></a></li>
+                                        <li><a href="tel:+91 96714 00196" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+91 96714 00196</span></a></li>
+                                        <li><a href="/cdn-cgi/l/email-protection#c3aaada5ac83acb0abaca7aba2b1a2edacb1a4edaaad" target="_blank" class="si-email3"><span class="ts-icon"><i class="icon-email3"></i></span><span class="ts-text"><span class="__cf_email__" data-cfemail="8fe6e1e9e0cfe0fce7e0ebe7eefdeea1e0fde8a1e6e1">[email&#160;protected]</span></span></a></li>
+                                        <li><a href="https://twitter.com/SiddharthAulia" target="_blank" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Osho Siddharth</span></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -353,8 +367,8 @@
 
             </div>
         </div>
-        <?php include_once 'public_html/includes/footerPage.php'; ?>
     </div>
+    <?php include_once 'public_html/includes/footerPage.php'; ?>
 
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap/bootstrap.js"></script>
@@ -368,17 +382,17 @@
     <script src="vendor/masonry/masonry.pkgd.min.js"></script>
     <script src="vendor/uikit/uikit.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
-
+    <script type="text/javascript" src="assets/script/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/script/js/functions.js"></script>
     <script src="js/theme.js"></script>
     <script src="assets/script/libs/mustache.min.js"></script>
     <script src="assets/script/js/headerProgramCategory.js"></script>
     <script src="assets/script/js/index.js"></script>
-    <!-- Style Switcher -->
     <script type="text/javascript" src="style-switcher/js/switcher.js"></script>
     <script src='js/SidebarNav.min.js' type='text/javascript'></script>
     <script>
         $('.sidebar-menu').SidebarNav()
     </script>
     <script type="text/javascript"></script>
-    < /body>
-        < /html>
+    </body>
+</html>
