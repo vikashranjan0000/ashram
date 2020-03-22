@@ -20,7 +20,7 @@
                 </li>
                 <li class="treeview">
                     <a href="master.php">
-                        <span>MASTERS</span>
+                        <span>Masters</span>
                     </a>
                     <ul class="treeview-menu">
 
@@ -198,3 +198,4 @@
         </div>
     </nav>
 </aside>
+<?php include_once 'public_html/includes/headerRow.php';?>
