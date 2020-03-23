@@ -292,9 +292,7 @@
         <?php include_once 'public_html/includes/footerPage.php'; ?>
         <?php include_once 'public_html/includes/footerScript.php'; ?>
 
-    
-        <script src="assets/script/libs/mustache.min.js"></script>
-        <script src="assets/script/js/headerProgramCategory.js"></script>
+        <script type="text/javascript" src="assets/script/js/index.js"></script>
         <script>
             $('.sidebar-menu').SidebarNav()
         </script>

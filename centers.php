@@ -9,6 +9,9 @@
         body,
         td,
         th {
+                            </p>
+                            <br>
+
             font-family: Dosis, sans-serif;
             font-size: 14px;
             color: #333;
@@ -81,7 +84,10 @@
                                         <div class="panel-heading">
                                             <h4 class="panel-title"> <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse">ANDHRA PRADESH</a> </h4>
                                         </div>
-                                        <div class="panel-collapse collapse in" id="collapseOne">
+              
+                                        <li>
+                                            <a href="programe.php">{{categoryname}}<i class="fa fa-angle-left pull-right"></i></a>
+                                            <ul id="programListHolder_{{categor                          <div class="panel-collapse collapse in" id="collapseOne">
                                             <div class="panel-body">
 
                                                 <table cellpadding="2" cellspacing="2" class="table table-striped table-bordered ">
@@ -194,8 +200,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate  </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -224,8 +229,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -254,8 +258,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate  </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -284,8 +287,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -314,8 +316,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -344,8 +345,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate   </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -374,8 +374,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate</span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -404,8 +403,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -434,8 +432,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate     </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -464,8 +461,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate  </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -524,8 +520,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate   </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -554,8 +549,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate</span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -584,8 +578,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate    </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -614,8 +607,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -644,8 +636,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -674,8 +665,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate</span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -704,13 +694,11 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td colspan="5"><strong>OshoDhara Sadhna Kendra Janakpur
-    </strong></td>
+                                                            <td colspan="5"><strong>OshoDhara Sadhna Kendra Janakpur</strong></td>
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="31%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="31%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate   </span></td>
                                                             <td width="15%">Secunderabad </td>
                                                             <td width="13%">9701622355 </td>
                                                             <td width="25%">vsridhar66@gmail.com</td>
@@ -780,8 +768,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate          </span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -810,8 +797,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td width="16%">Sw.V.Sridhar </td>
-                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate
-          </span></td>
+                                                            <td width="32%"><span class="form-group">Opp. Little Jewel School, Jyothi Colony, Near A.O.C. Kirkee Gate</span></td>
                                                             <td width="14%">Secunderabad </td>
                                                             <td width="11%">9701622355 </td>
                                                             <td width="16%">vsridhar66@gmail.com</td>
@@ -851,7 +837,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
 

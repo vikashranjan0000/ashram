@@ -6,8 +6,6 @@
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
     <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css' />
     <script defer src="js/solid.js"></script>
-
-    <!-- Head libs -->
     <script src="vendor/modernizr/modernizr.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <style type="text/css">
@@ -173,10 +171,11 @@
 
                             <thead class="tb-bg-text">
                                 <tr>
-                                    <th width="28%">Date</th>
-                                    <th width="22%">Venue</th>
+                                    <th width="22%">Program</th>
+                                    <th width="22%">Date</th>
                                     <th width="29%">Aachrya</th>
-                                    <th width="21%">&nbsp;</th>
+                                    <th width="28%"><span id="viewButton"  class="pull-left">View</span>
+                        <span id="bookButton" class="pull-right">Book</span></th>
                                 </tr>
                             </thead>
                             <tbody id="programScheduleHolder">
@@ -361,9 +360,12 @@
             </div>
         </div>
     <?php include_once 'public_html/includes/footerPage.php'; ?>
+<div id="myModal">
+    
+</div>
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!--     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -412,33 +414,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
     <?php include_once 'public_html/includes/footerScript.php'; ?>
-    <script src="assets/script/libs/jquery-1.12.4.js"></script>
-    <script src="assets/script/libs/jquery-ui.js"></script>
-    <script src="vendor/bootstrap/bootstrap.js"></script>
-    <script src="vendor/jquery.validation/jquery.validation.js"></script>
-    <script src="vendor/owlcarousel/owl.carousel.js"></script>
-    <script src="vendor/flexslider/jquery.flexslider-min.js"></script>
-    <script src="vendor/countdown/countdown.min.js"></script>
-    <script src="vendor/chosen/chosen.jquery.min.js"></script>
-    <script src="vendor/pricefilter/jquery.pricefilter.js"></script>
-    <script src="vendor/masonry/imagesloaded.pkgd.min.js"></script>
-    <script src="vendor/masonry/masonry.pkgd.min.js"></script>
-    <script src="vendor/uikit/uikit.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
-    <script src="assets/script/libs/mustache.min.js"></script>
-    <script src="assets/script/libs/moment.min.js"></script>
-    <script src="assets/script/js/headerProgramCategory.js"></script>
+
+    <script src="assets/script/libs/jquery-ui.min.js"></script>
     <script src="assets/script/js/schedule.js"></script>
 
-    <!-- Theme Base, Components and Settings -->
-    <script src="js/theme.js"></script>
-
-    <!-- Style Switcher -->
-    <script type="text/javascript" src="style-switcher/js/switcher.js"></script>
-    <script src='js/SidebarNav.min.js' type='text/javascript'></script>
     <script>
         $('.sidebar-menu').SidebarNav()
     </script>

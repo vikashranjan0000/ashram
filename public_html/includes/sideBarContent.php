@@ -12,10 +12,10 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="sidebar-menu">
-                <li>
+                <li class="treeview">
                     <a href="index.php" class="active"> <span>Home</span></a>
                 </li>
-                <li>
+                <li class="treeview">
                     <a href="knowus.php"> <span>About Us</span></a>
                 </li>
                 <li class="treeview">

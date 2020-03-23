@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div id="top-bar">
+                    <div id="top-bar" class="pull-right">
                         <div class="col_half hidden-xs fright col_last nobottommargin">
                             <div id="top-social">
                                 <ul>

@@ -46,7 +46,7 @@
         </div>
 
         <div class="row">
-            <div class="inner-slide-com-cot">
+            <div class="inner-slides-com-cot">
 
                 <div class="col-lg-12">
 
@@ -62,7 +62,7 @@
 
         <div class="row">
             <div class="tpp-orgl21"></div>
-            <div class="inner-slide-com-cot">
+            <div class="inner-slides-com-cot">
                 <div class="col-sm-6">
                     <h2 class=" ct-fw-600">Get in Touch.</h2>
 
