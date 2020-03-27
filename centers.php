@@ -79,15 +79,13 @@
                         <!-- Tab panes -->
                         <div class="tab-content">
                             <div class="tab-pane active" id="hometab">
-                                <div id="accordion" class="panel-group">
+                                <div id="accordionHolder" class="panel-group">
                                     <div class="panel panel-default pgl-panel">
                                         <div class="panel-heading">
-                                            <h4 class="panel-title"> <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse">ANDHRA PRADESH</a> </h4>
+                                            <h4 class="panel-title"> <a href="#collapseOne" data-parent="#accordionHolder" data-toggle="collapse">ANDHRA PRADESH</a> </h4>
                                         </div>
               
-                                        <li>
-                                            <a href="programe.php">{{categoryname}}<i class="fa fa-angle-left pull-right"></i></a>
-                                            <ul id="programListHolder_{{categor                          <div class="panel-collapse collapse in" id="collapseOne">
+                                        <div class="panel-collapse collapse in" id="collapseOne">
                                             <div class="panel-body">
 
                                                 <table cellpadding="2" cellspacing="2" class="table table-striped table-bordered ">
@@ -847,6 +845,8 @@
             </div>
         <?php include_once 'public_html/includes/footerPage.php'; ?>
         <?php include_once 'public_html/includes/footerScript.php'; ?>
+        <script src="assets/script/js/ourCentre.js"></script>
+
         <script src="js/theme.js"></script>
         <script src='js/SidebarNav.min.js' type='text/javascript'></script>
 

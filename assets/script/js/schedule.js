@@ -1,5 +1,4 @@
 var planProgramData = {};
-var scheuleLocationData = {};
 var scheduleTemplates = "";
 
 $(document).ready(function() {
@@ -140,14 +139,6 @@ function setProgramName(){
 		planProgramData[programName_SPG[pronameAutokey].programid] = programName_SPG[pronameAutokey];
 	}
 }
-function setLocationName(){
-	var scheuleLocationData_SPG = JSON.parse(window.localStorage.venueSchResponse);
-	scheuleLocationData_SPG = JSON.parse(scheuleLocationData_SPG);
-	for(var lockey in scheuleLocationData_SPG){
-		scheuleLocationData[scheuleLocationData_SPG[lockey].dhyankendraid] = scheuleLocationData_SPG[lockey];
-	}
-}
-
 
 function setLangaugeCode(){
 	window.localStorage.languageCode = $('#languageSelector').val();
@@ -200,7 +191,6 @@ function callScheduleFragment(){
 function loadInitialData(){	
 	loadScheduleListData();
 	setProgramName();
-	setLocationName();
 }
 
 function loadScheduleListData(searchdata){
@@ -244,7 +234,7 @@ function renderScheduleData(renderData){
   $('#programScheduleHolder').empty();    
   $('#myModal').empty();    
   for(var key in renderData){
-  	renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM, YYYY');
+  	renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM');
   	renderData[key].end_date = moment(renderData[key].end_date).format('DD MMM, YYYY');
   	renderData[key].programData =  planProgramData[renderData[key].programid]
   	renderData[key].locationData =  scheuleLocationData[renderData[key].dhyankendraid]

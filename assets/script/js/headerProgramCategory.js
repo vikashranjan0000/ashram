@@ -1,10 +1,12 @@
 var categoryData = {};
 var headerTemplates = "";
+var scheuleLocationData = {};
 
 function loadCategory(){
   debugger;
   callfragmentText_HPC(); 
   loadHeaderProgramCategoryData();
+  setLocationName();
 }
 
 function eventListener(){
@@ -80,5 +82,13 @@ function renderProgramData_HPC(programListCateData){
 
       }
 
+  }
+}
+
+function setLocationName(){
+  var scheuleLocationData_SPG = JSON.parse(window.localStorage.venueSchResponse);
+  scheuleLocationData_SPG = JSON.parse(scheuleLocationData_SPG);
+  for(var lockey in scheuleLocationData_SPG){
+    scheuleLocationData[scheuleLocationData_SPG[lockey].dhyankendraid] = scheuleLocationData_SPG[lockey];
   }
 }

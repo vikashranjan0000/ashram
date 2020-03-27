@@ -198,18 +198,6 @@
         <?php include_once 'public_html/includes/footerPage.php'; ?>
         <?php include_once 'public_html/includes/footerScript.php'; ?>
 
-    <script src="vendor/jquery/jquery.js"></script>
-    <script src="vendor/bootstrap/bootstrap.js"></script>
-    <script src="vendor/jquery.validation/jquery.validation.js"></script>
-    <script src="vendor/owlcarousel/owl.carousel.js"></script>
-    <script src="vendor/flexslider/jquery.flexslider-min.js"></script>
-    <script src="vendor/countdown/countdown.min.js"></script>
-    <script src="vendor/chosen/chosen.jquery.min.js"></script>
-    <script src="vendor/pricefilter/jquery.pricefilter.js"></script>
-    <script src="vendor/masonry/imagesloaded.pkgd.min.js"></script>
-    <script src="vendor/masonry/masonry.pkgd.min.js"></script>
-    <script src="vendor/uikit/uikit.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
 
     <script src="js/theme.js"></script>
 
@@ -218,6 +206,7 @@
     <script src='js/SidebarNav.min.js' type='text/javascript'></script>
     <script>
         $('.sidebar-menu').SidebarNav()
+        loadCategory();
     </script>
     <script type="text/javascript">
     </body>

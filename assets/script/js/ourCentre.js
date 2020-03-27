@@ -50,7 +50,7 @@ function venueAutoComplete(){
      });
 }
 
-function loadVenueData_SPG(){
+function loadStateData_CPG(){
   let xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -64,14 +64,6 @@ function loadVenueData_SPG(){
   xhttp.send();
 }
 
-
-function setProgramName(){
-	var programName_SPG = JSON.parse(window.localStorage.catProResponse);
-	programName_SPG = JSON.parse(programName_SPG);
-	for(var pronameAutokey in programName_SPG){
-		planProgramData[programName_SPG[pronameAutokey].programid] = programName_SPG[pronameAutokey];
-	}
-}
 function setLocationName(){
 	var scheuleLocationData_SPG = JSON.parse(window.localStorage.venueSchResponse);
 	scheuleLocationData_SPG = JSON.parse(scheuleLocationData_SPG);
@@ -114,17 +106,16 @@ function callCentreFragment(){
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-	        scheduleTemplates = xhttp.responseText;
-	        loadInitialData();
+	        centreTemplates = xhttp.responseText;
+	        loadInitialCentreData();
 	    }
 	};
-	xhttp.open("GET", "public_html/fragments/scheduleFragment.html", true);
+	xhttp.open("GET", "public_html/fragments/centreFragment.html", true);
 	xhttp.send();
 }
 
-function loadInitialData(){	
+function loadInitialCentreData(){	
 	loadCenterListData();
-	setProgramName();
 	setLocationName();
 }
 
@@ -156,27 +147,27 @@ function loadCenterListData(searchCenterdata){
 
       }
   };
-  xhttp.open("POST", "php/api/controller/CentreController.php", true);
+  xhttp.open("POST", "php/api/controller/CenterController.php", true);
   xhttp.send(fd);
 }
 
 
-function renderCentreData(renderData){
-  var schedulefragment = $(scheduleTemplates).filter('#programScheduleContent').html();
-  var scheduleModalfragment = $(headerTemplates).filter('#programScheduleModalContent').html();
+function renderCentreData(renderCentreData){
+  var centreAcordionfragment = $(centreTemplates).filter('#centreAcordionContent').html();
+  var centreDetailfragment = $(centreTemplates).filter('#centreDetailContent').html();
 
   var languageCode = window.localStorage.languageCode ?window.localStorage.languageCode : "en" ;
-  $('#programScheduleHolder').empty();    
+  $('#accordionHolder').empty();    
   $('#myModal').empty();    
-  for(var key in renderData){
-  	renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM, YYYY');
-  	renderData[key].end_date = moment(renderData[key].end_date).format('DD MMM, YYYY');
-  	renderData[key].programData =  planProgramData[renderData[key].programid]
-  	renderData[key].locationData =  scheuleLocationData[renderData[key].dhyankendraid]
+  for(var key in renderCentreData){
+  	renderCentreData[key].start_date = moment(renderCentreData[key].start_date).format('DD MMM, YYYY');
+  	renderCentreData[key].end_date = moment(renderCentreData[key].end_date).format('DD MMM, YYYY');
+  	renderCentreData[key].programData =  planProgramData[renderCentreData[key].programid]
+  	renderCentreData[key].locationData =  scheuleLocationData[renderCentreData[key].dhyankendraid]
   	
-    if(renderData[key]['language']=languageCode){
-      $('#programScheduleHolder').append(Mustache.render(schedulefragment, renderData[key]));
-      $('#myModal').append(Mustache.render(scheduleModalfragment, renderData[key]));
+    if(renderCentreData[key]['language']=languageCode){
+      $('#accordionHolder').append(Mustache.render(centreAcordionfragment, renderCentreData[key]));
+      $('#centreDetailHolder_'+state_id).append(Mustache.render(centreDetailfragment, renderCentreData[key]));
     }
   }
 }

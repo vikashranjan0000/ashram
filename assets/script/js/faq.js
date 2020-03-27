@@ -2,6 +2,7 @@ var planData = {};
 var faqtemplate = "";
 $(document).ready(function(){
 debugger;	
+  loadCategory();
 	callFaqData(); 
 });
 

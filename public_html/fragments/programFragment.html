@@ -8,10 +8,103 @@
 <div id="programDetailContent"  class="col-lg-7">
     <p>
         {{shortdescription}}</p>
-    <p>
+    <p id="programLongDiscription_{{programid}}">
         {{longdescription}}
         <br>
         <br>
 
         <a href="index.html" class="btn btn-primary"> Read More >></a></p>
+</div>
+
+<div id="programLisContent">   
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Venue</th>
+                <th>Conducting Aachrya</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody id="programListContent">
+            <tr>
+                <td>
+                     <div class="form-group">{{locationData.dhyankendraname}}</div>
+                </td>
+                <td>
+                    <div class="form-group"><div class="form-group">{{start_date}} - {{end_date}}</div></div>
+                </td>
+                <td>
+                    <div class="form-group">
+
+                        {{guidelines}}, {{comments}}
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <span id="viewProgButton_{{programid}}"  data-toggle="modal" data-target="#programModal_{{programid}}" class="myButton pull-left">View</span>
+                        <span id="bookProgButton_{{programid}}" class="myButton pull-right">Book</span>
+                    
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<div id="programListModalContent">
+    
+    <div class="modal fade" id="programModal_{{programid}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">{{programData.programname}}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 ">
+                            <table class="table table-striped">
+                                <tr>
+                                    <td><strong>Program Categor</strong>y</td>
+                                </tr>
+                                <tr>
+                                    <td>Sadhna</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Program</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>{{locationData.dhyankendraname}}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Venue</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>{{locationData.dhyankendraname}}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>State</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>{{locationData.dhyankendraname}}, {{locationData.Address2}} </strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Date</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>{{start_date}} </td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
 </div>

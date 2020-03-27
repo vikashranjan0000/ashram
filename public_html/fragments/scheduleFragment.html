@@ -5,25 +5,28 @@
             <table width="100%" border="0">
                 <tbody>
                     <tr>
-                        <td><strong>{{programData.programname}}</strong></td>
-                    </tr>
-                    <tr>
-                        <td>{{locationData.dhyankendraname}}</td>
+                        <td clsss="pointerCls">
+                            <a href="programe.php?programid={{programid}}">
+                                <strong>{{programData.programname}}</strong>       
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </td>
-        <td><span class="form-group"><div class="form-group">{{start_date}} to {{end_date}}</div> </span></td>
+        <td>
+            <div class="form-group">{{locationData.dhyankendraname}}</div>
+        </td>
+        <td>
+            <div class="form-group"><div class="form-group">{{start_date}} - {{end_date}}</div></div>
+        </td>
         <td>
             <table width="100%" border="0">
-                <tbody>
-                    <tr>
-                        <td><strong>Conducted by</strong></td>
-                    </tr>
-                    <tr>
-                        <td>{{guidelines}}, {{comments}}</td>
-                    </tr>
-                </tbody>
+            <tbody>
+                <tr>
+                    <td>{{guidelines}}, {{comments}}</td>
+                </tr>
+            </tbody>
             </table>
         </td>
         <td>
@@ -38,4 +41,3 @@
         </td>
     </tr>
 </tbody>
-

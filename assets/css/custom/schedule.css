@@ -1,0 +1,7 @@
+.pointerCls{
+	cursor: pointer;
+}
+
+.pointerCls a:hover {
+    color: #575a3b;
+}

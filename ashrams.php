@@ -175,6 +175,7 @@
         <?php include_once 'public_html/includes/footerScript.php'; ?>
         <script type="text/javascript" src="style-switcher/js/switcher.js"></script>
         <script src='js/SidebarNav.min.js' type='text/javascript'></script>
+        <script src="assets/script/js/ashrams.js"></script>
         <script>
             $('.sidebar-menu').SidebarNav()
         </script>
