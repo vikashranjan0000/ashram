@@ -78,7 +78,7 @@ function renderProgramData_PPG(renderData){
     function renderProgramIntake(programListData){
       renderData = programListData['programList'];
       var progListfragment = $(templates_PPG).find('#programListContent').html();
-      var scheduleModalfragment = $(templates_PPG).filter('#programLis)tModalContent').html();
+      var scheduleModalfragment = $(templates_PPG).filter('#programListModalContent').html();
 
   var languageCode = window.localStorage.languageCode ?window.localStorage.languageCode : "en" ;
   $('#programIntakeHolder').empty();    
@@ -89,8 +89,5 @@ function renderProgramData_PPG(renderData){
       renderData[key].locationData =  scheuleLocationData[renderData[key].dhyankendraid]
       $('#programIntakeHolder').append(Mustache.render(progListfragment, renderData[key]));
       $('#programModal').append(Mustache.render(scheduleModalfragment, renderData[key]));
-    
-    if(renderData[key]['language']=languageCode){
-    }
+      }
   }
-}
