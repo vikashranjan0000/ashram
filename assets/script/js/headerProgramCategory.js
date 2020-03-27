@@ -6,15 +6,9 @@ function loadCategory(){
   debugger;
   callfragmentText_HPC(); 
   loadHeaderProgramCategoryData();
-  setLocationName();
-}
-
-function eventListener(){
-  $('#languageSelector').on('change', setLangaugeCode);
-}
-//variable should be unique through out the application, like this page is common for all page
-function setLangaugeCode(){
-  window.localStorage.languageCode = $('#languageSelector').val();
+      if(!window.localStorage.venueAutoResponse){
+         loadVenueData_SPG();
+  }
 }
 
 function callfragmentText_HPC(){
@@ -86,9 +80,27 @@ function renderProgramData_HPC(programListCateData){
 }
 
 function setLocationName(){
-  var scheuleLocationData_SPG = JSON.parse(window.localStorage.venueSchResponse);
-  scheuleLocationData_SPG = JSON.parse(scheuleLocationData_SPG);
-  for(var lockey in scheuleLocationData_SPG){
-    scheuleLocationData[scheuleLocationData_SPG[lockey].dhyankendraid] = scheuleLocationData_SPG[lockey];
+  if(window.localStorage.venueSchResponse){    
+    var scheuleLocationData_SPG = JSON.parse(window.localStorage.venueSchResponse);
+    scheuleLocationData_SPG = JSON.parse(scheuleLocationData_SPG);
+    for(var lockey in scheuleLocationData_SPG){
+      scheuleLocationData[scheuleLocationData_SPG[lockey].dhyankendraid] = scheuleLocationData_SPG[lockey];
+    }
   }
+}
+
+
+function loadVenueData_SPG(){
+  let xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          let venueSchResponse = xhttp.responseText;
+          window.localStorage.venueSchResponse =  JSON.stringify(venueSchResponse);
+          setLocationName();
+      }else{
+
+      }
+  };
+  xhttp.open("POST", "php/api/controller/CenterController.php", true);
+  xhttp.send();
 }

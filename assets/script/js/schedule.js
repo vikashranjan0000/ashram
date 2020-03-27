@@ -117,20 +117,6 @@ function venueAutoComplete(){
      });
 }
 
-function loadVenueData_SPG(){
-  let xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-          let venueSchResponse = xhttp.responseText;
-          window.localStorage.venueSchResponse =  JSON.stringify(venueSchResponse);
-      }else{
-
-      }
-  };
-  xhttp.open("POST", "php/api/controller/CenterController.php", true);
-  xhttp.send();
-}
-
 
 function setProgramName(){
 	var programName_SPG = JSON.parse(window.localStorage.catProResponse);
