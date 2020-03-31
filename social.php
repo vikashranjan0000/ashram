@@ -11,19 +11,6 @@
 
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style type="text/css">
-        body,
-        td,
-        th {
-            font-family: Dosis, sans-serif;
-            font-size: 14px;
-            color: #333;
-        }
-        
-        body {
-            background-color: #ddcdbd;
-        }
-    </style>
 </head>
 
 <body class="front">
@@ -65,7 +52,7 @@
                                 <td height="47" align="center"><a href="https://www.facebook.com/oshodharaOSHO" target="_blank"><strong>FACEBOOK</strong></a></td>
                             </tr>
                             <tr>
-                                <td align="center"><a href="https://www.facebook.com/oshodharaOSHO" target="_blank">/osho...</a></td>
+                                <td align="center"><a href="https://www.facebook.com/oshodharaOSHO" target="_blank">Oshodhara Facebook.</a></td>
                             </tr>
                             <tr>
                                 <td align="center">&nbsp;</td>
@@ -91,7 +78,7 @@
                                 <td height="47" align="center"><a href="https://twitter.com/OSHO_Oshodhara" target="_blank"><strong>TWITTER</strong></a></td>
                             </tr>
                             <tr>
-                                <td align="center"><a href="https://twitter.com/OSHO_Oshodhara" target="_blank">/osho...</a></td>
+                                <td align="center"><a href="https://twitter.com/OSHO_Oshodhara" target="_blank">OshoDhara</a></td>
                             </tr>
                             <tr>
                                 <td align="center">&nbsp;</td>
@@ -114,7 +101,7 @@
                                 <td height="47" align="center"><a href="https://twitter.com/SiddharthAulia" target="_blank"><strong>TWITTER</strong></a></td>
                             </tr>
                             <tr>
-                                <td align="center"><a href="https://twitter.com/SiddharthAulia" target="_blank">/osho siddharth...</a></td>
+                                <td align="center"><a href="https://twitter.com/SiddharthAulia" target="_blank">Osho Siddharth Aulia</a></td>
                             </tr>
                             <tr>
                                 <td align="center">&nbsp;</td>
@@ -137,7 +124,7 @@
                                 <td height="47" align="center"><a href="https://www.instagram.com/osho.dhara" target="_blank"><strong>INSTAGRAM</strong></a></td>
                             </tr>
                             <tr>
-                                <td align="center"><a href="https://www.instagram.com/osho.dhara" target="_blank">/osho...</a></td>
+                                <td align="center"><a href="https://www.instagram.com/osho.dhara" target="_blank">Oshodhara Instagram</a></td>
                             </tr>
                             <tr>
                                 <td align="center">&nbsp;</td>
@@ -160,7 +147,7 @@
                                 <td height="47" align="center"><a href="https://www.youtube.com/user/OshodharaVideos?sub_confirmation=1" target="_blank"><strong>YOUTUBE</strong></a></td>
                             </tr>
                             <tr>
-                                <td align="center"><a href="https://www.youtube.com/user/OshodharaVideos?sub_confirmation=1" target="_blank">/osho...</a></td>
+                                <td align="center"><a href="https://www.youtube.com/user/OshodharaVideos?sub_confirmation=1" target="_blank">Osho Dhara</a></td>
                             </tr>
                             <tr>
                                 <td align="center">&nbsp;</td>
@@ -176,14 +163,37 @@
                             </tr>
                             <tr>
                                 <td height="49" align="center" valign="middle">
-                                    <a href="comingSoon.html"><img src="images/in.png" width="66" height="65" border="0"></a>
+                                    <a href="comingSoon.html"><img src="images/telegram.png" width="66" height="65" border="0"></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td height="47" align="center"><a href="comingSoon.html"><strong>LINKEDIN</strong></a></td>
+                                <td height="47" align="center"><a href="comingSoon.html"><strong>Telegram</strong></a></td>
                             </tr>
                             <tr>
                                 <td align="center"><a href="comingSoon.html">/osho...</a></td>
+                            </tr>
+                            <tr>
+                                <td align="center">&nbsp;</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="col-md-4  ">
+
+                        <table width="100%" border="0">
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td height="49" align="center" valign="middle">
+                                    <a href="comingSoon.html"><img src="images/whatsapp.png" width="66" height="65" border="0"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="47" align="center"><a href="https://chat.whatsapp.com/HrPTKoDdC2MILGPEyUWdXf"><strong>Whatsapp</strong></a></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><a href="https://chat.whatsapp.com/HrPTKoDdC2MILGPEyUWdXf">/osho...</a></td>
                             </tr>
                             <tr>
                                 <td align="center">&nbsp;</td>
@@ -205,7 +215,6 @@
     <script type="text/javascript" src="style-switcher/js/switcher.js"></script>
     <script src='js/SidebarNav.min.js' type='text/javascript'></script>
     <script>
-        $('.sidebar-menu').SidebarNav()
         loadCategory();
     </script>
     <script type="text/javascript">

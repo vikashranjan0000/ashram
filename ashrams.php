@@ -8,29 +8,7 @@
     <script defer src="js/solid.js"></script>
     <script src="vendor/modernizr/modernizr.js"></script>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style type="text/css">
-        body,
-        td,
-        th {
-            font-family: Dosis, sans-serif;
-            font-size: 14px;
-            color: #333;
-        }            color: #333;
-        }
-        .content {
-
-            top: -26px;
-        }
-
-        
-        body {
-            background-color: #ddcdbd;
-        }
-    </style>            color: #333;
-        }
-        
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">       
 </head>
 
 <body class="front">
@@ -176,9 +154,5 @@
         <script type="text/javascript" src="style-switcher/js/switcher.js"></script>
         <script src='js/SidebarNav.min.js' type='text/javascript'></script>
         <script src="assets/script/js/ashrams.js"></script>
-        <script>
-            $('.sidebar-menu').SidebarNav()
-        </script>
-        <script type="text/javascript">
     </body>
 </html>

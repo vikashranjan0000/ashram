@@ -5,23 +5,10 @@
 
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
     <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css' />
-    <link href='assets/css/custom/schedule.css' media='all' rel='stylesheet' type='text/css' />
     <script defer src="js/solid.js"></script>
     <script src="vendor/modernizr/modernizr.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style type="text/css">
-        body,
-        td,
-        th {
-            font-family: Dosis, sans-serif;
-            font-size: 14px;
-            color: #333;
-        }
-        
-        body {
-            background-color: #ddcdbd;
-        }
-    </style>
+    <link href='assets/css/custom/schedule.css' media='all' rel='stylesheet' type='text/css' />
 </head>
 
 <body class="front">
@@ -40,37 +27,37 @@
             </div>
         </div>
         <div class="row">
-            <div class="form-mgr">
+            <div class="form-mgr clearfix searchHolder">
                 <div class="col-md-12 col-sm-12 animate fadeInRight">
                     <form role="form" action="esendmail1.php" method="post" class="m-t-40" novalidate>
-                        <div class="form-group">
+                        <div class="form-group clearfix scheduleFormGroup">
 
                             <div class="col-md-4">
-                                <h5>Program Category </h5>
+                                <span class="titleLabel">Program Category </span>
                                 <div class="controls">
                                     <input name="programCate_SPG" id="programCate_SPG" placeholder="Program Category" required class="form-control">
                                 </div>
                             </div>
 
                             <div class="col-md-4">
-                                <h5>Program  </h5>
-                                <div class="controls">
+                                <span class="titleLabel">Program  </span>
+                                <div class="controls customInputDiv">
                                    <input name="programNameAuto_SPG" id="programNameAuto_SPG" placeholder="Program Name" required class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <h5>Venue  </h5>
-                                <div class="controls">
+                                <span class="titleLabel">Venue  </span>
+                                <div class="controls customInputDiv">
                                     <input name="venueNameAuto_SPG" id="venueNameAuto_SPG" placeholder="Venue Name" required class="form-control">
                                 </div>
                             </div>
 
                         </div>
-                        <div class="form-group">
+                        <div class="form-group clearfix scheduleFormGroup">
                             <div class="col-md-4">
 
-                                <h5>State  </h5>
-                                <div class="controls">
+                                <span class="titleLabel">State  </span>
+                                <div class="controls customInputDiv">
                                     <select name="ss" id="ss" required class="form-control">
                                         <option value="">Select an Option</option>
                                         <option value="State  1">State 1</option>
@@ -82,15 +69,15 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <h5>From Date  </h5>
-                                <div class="controls">
+                                <span class="titleLabel">From Date  </span>
+                                <div class="controls customInputDiv">
                                     <input id="startDate_SPG" type="name" name="name" class="form-control" required placeholder="start date" data-validation-required-message="This field is required"> 
                                 </div>
                             </div>
 
                             <div class="col-md-4">
-                                <h5>last Date  </h5>
-                                <div class="controls">
+                                <span class="titleLabel">last Date  </span>
+                                <div class="controls customInputDiv">
                                     <input id="endDate_SPG" type="name" name="name" class="form-control" required placeholder="end date" data-validation-required-message="This field is required"> 
                                 </div>
                             </div>
@@ -98,8 +85,8 @@
 
                         <div class="col-md-12">
                             <div class="text-xs-right">
-                                <button id="searchSchedule_SPG" type="button" class="btn btn-primary" data-text="Submit">Search</button>
-                                <button id="resetSchedule_SPG" type="button" class="btn btn-inverse" data-text="Reset">Reset</button>
+                                <button id="searchSchedule_SPG" type="button" class="btn myButton" data-text="Submit">Search</button>
+                                <button id="resetSchedule_SPG" type="button" class="btn myButton btn-inverse" data-text="Reset">Reset</button>
                                 <br>
                                 <br>
                             </div>
@@ -116,55 +103,18 @@
                         <table class="table table-striped ">
                             <thead class="tb-bg-text">
                                 <tr>
-                                    <th width="18%">Program</th>
-                                    <th width="18%">Location</th>
-                                    <th width="20%">Date</th>
-                                    <th width="24%">Aachrya</th>
-                                    <th width="20%">
+                                    <th class="scheduleTableHeader" width="20%">Program</th>
+                                    <th class="scheduleTableHeader" width="18%">Location</th>
+                                    <th class="scheduleTableHeader" width="20%">Date</th>
+                                    <th class="scheduleTableHeader" width="24%">Aachrya</th>
+                                    <th class="scheduleTableHeader" width="18%">
                                         <span id="viewButton"  class="pull-left">View</span>
                                         <span id="bookButton" class="pull-right">Book</span>
                                     </th>
                                 </tr>
                             </thead>
                             <tbody id="programScheduleHolder">
-                                <tr>
-                                    <td>
-                                        <table width="100%" border="0">
-                                            <tr>
-                                                <td><strong>Dhyan Samadhi</strong></td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <div class="form-group">15 april to 20 april</div>
-                                    </td>
-                                    <td>
-                                        <div class="form-group">15 april to 20 april</div>
-                                    </td>
-                                    <td>
-                                        <table width="100%" border="0">
-                                            <tr>
-                                                <td>Master Sadhguru</td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table width="100%" border="0" cellpadding="2" cellspacing="2">
-                                            <tr>
-                                                <td align="right">
-                                                    <input type="submit" value="BOOK MY SEAT " class="btn btn-primary" data-loading-text="Loading...">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td height="56" align="right" valign="bottom">
-                                                    <a href="comingSoon.html" data-toggle="modal" data-target="#myModal">
-                                                        <input type="submit" value="VIEW DETAILS" class="btn btn-primary" data-loading-text="Loading...">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
+
                             </tbody>
                         </table>
                     </form>
@@ -186,70 +136,17 @@
             </div>
         </div>
     <?php include_once 'public_html/includes/footerPage.php'; ?>
-<div id="myModal">
-    
-</div>
-
-    <!-- Modal -->
-<!--     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel"> PROGRAM : CELEBRATIONS (OSHODHARA DAY)</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-sm-12 ">
-                            <table class="table table-striped">
-                                <tr>
-                                    <td><strong>Program Categor</strong>y</td>
-                                </tr>
-                                <tr>
-                                    <td>Sadhna</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Program</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>Samna</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Venue</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>kanchana nagar</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>State</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Mumbai</strong></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Date</strong></td>
-                                </tr>
-                                <tr>
-                                    <td>02-04-2020</td>
-                                </tr>
-                            </table>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    <div id="myModal">
+        
+    </div>
+    <div id="proBookingModalHolder">
+        
+    </div>
     
     <?php include_once 'public_html/includes/footerScript.php'; ?>
 
     <script src="assets/script/libs/jquery-ui.min.js"></script>
     <script src="assets/script/js/schedule.js"></script>
-
-    <script>
-        $('.sidebar-menu').SidebarNav()
-    </script>
     <script src="js/mask.init.js"></script>
     <script src="js/jquery.inputmask.bundle.min.js"></script>
     </body>

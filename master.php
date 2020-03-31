@@ -9,19 +9,6 @@
 
     <script src="vendor/modernizr/modernizr.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style type="text/css">
-        body,
-        td,
-        th {
-            font-family: Dosis, sans-serif;
-            font-size: 14px;
-            color: #333;
-        }
-        
-        body {
-            background-color: #ddcdbd;
-        }
-    </style>
 </head>
 
 <body class="front">
@@ -92,6 +79,11 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div id="masterAccordionHolder" class="panel-group">
 
             </div>
         </div>
@@ -226,9 +218,6 @@
         <!-- Style Switcher -->
         <script type="text/javascript" src="style-switcher/js/switcher.js"></script>
         <script src='js/SidebarNav.min.js' type='text/javascript'></script>
-        <script>
-            $('.sidebar-menu').SidebarNav()
-        </script>
         <script type="text/javascript">
     </body>
 </html>

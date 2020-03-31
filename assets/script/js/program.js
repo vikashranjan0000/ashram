@@ -73,21 +73,22 @@ function renderProgramData_PPG(renderData){
     $('#programDetailHolder').append(Mustache.render(descfragment, renderData[0]));  
     $('#programLongDiscription_'+renderData[0].programid).html(renderData[0].longdescription);   
       }
-    }
+  }
     
-    function renderProgramIntake(programListData){
+  function renderProgramIntake(programListData){
       renderData = programListData['programList'];
       var progListfragment = $(templates_PPG).find('#programListContent').html();
       var scheduleModalfragment = $(templates_PPG).filter('#programListModalContent').html();
 
-  var languageCode = window.localStorage.languageCode ?window.localStorage.languageCode : "en" ;
-  $('#programIntakeHolder').empty();    
-  $('#programModal').empty();    
-  for(var key in renderData){
-      renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM');
-      renderData[key].end_date = moment(renderData[key].end_date).format('DD MMM, YYYY');
-      renderData[key].locationData =  scheuleLocationData[renderData[key].dhyankendraid]
-      $('#programIntakeHolder').append(Mustache.render(progListfragment, renderData[key]));
-      $('#programModal').append(Mustache.render(scheduleModalfragment, renderData[key]));
+      var languageCode = window.localStorage.languageCode ?window.localStorage.languageCode : "en" ;
+      $('#programIntakeHolder').empty();    
+      $('#programModal').empty();    
+      for(var key in renderData){
+          renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM');
+          renderData[key].end_date = moment(renderData[key].end_date).format('DD MMM, YYYY');
+          renderData[key].locationData =  scheuleLocationData[renderData[key].dhyankendraid]
+          renderData[key].programData =  programListData['programData'][0];
+          $('#programIntakeHolder').append(Mustache.render(progListfragment, renderData[key]));
+          $('#programModal').append(Mustache.render(scheduleModalfragment, renderData[key]));
       }
   }

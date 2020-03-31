@@ -9,19 +9,6 @@
 
     <script src="vendor/modernizr/modernizr.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <style type="text/css">
-        body,
-        td,
-        th {
-            font-family: Dosis, sans-serif;
-            font-size: 14px;
-            color: #CCC;
-        }
-        
-        body {
-            background-color: #333131;
-        }
-    </style>
 </head>
 
 <body class="front">
@@ -293,9 +280,6 @@
         <?php include_once 'public_html/includes/footerScript.php'; ?>
 
         <script type="text/javascript" src="assets/script/js/index.js"></script>
-        <script>
-            $('.sidebar-menu').SidebarNav()
-        </script>
         <script type="text/javascript"></script>
     </body>
 </html>
