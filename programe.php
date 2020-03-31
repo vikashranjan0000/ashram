@@ -30,7 +30,7 @@
 
         <div class="row">
             <div  class="inner-slide-com-cot">
-                <div id="programDetailHolder" class="col-lg-7">
+                <div id="programDetailHolder" class="col-lg-12">
                     <p>
                         Based on spiritual science unraveled by Osho and Sadguru, 28 levels of Enlightened Living Programs have been designed and are being conducted regularly. Each programis of six days� duration.It is essential to do lower level programs and essential Wisdom (Pragya) Programs before entry into higher level programs. Attending Wisdom programs is not mandatory for foreigners, senior citizens(above 65 years) and ladies.</p>
                     <p>
@@ -40,7 +40,7 @@
 
                         <a href="index.html" class="btn btn-primary"> Read More >></a></p>
                 </div>
-
+<!-- 
                 <div class="col-lg-5">
                     <div class="owl-carousel main-slides first-slides" data-plugin-options='{"items": 1, "autoPlay": true, "navigation": true}'>
                         <div class="slide-item">
@@ -74,7 +74,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
