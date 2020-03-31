@@ -259,7 +259,7 @@ function handlerBookProgram(id){
     	return
     }
     data.emailId =  $('#bookNow_emailId_'+id).val();
-        if(!data.emailId){
+    if(!data.emailId){
     	alert("Please enter your emailId !")
     	return
     }

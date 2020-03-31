@@ -34,7 +34,7 @@ class BookingController {
         switch ($this->requestMethod) {
         case 'GET':
                 if (!empty($_GET["bookService"])) {
-                    $response = $this->bookServiceMail();
+                    $response = $this->bookServiceTestMail();
                 }else if(!empty($data["masterid"])){
                     $response = $this->getMaster(($data["masterid"]));
                 }else {
@@ -71,11 +71,19 @@ class BookingController {
 
     private function bookServiceMail()
     {
-    $result = $this->mailService->processRequest($_POST);
+        $result = $this->mailService->processRequest($_POST);
         $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }
+    private function bookServiceTestMail()
+    {   $_POST = $_GET;
+        $result = $this->mailService->processRequest($_POST);
+        $response['status_code_header'] = 'HTTP/1.1 200 OK';
+        $response['body'] = "Successfully sent";
+        return $response;
+    }
+
 
     
 

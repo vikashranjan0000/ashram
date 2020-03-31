@@ -14,8 +14,8 @@ class MailService {
     {
 		$this->mail->isSMTP();
 		$this->mail->SMTPDebug = 2;
-		$this->mail->Host = 'smtp.gmail.com';
-		$this->mail->Port = 587;
+		$this->mail->Host = 'localhost';
+		$this->mail->Port = 25;
 		$this->mail->protocol = 'mail';
 		$this->mail->SMTPAuth = true;
 		$this->mail->SMTPSecure = false;
@@ -26,19 +26,19 @@ class MailService {
 		        'allow_self_signed' => true
 		    )
 		);
-		//$this->mail->SMTPSecure = 'tls'; 
-		//$this->mail->SMTPAuth = true;
-		$this->mail->Username = 'vikashranjan0000@gmail.com';
+		$this->mail->Username = 'booking@oshodhara.org.in';
 		$this->mail->Password = 'vivekJAY00.';
-		$this->mail->setFrom('vikashranjan0000@gmail.com', 'Avinash Kumar');
-		$this->mail->addReplyTo('vikashranjan0000@gmail.com', 'Avinash Kumar');
+		$this->mail->setFrom('booking@oshodhara.org.in', 'Oshodhara');
+		$this->mail->addReplyTo('booking@oshodhara.org.in', 'Oshodhara');
 		$this->mail->addAddress('vikashranjan0000@gmail.com', 'Vikash Ranjan');
-		$this->mail->Subject = 'PHPMailer SMTP message';
-		//$this->mail->msgHTML(file_get_contents('message.html'), __DIR__);
-		//$this->mail->msgHTML("this is hello world mail!!");
-		$this->mail->Body ="Dear receiver, this is test mail..".$_POST['programName']." address ". $_POST['programLocation']. " startDate ".$_POST['userName']. " file URL ". $_POST['paymentRecipt']."";
-		$this->mail->AltBody = 'This is a plain text message body';
-		//$this->mail->addAttachment('Report.xlsx');
+		$this->mail->Subject = 'Booking Request from '.$_POST['userName'];
+		if($_POST['programName']){
+		    $this->mail->addAddress($_POST['emailId'], $_POST['userName']);
+		}else{
+		   $this->mail->addAddress('vikashranjan0000@gmail.com', 'Vikash Ranjan'); 
+		}
+		$this->mail->Body ="Booking request for the ".$_POST['programName']." program has came from <br />User name  ". $_POST['programLocation']. " <br /> startDate ".$_POST['userName']. " <br />Payment Receipt URL ". $_POST['paymentRecipt']."";
+		$this->mail->AltBody = 'Booking request for the ';
 		if (!$this->mail->send()) {
 		    return 'Mailer Error: ' . $this->mail->ErrorInfo;
 		} else {
