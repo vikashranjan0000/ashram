@@ -3,7 +3,7 @@ var headerTemplates = "";
 var scheuleLocationData = {};
 
 function loadCategory(){
-  debugger;
+  $('.sidebar-menu').SidebarNav()
   callfragmentText_HPC(); 
   loadHeaderProgramCategoryData();
       if(!window.localStorage.venueAutoResponse){
@@ -72,6 +72,14 @@ function renderProgramData_HPC(programListCateData){
       var list =  programListCateData[pgkey].categoryid;
       list = list.split(",");
       for(var d in list){
+        if(list[d] ==='2' ||list[d]==='3'){
+          programListCateData[pgkey].customlabel = "label"
+          if(programListCateData[pgkey].programid < 10){
+              programListCateData[pgkey].customCounter = '0'+programListCateData[pgkey].programid;
+          }else{
+             programListCateData[pgkey].customCounter = programListCateData[pgkey].programid;
+          }
+        }
         $('#programListHolder_'+list[d]).append(Mustache.render(progfragment, programListCateData[pgkey]));     
 
       }

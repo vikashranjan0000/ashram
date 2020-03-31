@@ -85,9 +85,3 @@
     </div>
     </div>
 </footer>
-
-<div class="col-sm-12">
-    <footer>
-        <p class="footer_od"> </p>
-    </footer>
-</div>

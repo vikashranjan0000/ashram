@@ -8,7 +8,11 @@
 </div>
 
 <div id="programListContent">
-    <li><a href="programe.php?programid={{programid}}"><i class="fa fa-angle-right"></i>{{programname}}</a></li>
+    <li><a href="programe.php?programid={{programid}}"><i class="fa fa-angle-right"></i>
+        {{#customlabel}}
+        {{customCounter}}
+        {{/customlabel}}.  
+     {{programname}}</a></li>
 </div>
 
 <div id="programScheduleModalContent">
