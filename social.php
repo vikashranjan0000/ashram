@@ -163,14 +163,14 @@
                             </tr>
                             <tr>
                                 <td height="49" align="center" valign="middle">
-                                    <a href="comingSoon.html"><img src="images/telegram.png" width="66" height="65" border="0"></a>
+                                    <a href="https://t.me/joinchat/Q3rPsw0yp6BbCz15O7hktQ" target="_blank"><img src="images/telegram.png" width="66" height="65" border="0"></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td height="47" align="center"><a href="comingSoon.html"><strong>Telegram</strong></a></td>
+                                <td height="47" align="center"><a href="https://t.me/joinchat/Q3rPsw0yp6BbCz15O7hktQ" target="_blank"><strong>Telegram</strong></a></td>
                             </tr>
                             <tr>
-                                <td align="center"><a href="comingSoon.html">/osho...</a></td>
+                                <td align="center"><a href="https://t.me/joinchat/Q3rPsw0yp6BbCz15O7hktQ" target="_blank">Oshodhara</a></td>
                             </tr>
                             <tr>
                                 <td align="center">&nbsp;</td>
@@ -186,14 +186,14 @@
                             </tr>
                             <tr>
                                 <td height="49" align="center" valign="middle">
-                                    <a href="comingSoon.html"><img src="images/whatsapp.png" width="66" height="65" border="0"></a>
+                                    <a href="https://chat.whatsapp.com/HrPTKoDdC2MILGPEyUWdXf" target="_blank"><img src="images/whatsapp.png" width="66" height="65" border="0"></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td height="47" align="center"><a href="https://chat.whatsapp.com/HrPTKoDdC2MILGPEyUWdXf"><strong>Whatsapp</strong></a></td>
+                                <td height="47" align="center"><a href="https://chat.whatsapp.com/HrPTKoDdC2MILGPEyUWdXf" target="_blank"><strong>Whatsapp</strong></a></td>
                             </tr>
                             <tr>
-                                <td align="center"><a href="https://chat.whatsapp.com/HrPTKoDdC2MILGPEyUWdXf">/osho...</a></td>
+                                <td align="center"><a href="https://chat.whatsapp.com/HrPTKoDdC2MILGPEyUWdXf" target="_blank">Oshodhara Whatsapp</a></td>
                             </tr>
                             <tr>
                                 <td align="center">&nbsp;</td>

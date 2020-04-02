@@ -10,8 +10,8 @@
 <div id="programListContent">
     <li><a href="programe.php?programid={{programid}}"><i class="fa fa-angle-right"></i>
         {{#customlabel}}
-        {{customCounter}}
-        {{/customlabel}}.  
+        {{customCounter}}. 
+        {{/customlabel}} 
      {{programname}}</a></li>
 </div>
 
@@ -67,4 +67,29 @@
             </div>
         </div>
     </div> 
+</div>
+
+<div  id="searchItemContent">
+    <div class="col-md-6 searchItemCls">
+        {{#programid}}
+        <a href="programe.php?programid={{programid}}">            
+            <div>
+                <span class="programName">{{programname}} </span>                                    
+            </div>
+
+            <span class="programName programDescCls">{{shortdescription}}
+            </span>
+        </a>
+        {{/programid}}
+        {{#dhyankendraid}}
+            <a href="centers.php?centerid={{dhyankendraid}}">            
+                <div>
+                    <span class="programName">{{dhyankendraname}} </span>                                    
+                </div>
+
+                <span class="programName programDescCls">{{Address1}}
+                </span>
+            </a>
+        {{/dhyankendraid}}
+    </div>
 </div>

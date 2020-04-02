@@ -20,6 +20,7 @@
     <script type="text/javascript" src="assets/script/libs/mustache.min.js"></script>
     <script type="text/javascript" src="assets/script/libs/moment.min.js"></script>
     <script type="text/javascript" src="assets/script/js/headerProgramCategory.js"></script>
+    <script type="text/javascript" src="assets/script/js/search.js"></script>
 
     
         

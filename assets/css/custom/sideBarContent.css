@@ -22,3 +22,57 @@
 .displayNone{
   display: none;
 }
+
+.serachDialog{
+    border-bottom: 1px solid #e2caca;
+    border-top: none;
+    position: absolute;
+    top: 58px;
+    padding: 10px 15px 20px 15px;
+    left: 0px;
+    z-index: 200;
+    color: #4d5a1a;
+    background: white;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.searchHeading {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.searchLabel {
+  background-color: #ffffff;
+  padding: 5px 15px 3px;
+  margin-bottom: 2px;
+  color: #86843d;
+  border-bottom: 2px solid orange;
+  display: inline-block;
+}
+
+.programName{
+  color: #4c3232;
+  font-weight: 600;
+  display : inline-block;
+  text-decoration: inherit;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.programDescCls{
+
+}
+
+
+.searchItemCls{
+  margin: auto;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0px 1px 8px #b99eff;
+  width: calc(50% - 0px);
+}

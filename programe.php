@@ -4,6 +4,7 @@
 <head>
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
     <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css' />
+    <link href='assets/css/custom/program.css' media='all' rel='stylesheet' type='text/css' />
     <script defer src="js/solid.js"></script>
 
     <script src="vendor/modernizr/modernizr.js"></script>
@@ -24,21 +25,39 @@
                         </div>
                     </div>
                 </div>
+<!--                 <div class="navRelativeCls">
+                    <div class="demo">
 
+                        <a href="" class="arrow left">
+                            <i></i>
+                            <svg>
+                                <use xlink:href="#circle">
+                            </svg>
+                        </a>
+
+                        <a href="" class="arrow">
+                            <i></i>
+                            <svg>
+                                <use xlink:href="#circle">
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" style="">
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44px" height="44px" id="circle" fill="none" stroke="currentColor">
+                            <circle r="20" cy="22" cx="22" id="test">
+                        </symbol>
+                    </svg>
+                </div>
+ -->
             </div>
         </div>
 
         <div class="row">
             <div  class="inner-slide-com-cot">
                 <div id="programDetailHolder" class="col-lg-12">
-                    <p>
-                        Based on spiritual science unraveled by Osho and Sadguru, 28 levels of Enlightened Living Programs have been designed and are being conducted regularly. Each programis of six days� duration.It is essential to do lower level programs and essential Wisdom (Pragya) Programs before entry into higher level programs. Attending Wisdom programs is not mandatory for foreigners, senior citizens(above 65 years) and ladies.</p>
-                    <p>
-                        DHYAN SAMADHI (MEDITATIVE LIVING) It consists of two parts - AnandPragya or Blissful Living and Vipassana Samadhi or Divine Living.Each program is of three days’ duration. Foreign students are allowed to enter directly into Divine Living program
-                        <br>
-                        <br>
-
-                        <a href="index.html" class="btn btn-primary"> Read More >></a></p>
+                    
                 </div>
 <!-- 
                 <div class="col-lg-5">
@@ -104,37 +123,7 @@
                                 </tr>
                             </thead>
                             <tbody id="programIntakeHolder">
-                                <tr>
-                                    <td>
-                                        <div class="form-group">
 
-                                            Monday, 2 March 2020
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-group">
-
-                                            Murthal
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-group">
-
-                                            Bade Baba
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="form-group">
-                                            <input type="submit" value="Book Your Seat" class="btn btn-primary" data-loading-text="Loading...">
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><span class="form-group">Monday, 8 March 2020</span></td>
-                                    <td><span class="form-group">Murthal</span></td>
-                                    <td><span class="form-group">Bade Baba</span></td>
-                                    <td><span class="form-group"><input type="submit" value="Book Your Seat" class="btn btn-primary" data-loading-text="Loading..."></span></td>
-                                </tr>
                             </tbody>
                         </table>
                     </form>

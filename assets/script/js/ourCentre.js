@@ -153,21 +153,16 @@ function loadCenterListData(searchCenterdata){
 
 
 function renderCentreData(renderCentreData){
-  var centreAcordionfragment = $(centreTemplates).filter('#centreAcordionContent').html();
-  var centreDetailfragment = $(centreTemplates).filter('#centreDetailContent').html();
+	var centreAcordionfragment = $(centreTemplates).filter('#centreAcordionContent').html();
+	var centreDetailfragment = $(centreTemplates).find('#centreDetailContent').html();
 
-  var languageCode = window.localStorage.languageCode ?window.localStorage.languageCode : "en" ;
-  $('#accordionHolder').empty();    
-  $('#myModal').empty();    
-  for(var key in renderCentreData){
-  	renderCentreData[key].start_date = moment(renderCentreData[key].start_date).format('DD MMM, YYYY');
-  	renderCentreData[key].end_date = moment(renderCentreData[key].end_date).format('DD MMM, YYYY');
-  	renderCentreData[key].programData =  planProgramData[renderCentreData[key].programid]
-  	renderCentreData[key].locationData =  scheuleLocationData[renderCentreData[key].dhyankendraid]
-  	
-    if(renderCentreData[key]['language']=languageCode){
-      $('#accordionHolder').append(Mustache.render(centreAcordionfragment, renderCentreData[key]));
-      $('#centreDetailHolder_'+state_id).append(Mustache.render(centreDetailfragment, renderCentreData[key]));
-    }
-  }
+	$('#accordionHolder').empty();    
+	$('#myModal').empty();    
+	for(var key in renderCentreData){
+		if($('#accordionMainPanel_'+ renderCentreData[key].stateid).length <1){
+			$('#accordionHolder').append(Mustache.render(centreAcordionfragment, renderCentreData[key]));
+		}
+		$('#centreDetailHolder_'+ renderCentreData[key].stateid).append(Mustache.render(centreDetailfragment, renderCentreData[key]));
+	}
+  
 }

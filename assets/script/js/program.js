@@ -84,11 +84,16 @@ function renderProgramData_PPG(renderData){
       $('#programIntakeHolder').empty();    
       $('#programModal').empty();    
       for(var key in renderData){
+        if(key < 6){
+
           renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM');
           renderData[key].end_date = moment(renderData[key].end_date).format('DD MMM, YYYY');
           renderData[key].locationData =  scheuleLocationData[renderData[key].dhyankendraid]
           renderData[key].programData =  programListData['programData'][0];
           $('#programIntakeHolder').append(Mustache.render(progListfragment, renderData[key]));
           $('#programModal').append(Mustache.render(scheduleModalfragment, renderData[key]));
+        }else{
+          return ;
+        }
       }
   }

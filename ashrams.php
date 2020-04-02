@@ -140,7 +140,7 @@
                 <div class="col-lg-6">
 
                     <div style="width: 100%">
-                        <iframe width="100%" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.3986240793547!2d77.07594195018369!3d29.034788672425634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db10b532f1803%3A0xad83167e8566106!2sOshodhara%20Nanak%20Dham!5e0!3m2!1sen!2sin!4v1584690837532!5m2!1sen!2sin" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"> </iframe>
+                        <iframe width="100%" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57727.4362511711!2d84.2524088888868!3d25.271770679470503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8930392f91d7a01c!2sOsho%20Dham%20Karma!5e0!3m2!1sen!2sin!4v1585733759733!5m2!1sen!2sin" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"> </iframe>
                     </div>
                     <br />
 

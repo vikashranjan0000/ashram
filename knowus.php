@@ -23,7 +23,7 @@
                     <div class=" header-content">
                         <div class="main-title">
                             <!-- Main-title -->
-                            <h1 class="bold mb-30 a-f ">Know Us</h1>
+                            <h1 class="bold mb-30 a-f ">About Us</h1>
                             <!-- breadcrumbs -->
 
                             <!-- breadcrumbs end -->

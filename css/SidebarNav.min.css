@@ -78,6 +78,7 @@
     border-color: #333131;
 }
 .top-contact-info1 {
+      position: relative;
     font-size: 13px;
     color: #fff;
     background-color: #ffffff;
