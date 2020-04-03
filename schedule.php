@@ -4,9 +4,6 @@
 <head>
 
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
-    <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css' />
-    <script defer src="js/solid.js"></script>
-    <script src="vendor/modernizr/modernizr.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href='assets/css/custom/schedule.css' media='all' rel='stylesheet' type='text/css' />
 </head>

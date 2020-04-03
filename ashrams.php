@@ -4,10 +4,6 @@
 <head>
 
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
-  
-    <script defer src="js/solid.js"></script>
-    <script src="vendor/modernizr/modernizr.js"></script>
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">       
 </head>
 
@@ -32,7 +28,7 @@
         </div>
 
         <div class="row">
-            <div class="inner-slide-com-cot">
+            <div class="inner-slide-com-cot clearfix">
                 <div class="col-lg-6">
                     <h1>Oshodhara Nanak Dham, Murthal</h1>
                     <p>Surrounded by legendry Yamuna River towards east, GT road towards west, Kurukshetra, the land of Gita, towards north and Delhi the capital of India, towards south, this Ashram with a gorgeous Buddha Hall, is Headquarter of Oshodhara and Osho Nanak Dhyan Mandir Trusts.</p>
@@ -73,7 +69,7 @@
         </div>
         <div class="row">
             <div class="tpp-orgl21"></div>
-            <div class="inner-slide-com-cot">
+            <div class="inner-slide-com-cot clearfix">
                 <div class="col-lg-6">
 
                     <div style="width: 100%">
@@ -110,7 +106,7 @@
         </div>
         <div class="row">
             <div class="tpp-orgl21"></div>
-            <div class="inner-slide-com-cot">
+            <div class="inner-slide-com-cot clearfix">
                 <div class="col-lg-6">
                     <h1>Oshodhara Sahajanand Dham, Karma</h1>
                     <p>Being Birth Place of Osho Siddharthaji, this Dham is principally being developed as a regional center to meet the requiement of seekers from Bihar, Jharkhand , Eastern UP, MP, Chhattisgarh, West Bengal and Orissa.</p>
@@ -150,9 +146,6 @@
         </div>
             
         <?php include_once 'public_html/includes/footerPage.php'; ?>
-        <?php include_once 'public_html/includes/footerScript.php'; ?>
-        <script type="text/javascript" src="style-switcher/js/switcher.js"></script>
-        <script src='js/SidebarNav.min.js' type='text/javascript'></script>
         <script src="assets/script/js/ashrams.js"></script>
     </body>
 </html>

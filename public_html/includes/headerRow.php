@@ -8,13 +8,15 @@
                     <div class="white-from-trs wow fadeInUp">
                         <form action="" method="get">
 
-                            <select id="languageSelector" name="" class="top-search-form">
+                            <select id="languageSelector" name="" class="col-xs-2 col-md-2 top-search-form">
                                 <option value="en">Language</option>
                                 <option value="hi">Hindi</option>
                                 <option value="en">English</option>
                             </select>
-                            <input id="mainSearchInput" name="mainSearchInput" type="text" placeholder="Programs and Centers" class="top-search-form1">
-                            <input id="mainSearchBtn" name="" type="button" class="top-search-form-submit" value="">
+                            <span class="col-xs-10 col-md-10">                                
+                                <input id="mainSearchInput" name="mainSearchInput" type="text" placeholder="Programs and Centers" class=" top-search-form1">
+                                <input id="mainSearchBtn" name="" type="button" class="top-search-form-submit" value="">
+                            </span>
                         </form>
                         <div class="clearBoth"></div>
                     </div>
@@ -38,50 +40,14 @@
                 <div id="searchMainDialog" class="col-xs-12  col-md-12 serachDialog">
                     <div class="row customSearchSepCls">
                         <div class="searchHeading"><span class="searchLabel">Program List</span></div>
-                        <div id="programListData">
-                            <div class="col-md-6 searchItemCls">
-                                <div>
-                                    <span class="programName">                                    DhyanSamadhi
-                                    </span>                                    
-                                </div>
-
-                                <span class="programDescCls">    sdfsd     afss  fdaf as dsf adf sf asf asf asdf asf  sdfsf dsfas DhyanSamadhi
-                                </span>
-                            </div>
-                            <div class="col-md-6 searchItemCls">
-                                <div>
-                                    <span class="programName">                                    DhyanSamadhi
-                                    </span>                                    
-                                </div>
-
-                                <span class="programDescCls">    sdfsd     afss  fdaf as dsf adf sf asf asf asdf asf  sdfsf dsfas DhyanSamadhi
-                                </span>
-                            </div>
-
+                        <div id="programListData" class="col-xs-12 col-md-12">
                             
                         </div>
                     </div>
                     <div class="row customSearchSepCls">
                         <div class="searchHeading"><span  class="searchLabel">Dhyana Kendra</span></div>
-                        <div id="locationListData">
-                            <div class="col-md-6 searchItemCls">
-                                <div>
-                                    <span class="programName">                                    DhyanSamadhi
-                                    </span>                                    
-                                </div>
-
-                                <span class="programDescCls">    sdfsd     afss  fdaf as dsf adf sf asf asf asdf asf  sdfsf dsfas DhyanSamadhi
-                                </span>
-                            </div>
-                            <div class="col-md-6 searchItemCls">
-                                <div>
-                                    <span class="programName">                                    DhyanSamadhi
-                                    </span>                                    
-                                </div>
-
-                                <span class="programDescCls">    sdfsd     afss  fdaf as dsf adf sf asf asf asdf asf  sdfsf dsfas DhyanSamadhi
-                                </span>
-                            </div>                        
+                        <div id="locationListData" class="col-xs-12 col-md-12">
+                       
                         </div>
                     </div>
                 </div>

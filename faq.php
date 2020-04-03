@@ -3,13 +3,6 @@
 
 <head>
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
-    <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css' />
-    <script defer src="js/solid.js"></script>
-
-    <!-- Head libs -->
-    <script src="vendor/modernizr/modernizr.js"></script>
-
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
@@ -37,7 +30,7 @@
             </div>
 
             <div class="row">
-                <div class="inner-slide-com-cot">
+                <div class="inner-slide-com-cot clearfix">
 
                     <div class="col-md-12  ">
 
@@ -95,13 +88,6 @@
             </div>
 
         <?php include_once 'public_html/includes/footerPage.php'; ?>
-        <?php include_once 'public_html/includes/footerScript.php'; ?>
-
         <script src="assets/script/js/faq.js"></script>
-        <script src="js/theme.js"></script>
-
-        <!-- Style Switcher -->
-        <script type="text/javascript" src="style-switcher/js/switcher.js"></script>
-        <script src='js/SidebarNav.min.js' type='text/javascript'></script>
     </body>
 </html>

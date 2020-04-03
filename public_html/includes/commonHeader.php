@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="vendor/owl-carousel/owl.transitions.css" media="screen">
     <link rel="stylesheet" href="style-switcher/css/style-switcher.css">
 
-    <link rel="stylesheet" href='css/font-icons.css' media='all' type='text/css' />
-    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href='assets/css/libs/font-icons.css' media='all' type='text/css' />
+    <link rel="stylesheet" href="assets/css/libs/bootstrap.css" media="screen">
     <link rel="stylesheet" href="assets/css/libs/jquery-ui.css" media="screen">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/theme-animate.css">
+    <link rel="stylesheet" href="assets/css/libs/theme.css">
+    <link rel="stylesheet" href="assets/css/libs/theme-animate.css">
     <script type="text/javascript" src="vendor/jquery/jquery.js"></script>
     <script type="text/javascript" src="vendor/bootstrap/bootstrap.js"></script>
 
-    <link rel='stylesheet' href='css/SidebarNav.min.css' media='all' type='text/css'/>
+    <link rel='stylesheet' href='assets/css/libs/SidebarNav.min.css' media='all' type='text/css'/>
     <link rel='stylesheet' href='assets/css/custom/sideBarContent.css' media='all' type='text/css'/>
+    <?php include_once 'public_html/includes/footerScript.php';?>
 
 

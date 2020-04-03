@@ -4,10 +4,6 @@
 <head>
 
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
-    <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css' />
-    <script defer src="js/solid.js"></script>
-
-    <script src="vendor/modernizr/modernizr.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
@@ -30,19 +26,8 @@
         </div>
 
         <div class="row">
-            <div class="inner-slide-com-cot">
+            <div class="inner-slide-com-cot clearfix">
                 <div id="masterDetailHolder" class="col-lg-7">
-                    <p>
-                        Osho was born in Kuchwada, M.P. on 11th December, 1931. His parents Swami Devateertha Bharti and Ma Amrit Saraswati became his disciples in later years. He was enlightened at the age of 21 years on March 21, 1953, while he was studying philosophy at D.N. Jain College in Jabalpur. In 1956 Osho did M.A. from the University of Sagar with First Class Honors in Philosophy. He joined Sanskrit College, Raipur in 1957
-                        <br>
-
-                        He undertook a World Tour and visited many countries including Nepal, Greece, Uruguay, Jamaica and Portugal. In all, 21 countries denied Him entry or deported Him after arrival. On July 29,1986, He returned to Mumbai, India and shifted to the ashram in Poona, India, in January, 1987. During January-February 1989 He stopped using the name "Bhagwan," retaining only the name Rajneesh. Later He adopted ‘Osho’ as His new name. On 19th January 1990 Osho left His body saying “I leave you my dream." Different people interpreted His dream differently. Some started building large structures in His name. Some others considered Him last prophet and started propagating His spoken words. Oshodhara has assumed the responsibility of enhancing His spiritual work by guiding seekers from meditation to samadhi and enlightenment</p>
-                    <p>
-                      
-                        <br>
-                        <br>
-
-                        <a href="index.html" class="btn btn-primary"> Read More >></a></p>
                 </div>
 
                 <div class="col-lg-5">
@@ -210,14 +195,6 @@
         </div>
 
         <?php include_once 'public_html/includes/footerPage.php'; ?>
-        <?php include_once 'public_html/includes/footerScript.php'; ?>
-
         <script src="assets/script/js/master.js"></script>
-        <script src="js/theme.js"></script>
-
-        <!-- Style Switcher -->
-        <script type="text/javascript" src="style-switcher/js/switcher.js"></script>
-        <script src='js/SidebarNav.min.js' type='text/javascript'></script>
-        <script type="text/javascript">
     </body>
 </html>

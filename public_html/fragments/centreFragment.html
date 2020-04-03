@@ -1,7 +1,12 @@
 <div id="centreAcordionContent">   
     <div id="accordionMainPanel_{{stateid}}" class="panel panel-default pgl-panel">
         <div class="panel-heading">
-            <h4 class="panel-title"> <a class="collapsed" href="#collapse_{{stateid}}" data-parent="#accordionHolder" data-toggle="collapse">{{state_name}}</a> </h4>
+            {{#state_name}}
+                <h4 class="panel-title"> <a class="collapsed" href="#collapse_{{stateid}}" data-parent="#accordionHolder" data-toggle="collapse">{{state_name}}</a> </h4>
+            {{/state_name}}
+            {{^state_name}}
+                <h4 class="panel-title"> <a class="collapsed" href="#collapse_{{stateid}}" data-parent="#accordionHolder" data-toggle="collapse">{{stateid}}</a> </h4>
+            {{/state_name}}
         </div>
         <div class="panel-collapse collapse" id="collapse_{{stateid}}">
             <div class="panel-body">

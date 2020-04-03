@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="inner-slide-com-cot">
+                    <div class="inner-slide-com-cot clearfix">
                         <div class="col-lg-12">
 
                             <p>Centers around India and Nepal are places where seekers can get information about Osho and Oshodhara beside attending small sessions of Samadhis.

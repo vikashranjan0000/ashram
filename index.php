@@ -4,10 +4,6 @@
 <head>
 
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
-    <link rel='stylesheet'  href='css/SidebarNav.min.css' media='all' type='text/css' />
-    <script defer src="js/solid.js"></script>
-
-    <script src="vendor/modernizr/modernizr.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
@@ -41,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <a href="comingSoon.html">
+                    <a href="programe.php?programid=1">
                         <div class="large-button">
                             <span>Explor More</span>
                         </div>
@@ -58,7 +54,7 @@
                     <div id="programContentHolder0" class="thumb-item-content1">
 
                         <div class="sp11">
-                            <h3><a href="programe.html">Samadhi Program</a></h3></div>
+                            <h3><a href="programe.php?programid=1">Samadhi Program</a></h3></div>
                         <div class="thumb-item-img text-center">
                             <br>
 
@@ -69,7 +65,7 @@
                         <br>
 
                         <div class="lefi-vedio-sp11 text-right">
-                            <p class="fgfg"><a href="programe.html">Know more...</a> </p>
+                            <p class="fgfg"><a href="programe.php?programid=1">Know more...</a> </p>
                         </div>
 
                     </div>
@@ -277,9 +273,6 @@
 
         </div>
         <?php include_once 'public_html/includes/footerPage.php'; ?>
-        <?php include_once 'public_html/includes/footerScript.php'; ?>
-
         <script type="text/javascript" src="assets/script/js/index.js"></script>
-        <script type="text/javascript"></script>
     </body>
 </html>
