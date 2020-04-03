@@ -765,9 +765,7 @@
               // (cancelTouch cancels processing of single vs double taps for faster 'tap' response)
               var event = $.Event('tap');
               event.cancelTouch = cancelAll;
-              if(touch.el){
-                touch.el.trigger(event);
-              }
+              touch.el.trigger(event);
 
               // trigger double tap immediately
               if (touch.isDoubleTap) {
@@ -779,9 +777,7 @@
               else {
                 touchTimeout = setTimeout(function(){
                   touchTimeout = null;
-                    if(touch.el){
-                        touch.el.trigger('singleTap');
-                    }
+                  touch.el.trigger('singleTap');
                   touch = {};
                 }, 250);
               }

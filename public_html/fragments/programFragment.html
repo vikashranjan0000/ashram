@@ -26,24 +26,25 @@
                 <th>&nbsp;</th>
             </tr>
         </thead>
+
         <tbody id="programListContent">
-            <tr>
-                <td>
-                     <div class="form-group">{{locationData.dhyankendraname}}</div>
+            <tr class="programTableRow">
+                <td class="programTableDateCls">
+                     <div class="schProgramNameCls">{{locationData.dhyankendraname}}</div>
                 </td>
-                <td>
-                    <div class="form-group"><div class="form-group">{{start_date}} - {{end_date}}</div></div>
+                <td class="programTableDateCls">
+                    <div class="schProgramNameCls"><div class="">{{start_date}} - {{end_date}}</div></div>
                 </td>
-                <td>
-                    <div class="form-group">
+                <td class="programTableDateCls">
+                    <div class="schProgramNameCls">
 
                         {{guidelines}}, {{comments}}
                     </div>
                 </td>
-                <td>
-                    <div class="form-group">
-                        <span id="viewProgButton_{{programid}}"  data-toggle="modal" data-target="#programModal_{{programid}}" class="myButton pull-left">View</span>
-                        <span id="bookProgButton_{{programid}}" class="myButton pull-right">Book</span>
+                <td class="programTableDateCls">
+                    <div class="schProgramNameCls">
+                        <span id="viewProgButton_{{programid}}_{{scheduleid}}"  data-toggle="modal" data-target="#programModal_{{programid}}" class="myButton pull-left">View</span>
+                        <span id="bookProgButton_{{programid}}_{{scheduleid}}" class="myButton pull-right">Book</span>
                     
                     </div>
                 </td>

@@ -24,13 +24,14 @@
 }
 
 .serachDialog{
+    border: 1px solid #d9ebd0;
     border-bottom: 1px solid #e2caca;
-    border-top: none;
     position: absolute;
     top: 60px;
     padding: 10px 15px 20px 15px;
     left: 0px;
     z-index: 200;
+    box-shadow: 1px 4px 4px #a79999;
     color: #4d5a1a;
     background: white;
     border-radius: 0px 0px 20px 20px;
@@ -44,10 +45,11 @@
 
 .searchLabel {
   background-color: #ffffff;
-  padding: 5px 15px 3px;
-  margin-bottom: 2px;
+  padding: 5px 2px 2px 0px;
+  margin-bottom: 6px;
+  margin-left: 20px;
   color: #86843d;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid #faa133;
   display: inline-block;
 }
 
@@ -69,13 +71,14 @@
 
 
 .searchItemCls{
-  margin: auto;
+  border: 1px solid #d9ebd0;
   padding: 10px 15px;
   margin: 5px;
   cursor: pointer;
+  border-radius: 2px;
   height: 80px;
   display: inline-block;
-  box-shadow: 0px 1px 7px #95c77a;
+  box-shadow: 0px 1px 7px #98c182;
   width: calc(50% - 10px);
 }
 
@@ -95,5 +98,43 @@ select#languageSelector {
 
 .inner-slide-com-cot.clearfix {
     background: white;
+    margin: 15px;
+}
+
+.topSearchSpan{
+    width: calc(100% - 110px);
+    display: inline-block;
+}
+
+
+.titleContent {
+    vertical-align: middle;
+    padding: 34px 25px;
+    heigh: 80px;
+}
+
+.col-md-9.programTitleDiv {
+    /* height: 80px; */
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+div#masterAccordionHolder {
+    margin: 15px;
+    background-color: white;
+}
+
+.panel.panel-default.pgl-panel {
+    position: relative;
+}
+
+
+.thumb-item {
+    background: white;
+}
+
+.contentWhiteBG{
+    background-color: white;
     margin: 15px;
 }

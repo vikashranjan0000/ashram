@@ -4,6 +4,7 @@
 <head>
 
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
+    <link rel='stylesheet' href='assets/css/custom/index.css' media='all' type='text/css'/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
@@ -29,15 +30,16 @@
             </div>
         </div>
 
-        <div id="indexExploreMore" class="call-action ">
+        <div id="indexExploreMore" class="call-action ">  
+
             <div class="row">
-                <div class="col-md-9">
-                    <div class="content">
-                        <h1>Welcome to <span class="text-colortwo">Our Programs</span> </h1>
+                <div class="col-md-9 programTitleDiv">
+                    <div class="titleContent">
+                        <h1>Welcome to <span class="text-colortwo"> Our Programs</span> </h1>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <a href="programe.php?programid=1">
+                    <a href="programe.html">
                         <div class="large-button">
                             <span>Explor More</span>
                         </div>
@@ -46,8 +48,7 @@
                 </div>
             </div>
         </div>
-
-        <div class="row">
+        <div class="row programDetailsDiv">
             <div class="col-md-3">
                 <div class="thumb-item1 ylbg">
 
@@ -273,6 +274,7 @@
 
         </div>
         <?php include_once 'public_html/includes/footerPage.php'; ?>
+        <?php include_once 'public_html/includes/footerScript.php';?>
         <script type="text/javascript" src="assets/script/js/index.js"></script>
     </body>
 </html>

@@ -129,59 +129,59 @@ var masterdetails = { "en":{
 var programdetails = [{ "en":{
 			"programTitle" : "Samadhi Program",
 			"content" : "Based on Divine Sound, Light, Breathing, Energyy in which a seeker learns to live in harmony with the Divine Sound, Light, Breathing, Energyy",
-			"fotterLink" : "programe.html",
-			"masterLink" : "programe.html",
+			"fotterLink" : "programe.php?programid=1",
+			"masterLink" : "programe.php?programid=1",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "समाधि कार्यक्रम",
 			"content" : "दिव्य ध्वनि, प्रकाश, श्वास, ऊर्जा पर आधारित है जिसमें एक साधक दिव्य ध्वनि, प्रकाश, श्वास, ऊर्जा के साथ सद्भाव में रहना सीखता है",
-			"fotterLink" : "programe.html",
-			"masterLink" : "programe.html",
+			"fotterLink" : "programe.php?programid=1",
+			"masterLink" : "programe.php?programid=1",
 			"fottertext" :"अधिक जानिए"
 		}	
 },
 { "en":{
 			"programTitle" : "Pragya Program",
 			"content" : "For Happy Living in outside world Pragya programs have been designed and are being conducted on regular basis which are essential  at some point.",
-			"fotterLink" : "programe.html",
-			"masterLink" : "programe.html",
+			"fotterLink" : "programe.php?programid=100",
+			"masterLink" : "programe.php?programid=100",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "प्रज्ञा कार्यक्रम",
 			"content" : "बाहरी दुनिया में हैप्पी लिविंग के लिए प्रज्ञा कार्यक्रमों को डिजाइन किया गया है और नियमित रूप से संचालित किया जा रहा है जो कुछ बिंदु पर आवश्यक हैं।",
-			"fotterLink" : "programe.html",
-			"masterLink" : "programe.html",
+			"fotterLink" : "programe.php?programid=100",
+			"masterLink" : "programe.php?programid=100",
 			"fottertext" :"अधिक जानिए"
 		}	
 } ,
 { "en":{
 			"programTitle" : "Health Program",
 			"content" : "Based on modern developments in health management and ancient spiritual wisdom Kayakalpam programs are regularly conducted by Oshodhara.",
-			"fotterLink" : "programe.html",
-			"masterLink" : "programe.html",
+			"fotterLink" : "programe.php?programid=60",
+			"masterLink" : "programe.php?programid=60",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "स्वास्थ्य कार्यक्रम",
 			"content" : "स्वास्थ्य प्रबंधन और प्राचीन आध्यात्मिक ज्ञान में आधुनिक विकास पर आधारित कायाकल्प कार्यक्रम नियमित रूप से ओशोधारा द्वारा संचालित किए जाते हैं।",
-			"fotterLink" : "programe.html",
-			"masterLink" : "programe.html",
+			"fotterLink" : "programe.php?programid=60",
+			"masterLink" : "programe.php?programid=60",
 			"fottertext" :"अधिक जानिए"
 		}	
 } ,{ "en":{
 			"programTitle" : "Sumiran Program",
 			"content" : "This is conducted in total silence in which seekers learn to be grounded in Cosmic Bliss. Jeevan Pragya and Moksha Pragya before Anand Sumiran",
-			"fotterLink" : "programe.html",
-			"masterLink" : "programe.html",
+			"fotterLink" : "programe.php?programid=15",
+			"masterLink" : "programe.php?programid=15",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "सुमिरन कार्यक्रम",
 			"content" : "यह कुल मौन में आयोजित किया जाता है जिसमें साधक ब्रह्मांडीय आनंद में पारंगत होना सीखते हैं। आनंद सुमिरन से पहले जीवन प्रज्ञा और मोक्ष प्रज्ञा",
-			"fotterLink" : "programe.html",
-			"masterLink" : "programe.html",
+			"fotterLink" : "programe.php?programid=15",
+			"masterLink" : "programe.php?programid=15",
 			"fottertext" :"अधिक जानिए"
 		}	
 } ] 

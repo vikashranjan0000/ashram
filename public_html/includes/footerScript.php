@@ -1,6 +1,4 @@
-    <script type="text/javascript" src="assets/script/libs/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery/jquery.js"></script>
-    <script type="text/javascript" src="vendor/bootstrap/bootstrap.js"></script>
+
     <script type="text/javascript" src="vendor/jquery.validation/jquery.validation.js"></script>
     <script type="text/javascript" src="vendor/owlcarousel/owl.carousel.js"></script>
     <script type="text/javascript" src="vendor/flexslider/jquery.flexslider-min.js"></script>
@@ -17,10 +15,7 @@
 
     <script type="text/javascript" src="assets/script/js/plugins.js"></script>
     <script type="text/javascript" src="assets/script/js/functions.js"></script>
-    <script type="text/javascript" src="assets/script/libs/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/script/libs/moment.min.js"></script>
-    <script type="text/javascript" src="assets/script/js/headerProgramCategory.js"></script>
-    <script type="text/javascript" src="assets/script/js/search.js"></script>
-    <script src="assets/script/libs/jquery-ui.min.js"></script>
+    <script defer="" src="assets/script/libs/solid.js"></script>
+    <script src="vendor/modernizr/modernizr.js"></script>
     
         

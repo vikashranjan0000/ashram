@@ -88,3 +88,11 @@ input[type=file]::-webkit-file-upload-button {
 .scheduleFormGroup {
     margin-bottom: auto;
 }
+
+.form-mgr.clearfix.searchHolder {background-color: white;}
+
+div.required-field span::after { 
+    content: "*";
+    color: red;
+    padding: 5px;
+}

@@ -172,3 +172,39 @@ body {
         }
     }
 }
+
+
+.call-action2.tpp-orgl1 {
+    margin: 15px;
+    width: calc(100% - 30px);
+    background-color: white;
+    height: 60px;
+    position: relative;
+}
+
+.col-md-9 {
+    vertical-align: middle;
+}
+
+.programHeading {padding: 15px 5px;display: inline-block;top: 3px;position: relative;}
+
+.programHeading h1 {
+    margin: 0px;
+}
+
+.programTableHeader {
+    padding: 20px !important;
+}
+
+.programTableHead{
+    background: #333;
+    color: #FFF!important;
+}
+
+.programTableDateCls {
+    vertical-align: middle !important;
+}
+
+.programTableRow {
+    height: 60px;
+}

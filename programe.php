@@ -99,7 +99,7 @@
             <div class="call-action2 tpp-orgl1">
 
                 <div class="col-md-9">
-                    <div class="content">
+                    <div class="programHeading">
                         <h1>Future <span class="text-colortwo">Intake </span> </h1>
                     </div>
 
@@ -108,14 +108,17 @@
             <div class="col-lg-12">
                 <div class="table-responsive">
                     <form id="contact-form" action="#" method="POST" novalidate="novalidate">
-                        <table class="table">
+                        <table class="table table-striped">
 
-                            <thead>
+                            <thead class="programTableHead">
                                 <tr>
-                                    <th>Date</th>
-                                    <th>Venue</th>
-                                    <th>Conducting Aachrya</th>
-                                    <th>&nbsp;</th>
+                                    <th class="programTableHeader">Date</th>
+                                    <th class="programTableHeader">Venue</th>
+                                    <th class="programTableHeader">Conducting Aachrya</th>
+                                    <th class="programTableHeader">
+                                        <span id="viewButton"  class="pull-left">View</span>
+                                        <span id="bookButton" class="pull-right">Book</span>
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody id="programIntakeHolder">

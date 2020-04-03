@@ -1,3 +1,14 @@
 #quotesHoldr .owl-dots {
     display: none;
 }
+
+.programDetailsDiv{
+	    background: white;
+    margin: 0px;
+}
+
+.thumb-item-content1 h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}

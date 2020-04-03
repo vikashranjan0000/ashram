@@ -4,6 +4,7 @@
 <head>
     <?php include_once 'public_html/includes/commonHeader.php';?>
     <script src="vendor/modernizr/modernizr.js"></script>
+    <link href='assets/css/custom/centers.css' media='all' rel='stylesheet' type='text/css' />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
@@ -51,7 +52,7 @@
                 </div>
                 <div class="row">
                     <div class="tpp-orgl21"></div>
-                    <div class="inner-slide-com-cot1">
+                    <div class="inner-slide-com-cot1 clearfix">
 
                         <ul class="nav nav-tabs nav-justified" role="tablist">
                             <li class="active"><a href="#hometab" role="tab" data-toggle="tab"><strong>India</strong></a></li>
@@ -830,8 +831,5 @@
         <?php include_once 'public_html/includes/footerPage.php'; ?>
         <?php include_once 'public_html/includes/footerScript.php'; ?>
         <script src="assets/script/js/ourCentre.js"></script>
-
-        <script src="js/theme.js"></script>
-        <script src='js/SidebarNav.min.js' type='text/javascript'></script>
     </body>
 </html>

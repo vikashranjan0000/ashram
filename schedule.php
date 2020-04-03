@@ -141,11 +141,9 @@
     </div>
     
     <?php include_once 'public_html/includes/footerScript.php'; ?>
+    <?php include_once 'public_html/includes/footerScript.php';?>
 
-    <script src="assets/script/libs/jquery-ui.min.js"></script>
     <script src="assets/script/js/schedule.js"></script>
-    <script src="js/mask.init.js"></script>
-    <script src="js/jquery.inputmask.bundle.min.js"></script>
     </body>
 
 </html>

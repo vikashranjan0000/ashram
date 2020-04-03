@@ -37,7 +37,10 @@
                         <div id="accordion" class="panel-group">
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse">What is the main teaching of Oshodhara?</a> </h4>
+                                    <h4 class="panel-title"> <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse"><p>
+                                        
+                                    
+                                    What is the main teaching of Oshodhara?</p></a> </h4>
                                 </div>
                                 <div class="panel-collapse collapse in" id="collapseOne">
                                     <div class="panel-body">
@@ -49,7 +52,7 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a class="collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse">What is Dhyan Samadhi (Oshodhara's 1st Level Program)?</a> </h4>
+                                    <h4 class="panel-title"> <a class="collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse"><p>What is Dhyan Samadhi (Oshodhara's 1st Level Program)?</p></a> </h4>
                                 </div>
                                 <div class="panel-collapse collapse" id="collapseTwo">
                                     <div class="panel-body">
@@ -60,7 +63,7 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a class="collapsed" href="#collapseThree" data-parent="#accordion" data-toggle="collapse">How long should I meditate?</a> </h4>
+                                    <h4 class="panel-title"> <a class="collapsed" href="#collapseThree" data-parent="#accordion" data-toggle="collapse"><p>How long should I meditate?</p></a> </h4>
                                 </div>
                                 <div class="panel-collapse collapse" id="collapseThree">
                                     <div class="panel-body">
@@ -71,7 +74,7 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a class="collapsed" href="#collapse4" data-parent="#accordion" data-toggle="collapse">Can I join Oshodhara if I have already had a Guru?</a> </h4>
+                                    <h4 class="panel-title"> <a class="collapsed" href="#collapse4" data-parent="#accordion" data-toggle="collapse"><p>Can I join Oshodhara if I have already had a Guru?</p></a> </h4>
                                 </div>
                                 <div class="panel-collapse collapse" id="collapse4">
                                     <div class="panel-body">
@@ -88,6 +91,7 @@
             </div>
 
         <?php include_once 'public_html/includes/footerPage.php'; ?>
+        <?php include_once 'public_html/includes/footerScript.php';?>
         <script src="assets/script/js/faq.js"></script>
     </body>
 </html>

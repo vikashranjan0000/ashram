@@ -4,6 +4,7 @@
 <head>
 
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
+    <link href='assets/css/custom/contactus.css' media='all' rel='stylesheet' type='text/css' />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
@@ -29,7 +30,7 @@
         </div>
 
         <div class="row">
-            <div class="inner-slides-com-cot">
+            <div class="inner-slides-com-cot clearfix">
 
                 <div class="col-lg-12">
 
@@ -45,7 +46,7 @@
 
         <div class="row">
             <div class="tpp-orgl21"></div>
-            <div class="inner-slides-com-cot">
+            <div class="inner-slides-com-cot clearfix">
                 <div class="col-sm-6">
                     <h2 class=" ct-fw-600">Get in Touch.</h2>
 
@@ -112,6 +113,7 @@
             </div>
         </div>
         <?php include_once 'public_html/includes/footerPage.php'; ?>
+        <?php include_once 'public_html/includes/footerScript.php';?>
         <script src="assets/script/js/contactus.js"></script>
     </body>
 </html>

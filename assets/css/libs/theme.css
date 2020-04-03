@@ -8282,11 +8282,14 @@ input[type="checkbox"] {
 }
 /* line 42, ../sass/theme/gui/_accordion.scss */
 .pgl-panel .panel-title a:after {
+    padding: 2;
     color: #ffffff;
     content: "-";
-    float: right;
     font-size: 1.9em;
+    position: relative;
     font-weight: 500;
+    top: -24px;
+    width: 24px;
     line-height: .8;
 }
 /* line 51, ../sass/theme/gui/_accordion.scss */
@@ -8297,6 +8300,8 @@ input[type="checkbox"] {
 .pgl-panel .panel-title .collapsed:after {
   color: #ffffff;
   content: "+";
+  top: -20px;
+  position: relative;
 }
 /* line 59, ../sass/theme/gui/_accordion.scss */
 .pgl-panel > .panel-heading + .panel-collapse > .panel-body {

@@ -32,8 +32,8 @@
 
             <div class="call-action2">
                 <div class="row">
-                    <div class="col-md-9">
-                        <div class="content">
+                    <div class="col-md-9 programTitleDiv">
+                        <div class="titleContent">
                             <h1><span class="text-colortwo">Osho </span> </h1>
                         </div>
                     </div>
@@ -346,6 +346,7 @@
 
             </div>
         <?php include_once 'public_html/includes/footerPage.php'; ?>
+        <?php include_once 'public_html/includes/footerScript.php';?>
         <script src="assets/script/js/gallery.js"></script>
     </body>
 </html>
