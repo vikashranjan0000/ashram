@@ -65,7 +65,7 @@ function loadStateData_CPG(){
   xhttp.send();
 }
 
-function setLocationName(){
+function setLocationCenterName(){
 	var scheuleLocationData_SPG = JSON.parse(window.localStorage.venueSchResponse);
 	scheuleLocationData_SPG = JSON.parse(scheuleLocationData_SPG);
 	for(var lockey in scheuleLocationData_SPG){
@@ -117,7 +117,7 @@ function callCentreFragment(){
 
 function loadInitialCentreData(){	
 	loadCenterListData();
-	setLocationName();
+	setLocationCenterName();
 }
 
 function loadCenterListData(searchCenterdata){
@@ -160,8 +160,14 @@ function renderCentreData(renderCentreData){
 	$('#accordionHolder').empty();    
 	$('#myModal').empty();    
 	for(var key in renderCentreData){
-		if($('#accordionMainPanel_'+ renderCentreData[key].stateid).length <1){
-			$('#accordionHolder').append(Mustache.render(centreAcordionfragment, renderCentreData[key]));
+		if(renderCentreData[key].countryid <2){
+			if($('#accordionMainPanel_'+ renderCentreData[key].stateid).length <1){
+				$('#accordionHolder').append(Mustache.render(centreAcordionfragment, renderCentreData[key]));
+			}
+		}else if(renderCentreData[key].countryid ===2){
+			renderCentreData[key].stateid = "Nepal";
+		}else {
+			renderCentreData[key].stateid = "Spain";
 		}
 		$('#centreDetailHolder_'+ renderCentreData[key].stateid).append(Mustache.render(centreDetailfragment, renderCentreData[key]));
 	}

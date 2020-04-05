@@ -1,7 +1,7 @@
     <meta charset="utf-8">
     <title>Osho</title>
     <meta name="author" content="Oshodhara.org.in">
-    <meta name="keywords" content="HTML5 Template" />
+    <meta name="keywords" content="Website for Ashram" />
     <meta name="description" content="Oshodhara Spritual journey">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

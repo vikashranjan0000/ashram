@@ -17,7 +17,7 @@
                 <div class="header-bg" style="background-image:url(images/banner.jpg)">
                     <div id="programTitleHolder" class=" header-content">
                         <div class="main-title">
-                            <h1 class="bold mb-30 a-f ">Program</h1>
+                            <h1 class="bold mb-30 a-f "></h1>
                         </div>
                     </div>
                 </div>
@@ -112,8 +112,9 @@
 
                             <thead class="programTableHead">
                                 <tr>
-                                    <th class="programTableHeader">Date</th>
                                     <th class="programTableHeader">Venue</th>
+                                    <th class="programTableHeader">Date</th>
+                                    <th class="programTableHeader">level</th>
                                     <th class="programTableHeader">Conducting Aachrya</th>
                                     <th class="programTableHeader">
                                         <span id="viewButton"  class="pull-left">View</span>
@@ -128,6 +129,9 @@
                     </form>
                 </div>
                 <div id="programModal">
+                    
+                </div>
+                <div id="bookNowModal">
                     
                 </div>
             </div>

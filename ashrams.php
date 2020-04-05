@@ -19,7 +19,7 @@
                     <div class=" header-content">
                         <div class="main-title">
                             <!-- Main-title -->
-                            <h1 class="bold mb-30 a-f ">Ashrams</h1>
+                            <h1 class="bold mb-30 a-f ">Ashram</h1>
                         </div>
                     </div>
                 </div>

@@ -17,10 +17,7 @@
                     <div class=" header-content">
                         <div class="main-title">
                             <!-- Main-title -->
-                            <h1 class="bold mb-30 a-f ">FAQ</h1>
-                            <!-- breadcrumbs -->
-
-                            <!-- breadcrumbs end -->
+                            <h1 class="bold mb-30 a-f ">Reservation Guidelines</h1>
                         </div>
                     </div>
                 </div>
@@ -33,7 +30,7 @@
 
                 <div class="col-md-12  ">
                     <div>
-                        <h2 style="text-align:center">Introduction Of Oshodhara</h2>
+                        <h2 style="text-align:center">Reservation Guidelines</h2>
 
                         <p>1.&nbsp;&nbsp; &nbsp; All Programs conducted at the Ashram and Dhams are Residential Programs . It is mandatory to stay in the ashram itself. Participants are not allowed to leave the ashram premise during the program except under special circumstances and with prior permission of the Ashram Authorities.
                             <br />

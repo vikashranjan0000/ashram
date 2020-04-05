@@ -47,17 +47,25 @@ function renderSearchData_SePG(loaddata){
   	$('#programListData').empty();    
   	$('#locationListData').empty();   
   	searchData = loaddata['programData']; 
-  	if(searchData){
+  	if(searchData.length >0){
+  		
+  		$('#progSearchListDiv').removeClass('displayNone');
 		for(var serKey in searchData){
 			$('#programListData').append(Mustache.render(searchfragment, searchData[serKey]));
 		}  		
   	}else{
+  		$('#progSearchListDiv').addClass('displayNone');
   		
   	}
 
   	searchData = loaddata['centerData']; 
-	for(var serKey in searchData){
-		$('#locationListData').append(Mustache.render(searchfragment, searchData[serKey]));
+  	if(searchData.length >0){
+  		$('#centerSearchListDiv').removeClass('displayNone');
+		for(var serKey in searchData){
+			$('#locationListData').append(Mustache.render(searchfragment, searchData[serKey]));
+		}
+	}else{
+  		$('#centerSearchListDiv').addClass('displayNone');
 	}
 }
 

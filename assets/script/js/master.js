@@ -3,7 +3,7 @@ var templates = "";
 
 $(document).ready(function() {
   $('#masterHeaderView').addClass('active');
-    loadCategory()
+  loadCategory()
   callFragmentText();
   if(!window.localStorage.languageCode){
     window.localStorage.languageCode = 'en';
@@ -12,6 +12,8 @@ $(document).ready(function() {
   }
   var url  = window.location.href 
   url = url.split("?")[1];
+  var mast = url.split("=")[1];
+  $('#masterImageHolder_'+mast).removeClass('displayNone')
   if(url){      
       loadMasterData(url);
   }else{

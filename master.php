@@ -85,13 +85,13 @@
                     <h1 class="event-text-h icon-heading-1"><strong>Photo Gallery   </strong></h1>
                 </div>
             </div>
-            <div class="col-lg-12 contentWhiteBG">
+            <div id="masterImageHolder_1"  class="col-lg-12 contentWhiteBG displayNone">
                 <div class="owl-carousel multi-slides" data-plugin-options='{"items": 4, "singleItem": false, "itemsDesktop": 4, "pagination": false, "navigation": true}'>
                     <div class="col-md-12">
                         <div class="thumb-item">
                             <div class="thumb-item-img">
-                                <a href="shop-product-detail-classic.html" class="btn-detail">
-                                    <img class="img-responsive" src="images/osho.1500.jpg" alt="">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/oshoSiddhartha/oshoSiddhartha1.jpg" alt="">
 
                                 </a>
 
@@ -102,8 +102,8 @@
                     <div class="col-md-12">
                         <div class="thumb-item">
                             <div class="thumb-item-img">
-                                <a href="shop-product-detail-classic.html" class="btn-detail">
-                                    <img class="img-responsive" src="images/osho.1500.jpg" alt="">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/oshoSiddhartha/oshoSiddhartha2.jpg" alt="">
 
                                 </a>
 
@@ -114,8 +114,8 @@
                     <div class="col-md-12">
                         <div class="thumb-item">
                             <div class="thumb-item-img">
-                                <a href="shop-product-detail-classic.html" class="btn-detail">
-                                    <img class="img-responsive" src="images/osho.1500.jpg" alt="">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/oshoSiddhartha/oshoSiddhartha3.jpg" alt="">
 
                                 </a>
 
@@ -126,8 +126,8 @@
                     <div class="col-md-12">
                         <div class="thumb-item">
                             <div class="thumb-item-img">
-                                <a href="shop-product-detail-classic.html" class="btn-detail">
-                                    <img class="img-responsive" src="images/osho.1500.jpg" alt="">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/oshoSiddhartha/oshoSiddhartha4.jpg" alt="">
 
                                 </a>
 
@@ -138,8 +138,200 @@
                     <div class="col-md-12">
                         <div class="thumb-item">
                             <div class="thumb-item-img">
-                                <a href="shop-product-detail-classic.html" class="btn-detail">
-                                    <img class="img-responsive" src="images/osho.1500.jpg" alt="">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/oshoSiddhartha/oshoSiddhartha5.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  id="masterImageHolder_2"  class="col-lg-12 contentWhiteBG displayNone">
+                <div class="owl-carousel multi-slides" data-plugin-options='{"items": 4, "singleItem": false, "itemsDesktop": 4, "pagination": false, "navigation": true}'>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/Osho/oshos1.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/Osho/oshos2.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/Osho/oshos3.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/Osho/oshos4.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/Osho/oshos5.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="masterImageHolder_3"  class="col-lg-12 contentWhiteBG displayNone">
+                <div class="owl-carousel multi-slides" data-plugin-options='{"items": 4, "singleItem": false, "itemsDesktop": 4, "pagination": false, "navigation": true}'>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/nanakdev/nanakdev.jpeg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/nanakdev/nanakdev2.jpeg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/nanakdev/nanakdev3.jpeg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/nanakdev/nanakdev4.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/nanakdev/nanakdev5.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="masterImageHolder_4"  class="col-lg-12 contentWhiteBG displayNone">
+                <div class="owl-carousel multi-slides" data-plugin-options='{"items": 4, "singleItem": false, "itemsDesktop": 4, "pagination": false, "navigation": true}'>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/sufibaba/sufibaba_Timeline1.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/sufibaba/sufibaba_Timeline2.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/sufibaba/sufibaba_Timeline3.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/sufibaba/sufibaba_Timeline4.jpg" alt="">
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="thumb-item">
+                            <div class="thumb-item-img">
+                                <a href="#" class="btn-detail">
+                                    <img class="img-responsive" src="assets/images/Master/sufibaba/sufibaba_Timeline5.jpg" alt="">
 
                                 </a>
 

@@ -2,6 +2,7 @@ var planData = {};
 
 $(document).ready(function() {
 	$('#indexHeaderView').addClass('active');
+	window.localStorage.clear();
 	loadCategory();
 	if(!window.localStorage.languageCode){
 		window.localStorage.languageCode = 'en';

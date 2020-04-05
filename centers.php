@@ -33,12 +33,12 @@
 
                             </p>
                             <br>
-
+<!-- 
                             <h4>Search Center By Location *</h4>
                             <form>
                                 <input type="text" class="form-control" id="name" name="name" value="" data-msg-required="Please enter your name." required="" aria-required="true">
                             </form>
-                            <br>
+                            <br> -->
 
                         </div>
 
@@ -75,7 +75,7 @@
                                                     <thead class="tb-bg-text">
 
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody id="centreDetailHolder_Nepal">
                                                         <tr>
                                                             <td colspan="5"><strong>OshoDhara Sadhna Kendra Janakpur</strong></td>
                                                         </tr>
@@ -115,7 +115,7 @@
                                                     <thead class="tb-bg-text">
 
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody id="centreDetailHolder_Spain">
                                                         <tr>
                                                             <td colspan="6"><strong>OshoDhara SahajaNand Dham Karma    </strong></td>
                                                         </tr>
@@ -145,7 +145,7 @@
                                                     <thead class="tb-bg-text">
 
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody id="centreDetailHolder_Australia">
                                                         <tr>
                                                             <td colspan="6"><strong>OshoDhara Sadhana Kendra Secunderabad    </strong></td>
                                                         </tr>
@@ -174,7 +174,7 @@
                                                     <thead class="tb-bg-text">
 
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody id="centreDetailHolder_UK">
                                                         <tr>
                                                             <td colspan="6"><strong>OshoDhara Sadhana Kendra Secunderabad    </strong></td>
                                                         </tr>
@@ -203,7 +203,7 @@
                                                     <thead class="tb-bg-text">
 
                                                     </thead>
-                                                    <tbody>
+                                                    <tbody id="centreDetailHolder_Canada">
                                                         <tr>
                                                             <td colspan="6"><strong>OshoDhara Sadhana Kendra Secunderabad    </strong></td>
                                                         </tr>

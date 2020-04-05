@@ -5,27 +5,32 @@ var scheuleLocationData = {};
 function loadCategory() {
     $('.sidebar-menu').SidebarNav()
     callfragmentText_HPC();
-    loadHeaderProgramCategoryData();
     if (!window.localStorage.venueAutoResponse) {
         loadVenueData_SPG();
     }
 }
 
 function callfragmentText_HPC() {
-
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            headerTemplates = xhttp.responseText;
-        }
-    };
-    xhttp.open("GET", "public_html/fragments/headerCategoryFragment.html", true);
-    xhttp.send();
+    if(window.localStorage.headerTemplates ){
+        headerTemplates = window.localStorage.headerTemplates;
+        loadHeaderProgramCategoryData();
+    }else{
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                headerTemplates = xhttp.responseText;
+                window.localStorage.headerTemplates = headerTemplates;
+                loadHeaderProgramCategoryData();
+            }
+        };
+        xhttp.open("GET", "public_html/fragments/headerCategoryFragment.html", true);
+        xhttp.send();
+    }
 }
 
 function loadHeaderProgramCategoryData() {
   if(window.localStorage.proCatResponse ){
-      let proCatResponse = JSON.stringify(window.localStorage.proCatResponse) ;
+      let proCatResponse = JSON.parse(window.localStorage.proCatResponse) ;
       categoryData = JSON.parse(proCatResponse);
       loadProgramCategoryData();
   }else{
@@ -46,42 +51,52 @@ function loadHeaderProgramCategoryData() {
 }
 
 function loadProgramCategoryData() {
-    if(window.localStorage.catProResponse){
-      let catProResponse = JSON.stringify(window.localStorage.catProResponse) ;
-      catProResponse = JSON.parse(catProResponse);
-      if (catProResponse && catProResponse.length > 0) {
-          renderProgramData_HPC(catProResponse);
-      }
-  }else{
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            let catProResponse = xhttp.responseText;
-            window.localStorage.catProResponse = JSON.stringify(catProResponse);
-            catProResponse = JSON.parse(catProResponse);
-            if (catProResponse && catProResponse.length > 0) {
-                renderProgramData_HPC(catProResponse);
-            }
-        } else {
-
-        }
-    };
-    xhttp.open("POST", "php/api/controller/ProgramController.php", true);
-    xhttp.send();
-  }
+    renderCategoryData_HPC();
+    loadProgramData_HPC();
 }
 
-function renderProgramData_HPC(programListCateData) {
+function loadProgramData_HPC() {
+    if(window.localStorage.catProResponse){
+        let catProResponse = JSON.parse(window.localStorage.catProResponse) ;
+        catProResponse = JSON.parse(catProResponse);
+        if (catProResponse && catProResponse.length > 0) {
+            renderProgramData_HPC(catProResponse);
+        }
+    }else{
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                let catProResponse = xhttp.responseText;
+                window.localStorage.catProResponse = JSON.stringify(catProResponse);
+                catProResponse = JSON.parse(catProResponse);
+                if (catProResponse && catProResponse.length > 0) {
+                    renderProgramData_HPC(catProResponse);
+                }
+            } else {
+
+            }
+        };
+        xhttp.open("POST", "php/api/controller/ProgramController.php", true);
+        xhttp.send();
+    }
+}
+
+
+function renderCategoryData_HPC() {
     var categoryfragment = $(headerTemplates).filter('#categoryContent').html();
-    var progfragment = $(headerTemplates).filter('#programListContent').html();
-    var languageCode = window.localStorage.languageCode ? window.localStorage.languageCode : "en";
+    //var languageCode = window.localStorage.languageCode ? window.localStorage.languageCode : "en";
     $('#programCategoryHolder').empty();
     for (var keyCat in categoryData) {
-        if (categoryData[keyCat]['language'] = languageCode) {
+       // if (categoryData[keyCat]['language'] = languageCode) {
             $('#programCategoryHolder').append(Mustache.render(categoryfragment, categoryData[keyCat]));
             $('#programListHolder_' + categoryData[keyCat].categoryid).empty();
-        }
+       // }
     }
+}
+function renderProgramData_HPC(programListCateData) {
+    var progfragment = $(headerTemplates).filter('#programListContent').html();
+    var languageCode = window.localStorage.languageCode ? window.localStorage.languageCode : "en";
+
     for (var pgkey in programListCateData) {
         var list = programListCateData[pgkey].categoryid;
         list = list.split(",");
@@ -95,15 +110,13 @@ function renderProgramData_HPC(programListCateData) {
                 }
             }
             $('#programListHolder_' + list[d]).append(Mustache.render(progfragment, programListCateData[pgkey]));
-
         }
-
     }
 }
 
 function setLocationName() {
     if (window.localStorage.venueSchResponse) {
-        var scheuleLocationData_SPG = JSON.parse(window.localStorage.venueSchResponse);
+        scheuleLocationData_SPG = JSON.parse(window.localStorage.venueSchResponse);
         scheuleLocationData_SPG = JSON.parse(scheuleLocationData_SPG);
         for (var lockey in scheuleLocationData_SPG) {
             scheuleLocationData[scheuleLocationData_SPG[lockey].dhyankendraid] = scheuleLocationData_SPG[lockey];

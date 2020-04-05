@@ -222,6 +222,7 @@ function renderScheduleData(renderData) {
     var languageCode = window.localStorage.languageCode ? window.localStorage.languageCode : "en";
     $('#programScheduleHolder').empty();
     $('#myModal').empty();
+    $('#proBookingModalHolder').empty();
     for (var key in renderData) {
         renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM');
         renderData[key].bookingStart_date = moment(renderData[key].start_date).format('DD MMM, YYYY');
