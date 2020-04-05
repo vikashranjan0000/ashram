@@ -2,7 +2,7 @@ var masterData = {};
 var templates = "";
 
 $(document).ready(function() {
-  debugger;
+  $('#masterHeaderView').addClass('active');
     loadCategory()
   callFragmentText();
   if(!window.localStorage.languageCode){

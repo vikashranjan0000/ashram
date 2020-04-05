@@ -1,8 +1,8 @@
     <meta charset="utf-8">
     <title>Osho</title>
-    <meta name="author" content="pixelgeeklab.com">
+    <meta name="author" content="Oshodhara.org.in">
     <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Marvel - MultiShop Responsive HTML5 Template">
+    <meta name="description" content="Oshodhara Spritual journey">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/libs/bootstrap.css" media="screen">

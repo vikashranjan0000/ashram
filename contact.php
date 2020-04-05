@@ -35,7 +35,7 @@
                 <div class="col-lg-12">
 
                     <div style="width: 100%">
-                        <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=400&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"> </iframe>
+                        <iframe width="100%" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.3986240793547!2d77.07594195018369!3d29.034788672425634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db10b532f1803%3A0xad83167e8566106!2sOshodhara%20Nanak%20Dham!5e0!3m2!1sen!2sin!4v1584690837532!5m2!1sen!2sin" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"> </iframe>
                     </div>
                     <br />
 

@@ -2,8 +2,9 @@ var programData_PPG = {};
 var templates_PPG = "";
 
 $(document).ready(function() {
-  loadCategory()
+  $('#programHeaderView').addClass('active');
   callFragmentText_PPG();
+  loadCategory()
   if(!window.localStorage.languageCode){
     window.localStorage.languageCode = 'en';
   }else{
@@ -17,6 +18,7 @@ $(document).ready(function() {
     url ="programid=1"
     loadProgramData_PPG(url);
   }
+  
   eventListener();
 });
 

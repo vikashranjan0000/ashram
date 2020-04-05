@@ -61,7 +61,9 @@ class FileUploadController {
             $allowed_extension = array("png","jpg","jpeg","pdf", "doc", "docx", "txt","ppt","pptx","odt","png","raw","psd");
 		    $extension = end($test);  
             if(in_array(strtolower($extension),$allowed_extension)){
-    		    $name = "ProgramReceipt" . date("Y_m_d") .'.'.$extension;
+                $mytime=gettimeofday();
+                $timeData = "$mytime[sec].$mytime[usec]";
+    		    $name = "ProgramReceipt" . $timeData .'.'.$extension;
     		    $location = '../../../upload/'.$name;
     		    move_uploaded_file($_FILES['file']['tmp_name'], $location);
     		    return 'http://localhost/upload/'.$name;        

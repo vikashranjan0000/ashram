@@ -1,6 +1,7 @@
 var planData = {};
 
 $(document).ready(function() {
+	$('#aboutUsHeaderView').addClass('active');
 	loadCategory()
 	if(!window.localStorage.languageCode){
 		window.localStorage.languageCode = 'en';

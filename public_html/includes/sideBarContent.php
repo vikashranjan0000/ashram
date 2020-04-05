@@ -12,13 +12,13 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="sidebar-menu">
-                <li class="treeview">
-                    <a href="index.php" class="active"> <span>Home</span></a>
+                <li id="indexHeaderView" class="treeview">
+                    <a href="index.php" class=""> <span>Home</span></a>
                 </li>
-                <li class="treeview">
+                <li id="aboutUsHeaderView" class="treeview">
                     <a href="knowus.php"> <span>About Us</span></a>
                 </li>
-                <li class="treeview">
+                <li id="masterHeaderView" class="treeview">
                     <a href="master.php">
                         <span>Masters</span>
                     </a>
@@ -42,7 +42,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="treeview">
+                <li id="programHeaderView" class="treeview">
                     <a href="programe.php">
                         <span> Programs</span>
                     </a>
@@ -301,10 +301,10 @@
 
                     </ul>
                 </li>
-                <li>
+                <li id="scheduleHeaderView" class="treeview">
                     <a href="schedule.php"> <span> Program Schedule</span></a>
                 </li>
-                <li class="treeview">
+                <li id="centerHeaderView" class="treeview">
                     <a href="centers.php">Centres</span> 
                                 </a>
                     <ul class="treeview-menu">
@@ -313,7 +313,7 @@
                         <li><a href="centers.php"><i class="fa fa-angle-right"></i>Oshodhara Dhyan Kendras</a></li>
                     </ul>
                 </li>
-                <li class="treeview">
+                <li id="galleryHeaderView" class="treeview">
                     <a href="gallery.php">
                         <span>  Gallery</span>
                     </a>
@@ -339,13 +339,13 @@
                     </ul>
                 </li>
 
-                <li>
-                    <a href="social.php"> <span> Official Social Media Acounts</span></a>
+                <li id="socialHeaderView" class="treeview">
+                    <a href="social.php"> <span>Social Media Acounts</span></a>
                 </li>
-                <li class="treeview">
+                <li id="faqHeaderView" class="treeview">
                     <a href="faq.php">FAQ</a>
                     <ul class="treeview-menu">
-                        <li><a href="faq.php"><i class="fa fa-angle-right"></i> Reservation Guide Lines</a></li>
+                        <li><a href="guideline.php"><i class="fa fa-angle-right"></i> Reservation Guide Lines</a></li>
                         <li><a href="faq.php"><i class="fa fa-angle-right"></i> General Guide Lines    </a></li>
                         <li><a href="contact.php"><i class="fa fa-angle-right"></i>Contact Us</a></li>
 

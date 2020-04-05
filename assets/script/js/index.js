@@ -1,18 +1,13 @@
 var planData = {};
 
 $(document).ready(function() {
-	debugger;
+	$('#indexHeaderView').addClass('active');
 	loadCategory();
 	if(!window.localStorage.languageCode){
 		window.localStorage.languageCode = 'en';
 	}else{
 		$('#languageSelector').val(window.localStorage.languageCode);
 	}
-    $('#sidebarCollapse').on('click', function() {
-        $('#sidebar, #content').toggleClass('active');
-        $('.collapse.in').toggleClass('in');
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-    });
 	callFaqData(); 
 	eventListener();
 });
@@ -185,3 +180,5 @@ var programdetails = [{ "en":{
 			"fottertext" :"अधिक जानिए"
 		}	
 } ] 
+
+//https://www.jssor.com/skins/bullet/bullet-skin-035-black.slider/=skin

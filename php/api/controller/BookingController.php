@@ -2,6 +2,7 @@
 
 include_once "../config/database.php"; 
 include_once "../service/MailService.php";
+include_once "../service/BookingService.php";
 
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
@@ -21,12 +22,14 @@ class BookingController {
     private $requestMethod;
 
     private $mailService;
+    private $bokingService;
 
     public function __construct($db, $requestMethod)
     {
         $this->db = $db;
         $this->requestMethod = $requestMethod;
         $this->mailService = new MailService($this->db);
+        $this->bookingService = new BookingService($this->db);
     }   
 
     public function processRequest()
@@ -35,19 +38,15 @@ class BookingController {
         case 'GET':
                 if (!empty($_GET["bookService"])) {
                     $response = $this->bookServiceTestMail();
-                }else if(!empty($data["masterid"])){
-                    $response = $this->getMaster(($data["masterid"]));
                 }else {
-                    $response = $this->getAllMaster();
+                    $response = $this->notFoundResponse();
                 };
                 break;
             case 'POST':
                 if (!empty($_POST["bookService"])) {
                     $response = $this->bookServiceMail();
-                }else if(!empty($data["masterid"])){
-                    $response = $this->getMaster(($data["masterid"]));
                 } else {
-                    $response = $this->getAllMaster();
+                    $response = $this->notFoundResponse();
                 };
                 break;
             default:
@@ -57,42 +56,24 @@ class BookingController {
         
         if ($response['body']) {
             echo json_encode($response['body']);
-            //echo $response['body'];
         }
     }
 
-    private function getAllMaster()
-    {
-        $result = $this->masterService->findAll();
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
-        $response['body'] = $result;
-        return $response;
-    }
 
     private function bookServiceMail()
     {
-        $result = $this->mailService->processRequest($_POST);
+        $result = $this->bookingService->insertBookingDetail($_POST);
+        $result['OfficeMail'] = $this->mailService->sendToReceptionMessage($_POST, $result['bookingId']);
+        $result['userMail'] = $this->mailService->sendToUserMessage($_POST,  $result['bookingId']);
         $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;
     }
+
     private function bookServiceTestMail()
-    {   $_POST = $_GET;
-        $result = $this->mailService->processRequest($_POST);
-        $response['status_code_header'] = 'HTTP/1.1 200 OK';
-        $response['body'] = "Successfully sent";
-        return $response;
-    }
-
-
-    
-
-    private function getMaster($id)
     {
-        $result = $this->masterService->find($id);
-        if (! $result) {
-            return $this->notFoundResponse();
-        }
+        $result = $this->bookingService->insertBookingDetail($_GET);
+        $result['userMail'] = $this->mailService->sendToUserMessage($_GET,  $result['bookingId']);
         $response['status_code_header'] = 'HTTP/1.1 200 OK';
         $response['body'] = $result;
         return $response;

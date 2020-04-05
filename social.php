@@ -203,6 +203,7 @@
         <?php include_once 'public_html/includes/footerScript.php'; ?>
         <script>
             loadCategory();
+            $('#socialHeaderView').addClass('active');
         </script>
     </body>
 </html>
