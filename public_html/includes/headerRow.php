@@ -6,7 +6,7 @@
                     <div class="white-from-trs wow fadeInUp">
                         <form action="" method="get">
 
-                            <select id="languageSelector" name="" class="top-search-form">
+                            <select id="languageSelector" name="" class="top-search-form" disabled="true">
                                 <option value="en">Language</option>
                                 <option value="hi">Hindi</option>
                                 <option value="en">English</option>
@@ -36,13 +36,13 @@
                     </div>
                 </div>
                 <div id="searchMainDialog" class="col-xs-12  col-md-12 serachDialog" style="display:none">
-                    <div class="row customSearchSepCls">
+                    <div id="progSearchListDiv" class="row customSearchSepCls displayNone">
                         <div class="searchHeading"><span class="searchLabel">Program List</span></div>
                         <div id="programListData" class="col-xs-12 col-md-12">
                             
                         </div>
                     </div>
-                    <div class="row customSearchSepCls">
+                    <div id="centerSearchListDiv" class="row customSearchSepCls displayNone">
                         <div class="searchHeading"><span  class="searchLabel">Dhyana Kendra</span></div>
                         <div id="locationListData" class="col-xs-12 col-md-12">
                        

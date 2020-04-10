@@ -57,25 +57,49 @@
                                 <div class="controls customInputDiv">
                                     <select name="ss" id="ss" required class="form-control">
                                         <option value="">Select an Option</option>
-                                        <option value="State  1">State 1</option>
-                                        <option value="State  2">State 2</option>
-                                        <option value="State  3">State 3</option>
-                                        <option value="State  4">State 4</option>
+                                        <option value="AP">Andhra Pradesh</option>
+                                        <option value="AR">Arunachal Prades</option>
+                                        <option value="AS">Assam</option>
+                                        <option value="BR">Bihar</option>
+                                        <option value="CT">Chhattisgarh</option>
+                                        <option value="GA">Goa</option>
+                                        <option value="GJ">Gujarat</option>
+                                        <option value="HR">Haryana</option>
+                                        <option value="HP">Himachal Prades</option>
+                                        <option value="JK">Jammu & Kashmir</option>
+                                        <option value="JH">Jharkhand</option>
+                                        <option value="KA">Karnataka</option>
+                                        <option value="KL">Kerala</option>
+                                        <option value="MP">Madhya Pradesh</option>
+                                        <option value="MH">Maharashtra</option>
+                                        <option value="MN">Manipur</option>
+                                        <option value="ML">Meghalaya</option>
+                                        <option value="MZ">Mizoram</option>
+                                        <option value="NL">Nagaland</option>
+                                        <option value="OR">Odisha</option>
+                                        <option value="PB">Punjab</option>
+                                        <option value="RJ">Rajasthan</option>
+                                        <option value="SK">Sikkim</option>
+                                        <option value="TN">Tamil Nadu</option>
+                                        <option value="TR">Tripura</option>
+                                        <option value="UK">Uttarakhand</option>
+                                        <option value="UP">Uttar Pradesh</option>
+                                        <option value 3WB">West Bengal</option>
 
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <span class="titleLabel">From Date  </span>
+                                <span class="titleLabel">Start Date  </span>
                                 <div class="controls customInputDiv">
-                                    <input id="startDate_SPG" type="name" name="name" class="form-control" required placeholder="start date" data-validation-required-message="This field is required"> 
+                                    <input id="startDate_SPG" type="name" name="name" class="form-control" required placeholder="Start date" data-validation-required-message="This field is required"> 
                                 </div>
                             </div>
 
                             <div class="col-md-4">
-                                <span class="titleLabel">last Date  </span>
+                                <span class="titleLabel">End Date  </span>
                                 <div class="controls customInputDiv">
-                                    <input id="endDate_SPG" type="name" name="name" class="form-control" required placeholder="end date" data-validation-required-message="This field is required"> 
+                                    <input id="endDate_SPG" type="name" name="name" class="form-control" required placeholder="End date" data-validation-required-message="This field is required"> 
                                 </div>
                             </div>
                         </div>
@@ -103,7 +127,7 @@
                                     <th class="scheduleTableHeader" width="20%">Program</th>
                                     <th class="scheduleTableHeader" width="18%">Location</th>
                                     <th class="scheduleTableHeader" width="20%">Date</th>
-                                    <th class="scheduleTableHeader" width="24%">Aachrya</th>
+                                    <th class="scheduleTableHeader" width="24%">Acharya</th>
                                     <th class="scheduleTableHeader" width="18%">
                                         <span id="viewButton"  class="pull-left">View</span>
                                         <span id="bookButton" class="pull-right">Book</span>
@@ -118,7 +142,7 @@
                 </div>
             </div>
         </div>
-        <div class="pagination-wrap">
+<!--         <div class="pagination-wrap">
             <div class="row">
                 <div class="col-xs-7">
                     <ul class="pagination">
@@ -131,7 +155,7 @@
                     <p>Showing 1–9 of 20 results</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     <?php include_once 'public_html/includes/footerPage.php'; ?>
     <div id="myModal">
         

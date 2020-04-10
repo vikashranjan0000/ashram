@@ -39,9 +39,9 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <a href="programe.html">
+                    <a href="schedule.php">
                         <div class="large-button">
-                            <span>Explor More</span>
+                            <span>Explore More</span>
                         </div>
                     </a>
 
@@ -55,7 +55,7 @@
                     <div id="programContentHolder0" class="thumb-item-content1">
 
                         <div class="sp11">
-                            <h3><a href="programe.php?programid=1">Samadhi Program</a></h3></div>
+                            <h3><a href="programe.php?programid=1">Samadhi Programs</a></h3></div>
                         <div class="thumb-item-img text-center">
                             <br>
 
@@ -78,7 +78,7 @@
                     <div id="programContentHolder1" class="thumb-item-content1">
 
                         <div class="sp11">
-                            <h3><a href="programe.html">Pragya Program</a></h3></div>
+                            <h3><a href="programe.html">Pragya Programs</a></h3></div>
                         <div class="thumb-item-img text-center">
                             <br>
 
@@ -101,7 +101,7 @@
                     <div id="programContentHolder2" class="thumb-item-content1">
 
                         <div class="sp11">
-                            <h3><a href="programe.html">Health Program</a></h3></div>
+                            <h3><a href="programe.html">Health Programs</a></h3></div>
                         <div class="thumb-item-img text-center">
                             <br>
 
@@ -124,7 +124,7 @@
                     <div id="programContentHolder3" class="thumb-item-content1">
 
                         <div class="sp11">
-                            <h3><a href="programe.html">Sumiran Program</a></h3></div>
+                            <h3><a href="programe.html">Sumiran Programs</a></h3></div>
                         <div class="thumb-item-img text-center">
                             <br>
 

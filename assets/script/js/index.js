@@ -96,7 +96,7 @@ var exploredetails = { "en":{
 			"exploreTitle":"Welcome to ",
 			"exploreName":" Our Programs",
 			"masterLink":"programe.html",
-			"fottertext":"Explor More"
+			"fottertext":"Explore More"
 		},
 		"hi":{
 			"exploreTitle":"आपका स्वागत है ",
@@ -123,7 +123,7 @@ var masterdetails = { "en":{
 } 
 
 var programdetails = [{ "en":{
-			"programTitle" : "Samadhi Program",
+			"programTitle" : "Samadhi Programs",
 			"content" : "Based on Divine Sound, Light, Breathing, Energyy in which a seeker learns to live in harmony with the Divine Sound, Light, Breathing, Energyy",
 			"fotterLink" : "programe.php?programid=1",
 			"masterLink" : "programe.php?programid=1",
@@ -138,7 +138,7 @@ var programdetails = [{ "en":{
 		}	
 },
 { "en":{
-			"programTitle" : "Pragya Program",
+			"programTitle" : "Pragya Programs",
 			"content" : "For Happy Living in outside world Pragya programs have been designed and are being conducted on regular basis which are essential  at some point.",
 			"fotterLink" : "programe.php?programid=100",
 			"masterLink" : "programe.php?programid=100",
@@ -153,7 +153,7 @@ var programdetails = [{ "en":{
 		}	
 } ,
 { "en":{
-			"programTitle" : "Health Program",
+			"programTitle" : "Health Programs",
 			"content" : "Based on modern developments in health management and ancient spiritual wisdom Kayakalpam programs are regularly conducted by Oshodhara.",
 			"fotterLink" : "programe.php?programid=60",
 			"masterLink" : "programe.php?programid=60",
@@ -167,7 +167,7 @@ var programdetails = [{ "en":{
 			"fottertext" :"अधिक जानिए"
 		}	
 } ,{ "en":{
-			"programTitle" : "Sumiran Program",
+			"programTitle" : "Sumiran Programs",
 			"content" : "This is conducted in total silence in which seekers learn to be grounded in Cosmic Bliss. Jeevan Pragya and Moksha Pragya before Anand Sumiran",
 			"fotterLink" : "programe.php?programid=15",
 			"masterLink" : "programe.php?programid=15",

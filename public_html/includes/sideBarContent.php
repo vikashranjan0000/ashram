@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="comingSoon.php"><img src="images/logo.png" class="img-responsive img-logo"></a>
+            <a class="navbar-brand" href="index.php"><img src="images/logo.png" class="img-responsive img-logo"></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="sidebar-menu">
@@ -28,15 +28,15 @@
                             <a href="master.php?masterid=2"> Param Gurus <i class="fa fa-angle-right pull-left"></i></a>
                             <ul class="treeview-menu">
                                 <li><a href="master.php?masterid=2"><i class="fa fa-angle-right"></i> Param Guru Osho</a></li>
-                                <li><a href="master.php?masterid=3"><i class="fa fa-angle-right"></i> Sufi Baba Shah Kalandar</a></li>
+                                <li><a href="master.php?masterid=3"><i class="fa fa-angle-right"></i> Sufi Baba Shah Qalandar</a></li>
                                 <li><a href="master.php?masterid=4"><i class="fa fa-angle-right"></i> Guru Nanak Dev Ji</a></li>
 
                             </ul>
                         </li>
                         <li>
-                            <a href="master.php?masterid=1"> Present Master <i class="fa fa-angle-right pull-left"></i></a>
+                            <a href="master.php?masterid=1">Sadguru of Oshodhara <i class="fa fa-angle-right pull-left"></i></a>
                             <ul class="treeview-menu">
-                                <li><a href="master.php?masterid=1"><i class="fa fa-angle-right"></i> Sadguru Osho Siddharth Aulia</a></li>
+                                <li><a href="master.php?masterid=1"><i class="fa fa-angle-right"></i> Sadguru Osho Siddharth Aulia ji</a></li>
 
                             </ul>
                         </li>
@@ -295,7 +295,7 @@
                                 <a href="programe.php">Celebration<i class="fa fa-angle-right pull-left"></i></a>
                                 <ul id="programListHolder_8" class="treeview-menu">
                                     <li><a href="programe.php?programid=124"><i class="fa fa-angle-right"></i>
-                             Madhopur Yatra</a></li>
+                                    Madhopur Yatra</a></li>
                                 </ul>
                             </li>
 
@@ -305,11 +305,11 @@
                     <a href="schedule.php"> <span> Program Schedule</span></a>
                 </li>
                 <li id="centerHeaderView" class="treeview">
-                    <a href="centers.php">Centres</span> 
+                    <a href="centers.php">Centers</span> 
                                 </a>
                     <ul class="treeview-menu">
                         <li><a href="ashrams.php"><i class="fa fa-angle-right"></i>Oshodhara Ashram</a></li>
-                        <li><a href="centers.php"><i class="fa fa-angle-right"></i>Osho Sadhna Kendras</a></li>
+                        <li><a href="centers.php"><i class="fa fa-angle-right"></i>OshoDhara Sadhna Kendras</a></li>
                         <li><a href="centers.php"><i class="fa fa-angle-right"></i>Oshodhara Dhyan Kendras</a></li>
                     </ul>
                 </li>
@@ -326,15 +326,15 @@
 
                                     <ul class="treeview-menu">
                                         <li><a href="gallery.php"><i class="fa fa-angle-right"></i> Param Guru Osho </a></li>
-                                        <li><a href="gallery.php"><i class="fa fa-angle-right"></i> Sufi Baba Shah Kalandar</a></li>
+                                        <li><a href="gallery.php"><i class="fa fa-angle-right"></i> Sufi Baba Shah Qalandar</a></li>
                                         <li><a href="gallery.php"><i class="fa fa-angle-right"></i> Sadguru Osho Siddharth Aulia</a></li>
 
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li> <a href="comingSoon.php"><i class="fa fa-angle-right"></i> Videos</a> </li>
-                        <li> <a href="comingSoon.php"><i class="fa fa-angle-right"></i> E-Books  </a> </li>
+                        <!-- <li> <a href="comingSoon.php"><i class="fa fa-angle-right"></i> Videos</a> </li>
+                        <li> <a href="comingSoon.php"><i class="fa fa-angle-right"></i> E-Books  </a> </li> -->
 
                     </ul>
                 </li>
@@ -345,10 +345,9 @@
                 <li id="faqHeaderView" class="treeview">
                     <a href="faq.php">FAQ</a>
                     <ul class="treeview-menu">
-                        <li><a href="guideline.php"><i class="fa fa-angle-right"></i> Reservation Guide Lines</a></li>
-                        <li><a href="faq.php"><i class="fa fa-angle-right"></i> General Guide Lines    </a></li>
+                        <li><a href="faq.php"><i class="fa fa-angle-right"></i> General Question</a></li>
+                        <li><a href="guideline.php"><i class="fa fa-angle-right"></i> Reservation Guideline</a></li>
                         <li><a href="contact.php"><i class="fa fa-angle-right"></i>Contact Us</a></li>
-
                     </ul>
                 </li>
 

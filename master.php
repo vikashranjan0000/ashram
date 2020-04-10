@@ -18,7 +18,7 @@
                     <!-- Gradient overlay -->
                     <div class=" header-content">
                         <div id="masterTitleHolder" class="main-title">
-                            <h1 class="bold mb-30 a-f ">Master</h1>
+                            <h1 class="bold mb-30 a-f "></h1>
                         </div>
                     </div>
                 </div>
