@@ -325,9 +325,11 @@
                                     <a href="gallery.php"> <i class="fa fa-angle-right pull-left"></i> Masters </a>
 
                                     <ul class="treeview-menu">
-                                        <li><a href="gallery.php"><i class="fa fa-angle-right"></i> Param Guru Osho </a></li>
-                                        <li><a href="gallery.php"><i class="fa fa-angle-right"></i> Sufi Baba Shah Qalandar</a></li>
-                                        <li><a href="gallery.php"><i class="fa fa-angle-right"></i> Sadguru Osho Siddharth Aulia</a></li>
+                                        <li><a href="gallery.php?folderid=1586719665"><i class="fa fa-angle-right"></i> Sadguru Osho Siddharth Aulia</a></li>
+                                        <li><a href="gallery.php?folderid=1586712318"><i class="fa fa-angle-right"></i> Param Guru Osho </a></li>
+                                        <li><a href="gallery.php?folderid=1586719267"><i class="fa fa-angle-right"></i> Sufi Baba Shah Qalandar</a></li>
+                                        </a></li>
+                                        <li><a href="gallery.php?folderid=1586719351"><i class="fa fa-angle-right"></i>Guru Nanak Dev</a></li>
 
                                     </ul>
                                 </li>

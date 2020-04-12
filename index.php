@@ -144,7 +144,7 @@
 
         </div>
 
-        <div class="row">
+<!--         <div class="row">
             <div class="col-lg-12">
                 <div class="bg-r31">
                     <h1 class="event-text-h ">  <span class="color-red">  </span></h1>
@@ -272,7 +272,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
         <?php include_once 'public_html/includes/footerPage.php'; ?>
         <?php include_once 'public_html/includes/footerScript.php';?>
         <script type="text/javascript" src="assets/script/js/index.js"></script>
