@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/libs/jquery-ui.css" media="screen">
     <link rel="stylesheet" href="assets/css/libs/theme.css">
     <link rel="stylesheet" href="assets/css/libs/theme-animate.css">
+    <link rel="stylesheet" href="assets/css/libs/magnific-popup.css">
+    
 
     <link rel='stylesheet' href='assets/css/libs/SidebarNav.min.css' media='all' type='text/css'/>
     <link rel='stylesheet' href='assets/css/custom/sideBarContent.css' media='all' type='text/css'/>

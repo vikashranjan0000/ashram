@@ -12,3 +12,9 @@
     font-weight: 700;
     text-align: center;
 }
+
+.thumb-item-content1 p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height:120px
+}

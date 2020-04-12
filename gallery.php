@@ -18,11 +18,7 @@
                         <!-- Gradient overlay -->
                         <div class=" header-content">
                             <div class="main-title">
-                                <!-- Main-title -->
                                 <h1 class="bold mb-30 a-f ">Gallery  <span class="color"></span></h1>
-                                <!-- breadcrumbs -->
-
-                                <!-- breadcrumbs end -->
                             </div>
                         </div>
                     </div>
@@ -48,12 +44,12 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <div class="owl-carousel multi-slides" data-plugin-options='{"items": 4, "singleItem": false, "itemsDesktop": 4, "pagination": false, "navigation": true}'>
+                    <div class="owl-carousel multi-slides" data-big="3" data-lightbox="gallery" data-plugin-options='{"items": 4, "singleItem": false, "itemsDesktop": 4, "pagination": false, "navigation": true}'>
                         <div class="col-md-12">
                             <div class="thumb-item">
                                 <div class="thumb-item-img">
-                                    <a href="shop-product-detail-classic.html" class="btn-detail">
-                                        <img class="img-responsive" src="images/osho.1500.jpg" alt="">
+                                    <a href="images/osho.1500.jpg" data-lightbox="gallery-item"  class="btn-detail">
+                                        <img class="img-responsive" class="image_fade" src="images/osho.1500.jpg" alt="">
 
                                     </a>
 
@@ -64,8 +60,8 @@
                         <div class="col-md-12">
                             <div class="thumb-item">
                                 <div class="thumb-item-img">
-                                    <a href="shop-product-detail-classic.html" class="btn-detail">
-                                        <img class="img-responsive" src="images/osho.1500.jpg" alt="">
+                                    <a href="images/osho.1500.jpg" data-lightbox="gallery-item" class="btn-detail">
+                                        <img class="img-responsive" class="image_fade" src="images/osho.1500.jpg" alt="">
 
                                     </a>
 
@@ -76,8 +72,8 @@
                         <div class="col-md-12">
                             <div class="thumb-item">
                                 <div class="thumb-item-img">
-                                    <a href="shop-product-detail-classic.html" class="btn-detail">
-                                        <img class="img-responsive" src="images/osho.1500.jpg" alt="">
+                                    <a href="images/osho.1500.jpg" data-lightbox="gallery-item"  class="btn-detail">
+                                        <img class="img-responsive" class="image_fade" src="images/osho.1500.jpg" alt="">
 
                                     </a>
 
@@ -88,8 +84,8 @@
                         <div class="col-md-12">
                             <div class="thumb-item">
                                 <div class="thumb-item-img">
-                                    <a href="shop-product-detail-classic.html" class="btn-detail">
-                                        <img class="img-responsive" src="images/osho.1500.jpg" alt="">
+                                    <a href="images/osho.1500.jpg" data-lightbox="gallery-item"  class="btn-detail">
+                                        <img class="img-responsive" class="image_fade" src="images/osho.1500.jpg" alt="">
 
                                     </a>
 
@@ -100,8 +96,8 @@
                         <div class="col-md-12">
                             <div class="thumb-item">
                                 <div class="thumb-item-img">
-                                    <a href="shop-product-detail-classic.html" class="btn-detail">
-                                        <img class="img-responsive" src="images/osho.1500.jpg" alt="">
+                                    <a href="images/osho.1500.jpg" data-lightbox="gallery-item"  class="btn-detail">
+                                        <img class="img-responsive" class="image_fade" src="images/osho.1500.jpg" alt="">
 
                                     </a>
 

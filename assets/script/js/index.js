@@ -95,13 +95,13 @@ function renderProgramPlans(renderData){
 var exploredetails = { "en":{
 			"exploreTitle":"Welcome to ",
 			"exploreName":" Our Programs",
-			"masterLink":"programe.html",
+			"masterLink":"schedule.php",
 			"fottertext":"Explore More"
 		},
 		"hi":{
 			"exploreTitle":"आपका स्वागत है ",
 			"exploreName":" हमारे कार्यक्रमों",
-			"masterLink":"programe.html",
+			"masterLink":"schedule.php",
 			"fottertext":"और ज्यादा खोजें"
 		}	
 } 
@@ -124,14 +124,14 @@ var masterdetails = { "en":{
 
 var programdetails = [{ "en":{
 			"programTitle" : "Samadhi Programs",
-			"content" : "Based on Divine Sound, Light, Breathing, Energyy in which a seeker learns to live in harmony with the Divine Sound, Light, Breathing, Energyy",
+			"content" : "Osho often says, “Life itself is God”. As a musk deer runs away from itself in the search of the fragrance, we also run away from life in the search of God. In Oshodhara 'Life' is at the center of the first level of samadhi program.",
 			"fotterLink" : "programe.php?programid=1",
 			"masterLink" : "programe.php?programid=1",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "समाधि कार्यक्रम",
-			"content" : "दिव्य ध्वनि, प्रकाश, श्वास, ऊर्जा पर आधारित है जिसमें एक साधक दिव्य ध्वनि, प्रकाश, श्वास, ऊर्जा के साथ सद्भाव में रहना सीखता है",
+			"content" : "ओशो अक्सर कहते है,'जीवन ही ईश्वर है'। जैसे कस्तूरी मृग सुगंध की खोज में अपने आप से दूर भागता है, वैसे ही हम भी ईश्वर की खोज में जीवन से भाग जाते हैं। ओशोधारा में 'जीवन' समाधि कार्यक्रम के पहले स्तर के केंद्र में है।द्भाव में रहना सीखता है",
 			"fotterLink" : "programe.php?programid=1",
 			"masterLink" : "programe.php?programid=1",
 			"fottertext" :"अधिक जानिए"
@@ -139,14 +139,14 @@ var programdetails = [{ "en":{
 },
 { "en":{
 			"programTitle" : "Pragya Programs",
-			"content" : "For Happy Living in outside world Pragya programs have been designed and are being conducted on regular basis which are essential  at some point.",
+			"content" : "Mahajeevan is the higher life, which contains the cycle of births and deaths of a soul. It's the journey of a soul including all the births and deaths",
 			"fotterLink" : "programe.php?programid=100",
 			"masterLink" : "programe.php?programid=100",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "प्रज्ञा कार्यक्रम",
-			"content" : "बाहरी दुनिया में हैप्पी लिविंग के लिए प्रज्ञा कार्यक्रमों को डिजाइन किया गया है और नियमित रूप से संचालित किया जा रहा है जो कुछ बिंदु पर आवश्यक हैं।",
+			"content" : "महाजीवन उच्च जीवन है, जिसमें आत्मा के जन्म और मृत्यु का चक्र होता है। यह एक आत्मा की यात्रा है जिसमें सभी जन्म और मृत्यु शामिल हैंहै जो कुछ बिंदु पर आवश्यक हैं।",
 			"fotterLink" : "programe.php?programid=100",
 			"masterLink" : "programe.php?programid=100",
 			"fottertext" :"अधिक जानिए"
@@ -154,28 +154,28 @@ var programdetails = [{ "en":{
 } ,
 { "en":{
 			"programTitle" : "Health Programs",
-			"content" : "Based on modern developments in health management and ancient spiritual wisdom Kayakalpam programs are regularly conducted by Oshodhara.",
+			"content" : "‘Kaya’ means body and ‘kalp’ means transformation; collectively ‘kayakalp’ means transformation of the body. Kayakalpam is a six day health program specifically meant for reducing weight, calorie intake management and for bursting all our wrong notions around food and health.",
 			"fotterLink" : "programe.php?programid=60",
 			"masterLink" : "programe.php?programid=60",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "स्वास्थ्य कार्यक्रम",
-			"content" : "स्वास्थ्य प्रबंधन और प्राचीन आध्यात्मिक ज्ञान में आधुनिक विकास पर आधारित कायाकल्प कार्यक्रम नियमित रूप से ओशोधारा द्वारा संचालित किए जाते हैं।",
+			"content" : "'काया' का अर्थ है शरीर और 'कल्प' का अर्थ है परिवर्तन; सामूहिक रूप से 'कायाकल्प' का अर्थ है शरीर का परिवर्तन। कायाकल्प एक छह दिवसीय स्वास्थ्य कार्यक्रम है जो विशेष रूप से वजन कम करने, कैलोरी सेवन प्रबंधन और भोजन और स्वास्थ्य के आसपास हमारी सभी गलत धारणाओं को तोड़ने के लिए है।्वारा संचालित किए जाते हैं।",
 			"fotterLink" : "programe.php?programid=60",
 			"masterLink" : "programe.php?programid=60",
 			"fottertext" :"अधिक जानिए"
 		}	
 } ,{ "en":{
 			"programTitle" : "Sumiran Programs",
-			"content" : "This is conducted in total silence in which seekers learn to be grounded in Cosmic Bliss. Jeevan Pragya and Moksha Pragya before Anand Sumiran",
+			"content" : "A seeker embarks on the journey of Devotion as one enters Sumiran and later Pad Programs. One gets to experience the liveliness of space and consequently fall in love with it. 'Sans sans sumre Govind '- the Art of Divine remembrance is taught in these programs.",
 			"fotterLink" : "programe.php?programid=15",
 			"masterLink" : "programe.php?programid=15",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "सुमिरन कार्यक्रम",
-			"content" : "यह कुल मौन में आयोजित किया जाता है जिसमें साधक ब्रह्मांडीय आनंद में पारंगत होना सीखते हैं। आनंद सुमिरन से पहले जीवन प्रज्ञा और मोक्ष प्रज्ञा",
+			"content" : "एक साधक भक्ति की यात्रा पर निकलता है क्योंकि एक सुमिरन और बाद में पैड कार्यक्रमों में प्रवेश करता है। व्यक्ति को अंतरिक्ष की आजीविका का अनुभव होता है और फलस्वरूप उसके साथ प्यार हो जाता है। 'सन्स सेन्स गोविन्द' - इन कार्यक्रमों में दिव्य स्मरण की कला सिखाई जाती है।",
 			"fotterLink" : "programe.php?programid=15",
 			"masterLink" : "programe.php?programid=15",
 			"fottertext" :"अधिक जानिए"

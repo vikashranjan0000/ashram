@@ -97,7 +97,7 @@ function renderProgramData_PPG(renderData){
       for(var key in renderData){
         if(key < 6){
           if(renderData[key].programid <30){
-            renderData[key].programLevel = renderData[key].programLevel;
+            renderData[key].programLevel = renderData[key].programid;
           }else{
             renderData[key].programLevel = "Pragya"
           }
