@@ -138,3 +138,7 @@ div#masterAccordionHolder {
     background-color: white;
     margin: 15px;
 }
+
+.thumb-item-img.gallery {
+    height: 186px;
+}
