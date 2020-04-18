@@ -110,6 +110,7 @@ var masterdetails = { "en":{
 			"mastereTitle" : "Know the Masters",
 			"content" : "I Am A Threat - Certainly ! If you dont understand what I am saying, I am a threat, certainly. But if they understand what I am saying, they will rejoice, there is no threat. In fact, I want to make these people contemporaries.",
 			"fotterLink" : "master.html",
+			"imageName" : "sumiran.jpg",			
 			"masterLink" : "master.html",
 			"fottertext" :"Know More"
 		},
@@ -117,6 +118,7 @@ var masterdetails = { "en":{
 			"mastereTitle" : "मास्टर्स को जानें",
 			"content" : "आई एम ए थ्रेट - निश्चित रूप से! यदि आप यह नहीं समझते हैं कि मैं क्या कह रहा हूं, तो मैं एक खतरा हूं। लेकिन अगर वे समझते हैं कि मैं क्या कह रहा हूं, तो वे आनन्दित होंगे, कोई खतरा नहीं है। वास्तव में, मैं इन लोगों को समकालीन बनाना चाहता हूं",
 			"fotterLink" : "master.html",
+			"imageName" : "sumiran.jpg",
 			"masterLink" : "master.html",
 			"fottertext" :"अधिक जानिए"
 		}	
@@ -124,59 +126,67 @@ var masterdetails = { "en":{
 
 var programdetails = [{ "en":{
 			"programTitle" : "Samadhi Programs",
-			"content" : "Osho often says, “Life itself is God”. As a musk deer runs away from itself in the search of the fragrance, we also run away from life in the search of God. In Oshodhara 'Life' is at the center of the first level of samadhi program.",
+			"content" : "Give yourself a fresh start with our Samadhi programs where you can embark a beautiful spiritual journey by building a heightened state of awareness within you. It eventually leads you to the path of self-transformation.",
 			"fotterLink" : "programe.php?programid=1",
 			"masterLink" : "programe.php?programid=1",
+			"imageName" : "Samadhi.jpg",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "समाधि कार्यक्रम",
-			"content" : "ओशो अक्सर कहते है,'जीवन ही ईश्वर है'। जैसे कस्तूरी मृग सुगंध की खोज में अपने आप से दूर भागता है, वैसे ही हम भी ईश्वर की खोज में जीवन से भाग जाते हैं। ओशोधारा में 'जीवन' समाधि कार्यक्रम के पहले स्तर के केंद्र में है।द्भाव में रहना सीखता है",
+			"content" : "अपने आप को हमारे समाधि कार्यक्रमों से एक नई शुरुआत दें जहां आप एक सुंदर आध्यात्मिक अवतार ले सकते हैं आप के भीतर जागरूकता की एक बढ़ राज्य का निर्माण करके यात्रा। यह अंततः आपको मार्ग की ओर ले जाता है आत्म परिवर्तन का।",
 			"fotterLink" : "programe.php?programid=1",
 			"masterLink" : "programe.php?programid=1",
+			"imageName" : "Samadhi.jpg",
 			"fottertext" :"अधिक जानिए"
 		}	
 },
 { "en":{
 			"programTitle" : "Pragya Programs",
-			"content" : "Mahajeevan is the higher life, which contains the cycle of births and deaths of a soul. It's the journey of a soul including all the births and deaths",
+			"content" : "Reconnect with your roots and find the secret within you by joining our unique segment of pragya programs. These are specially designed to unlock your emotional blockage and enable you to enjoy the present.",
 			"fotterLink" : "programe.php?programid=100",
 			"masterLink" : "programe.php?programid=100",
+			"imageName" : "pragya.png",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "प्रज्ञा कार्यक्रम",
-			"content" : "महाजीवन उच्च जीवन है, जिसमें आत्मा के जन्म और मृत्यु का चक्र होता है। यह एक आत्मा की यात्रा है जिसमें सभी जन्म और मृत्यु शामिल हैंहै जो कुछ बिंदु पर आवश्यक हैं।",
+			"content" : "अपनी जड़ों के साथ फिर से कनेक्ट करें और प्रज्ञा के हमारे अनूठे सेगमेंट में शामिल होकर अपने भीतर के रहस्य को खोजें कार्यक्रम। ये विशेष रूप से आपके भावनात्मक रुकावट को अनलॉक करने और आपको आनंद लेने के लिए सक्षम करने के लिए डिज़ाइन किए गए हैं वर्तमान।",
 			"fotterLink" : "programe.php?programid=100",
 			"masterLink" : "programe.php?programid=100",
+			"imageName" : "pragya.png",
 			"fottertext" :"अधिक जानिए"
 		}	
 } ,
 { "en":{
 			"programTitle" : "Health Programs",
-			"content" : "‘Kaya’ means body and ‘kalp’ means transformation; collectively ‘kayakalp’ means transformation of the body. Kayakalpam is a six day health program specifically meant for reducing weight, calorie intake management and for bursting all our wrong notions around food and health.",
+			"content" : "Priorities your health first before it’s too late! Our health programs are designed to encourage a healthy lifestyle that leads to promote your well-being.",
 			"fotterLink" : "programe.php?programid=60",
 			"masterLink" : "programe.php?programid=60",
+			"imageName" : "health.jpg",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "स्वास्थ्य कार्यक्रम",
-			"content" : "'काया' का अर्थ है शरीर और 'कल्प' का अर्थ है परिवर्तन; सामूहिक रूप से 'कायाकल्प' का अर्थ है शरीर का परिवर्तन। कायाकल्प एक छह दिवसीय स्वास्थ्य कार्यक्रम है जो विशेष रूप से वजन कम करने, कैलोरी सेवन प्रबंधन और भोजन और स्वास्थ्य के आसपास हमारी सभी गलत धारणाओं को तोड़ने के लिए है।्वारा संचालित किए जाते हैं।",
+			"content" : "बहुत देर होने से पहले अपने स्वास्थ्य को प्राथमिकता दें! हमारे स्वास्थ्य कार्यक्रमों को प्रोत्साहित करने के लिए डिज़ाइन किया गया है स्वस्थ जीवन शैली जो आपकी भलाई को बढ़ावा देती है।",
 			"fotterLink" : "programe.php?programid=60",
+			"imageName" : "health.jpg",
 			"masterLink" : "programe.php?programid=60",
 			"fottertext" :"अधिक जानिए"
 		}	
 } ,{ "en":{
 			"programTitle" : "Sumiran Programs",
-			"content" : "A seeker embarks on the journey of Devotion as one enters Sumiran and later Pad Programs. One gets to experience the liveliness of space and consequently fall in love with it. 'Sans sans sumre Govind '- the Art of Divine remembrance is taught in these programs.",
+			"content" : "The higher level of spiritual journey starts with devotion, when one enters in this stage they gets to experience the liveliness of this universe that is way beyond to the enlightenment.",
 			"fotterLink" : "programe.php?programid=15",
+			"imageName" : "sumiran.jpg",
 			"masterLink" : "programe.php?programid=15",
 			"fottertext" :"Know More"
 		},
 		"hi":{
 			"programTitle" : "सुमिरन कार्यक्रम",
-			"content" : "एक साधक भक्ति की यात्रा पर निकलता है क्योंकि एक सुमिरन और बाद में पैड कार्यक्रमों में प्रवेश करता है। व्यक्ति को अंतरिक्ष की आजीविका का अनुभव होता है और फलस्वरूप उसके साथ प्यार हो जाता है। 'सन्स सेन्स गोविन्द' - इन कार्यक्रमों में दिव्य स्मरण की कला सिखाई जाती है।",
+			"content" : "आध्यात्मिक यात्रा का उच्चतर स्तर भक्ति से शुरू होता है, जब कोई इस अवस्था में प्रवेश करता है तो वे उससे जुड़ जाते हैं इस ब्रह्माण्ड की जीविका का अनुभव करें जो आत्मज्ञान से परे है।",
 			"fotterLink" : "programe.php?programid=15",
+			"imageName" : "sumiran.jpg",
 			"masterLink" : "programe.php?programid=15",
 			"fottertext" :"अधिक जानिए"
 		}	

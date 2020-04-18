@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="row programDetailsDiv">
-            <div class="col-md-3">
+            <div class="col-md-3 customTableView">
                 <div class="thumb-item1 ylbg">
 
                     <div id="programContentHolder0" class="thumb-item-content1">
@@ -62,7 +62,9 @@
                             <img src="images/1p.jpg" alt="">
 
                         </div>
-                        <p>Based on Divine Sound, Light, Breathing, Energyy in which a seeker learns to live in harmony with the Divine Sound, Light, Breathing, Energyy </p>
+                        <p>Give yourself a fresh start with our Samadhi programs where you can embark a beautiful spiritual
+                            journey by building a heightened state of awareness within you. It eventually leads you to the path
+                            of self-transformation.</p>
                         <br>
 
                         <div class="lefi-vedio-sp11 text-right">
@@ -72,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 customTableView">
                 <div class="thumb-item1 ylbg1">
 
                     <div id="programContentHolder1" class="thumb-item-content1">
@@ -85,7 +87,9 @@
                             <img src="images/1p.jpg" alt="">
 
                         </div>
-                        <p>For Happy Living in outside world Pragya programs have been designed and are being conducted on regular basis which are essential at some point.</p>
+                        <p>Reconnect with your roots and find the secret within you by joining our unique segment of pragya
+                            programs. These are specially designed to unlock your emotional blockage and enable you to enjoy
+                            the present.</p>
                         <br>
 
                         <div class="lefi-vedio-sp11 text-right">
@@ -95,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 customTableView">
                 <div class="thumb-item1 ylbg">
 
                     <div id="programContentHolder2" class="thumb-item-content1">
@@ -108,7 +112,8 @@
                             <img src="images/1p.jpg" alt="">
 
                         </div>
-                        <p>Based on modern developments in health management and ancient spiritual wisdom Kayakalpam programs are regularly conducted by Oshodhara.</p>
+                        <p>The higher level of spiritual journey starts with devotion, when one enters in this stage they gets to
+                            experience the liveliness of this universe that is way beyond to the enlightenment.</p>
                         <br>
 
                         <div class="lefi-vedio-sp11 text-right">
@@ -118,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 customTableView">
                 <div class="thumb-item1 ylbg1">
 
                     <div id="programContentHolder3" class="thumb-item-content1">
@@ -131,7 +136,8 @@
                             <img src="images/1p.jpg" alt="">
 
                         </div>
-                        <p>This is conducted in total silence in which seekers learn to be grounded in Cosmic Bliss. Jeevan Pragya and Moksha Pragya before Anand Sumiran </p>
+                        <p>Priorities your health first before it’s too late! Our health programs are designed to encourage a
+                            healthy lifestyle that leads to promote your well-being.</p>
                         <br>
 
                         <div class="lefi-vedio-sp11 text-right">
@@ -141,7 +147,26 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="row clearfix video-item">
+            <div class="positionAbs">
+                <div class="slider-caption slider-caption-center" style="position: relative;">
+                            <div data-animate="fadeInUp" class="fadeInUp animated">
+                                <h2 style="font-size: 42px;">Experience Oneness.</h2>
+                                <p style="line-height:28px;">Oshodhara is an existential, experiential mystery school under the guidance of Sadguru. It does not give you knowledge about meditation; it gives you the experience of meditation.</p>
+                                <a href="knowus.php" class="button button-border button-rounded button-white button-light button-large noleftmargin nobottommargin" style="margin-top: 20px;">Read More</a>
+                            </div>
+                        </div>
+            </div>
+            <div class="section dark parallax videoPlayer" style="">
+                <div class="video-wrapd" >            
+                    <video poster="assets/images/Other/explore.jpg" preload="none" loop="" autoplay="" muted="" class="videoHolder">
+                        <source src="assets/images/Other/explore.mp4" type="video/mp4">
+                        <source src="assets/images/Other/explore.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>  
+            <div class="hideBottomBorder"></div>          
         </div>
 
 <!--         <div class="row">

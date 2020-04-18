@@ -4,6 +4,6 @@ $(document).ready(function() {
   }else{
     $('#languageSelector').val(window.localStorage.languageCode);
   }
-  $('#faqHeaderView').addClass('active');
+  $('#contactUsHeaderView').addClass('active');
   loadCategory()
 });

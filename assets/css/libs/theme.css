@@ -5122,9 +5122,9 @@ textarea.form-control {
 
 /* line 15, ../sass/theme/gui/_featured-foot.scss */
 .contact-info-wrap, .newsletter {
-  padding-bottom: 22px;
-    padding-top: 43px;
-    padding-left: 70px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-left: 60px;
 }
 /* line 18, ../sass/theme/gui/_featured-foot.scss */
 .contact-info-wrap h2, .contact-info-wrap address, .contact-info-wrap p, .newsletter h2, .newsletter address, .newsletter p {

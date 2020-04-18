@@ -63,7 +63,7 @@
                         ?>                        
                         <div class="col-md-12">
                             <div class="thumb-item">
-                                <div class="thumb-item-img">
+                                <div class="thumb-item-img gallery">
                                     <a href="../cmsadmin/<?php echo $photoRow['path']; ?>" data-lightbox="gallery-item" class="btn-detail">
                                         <img class="img-responsive" src="../cmsadmin/<?php echo $photoRow['path']; ?>" alt="">
                                     </a>

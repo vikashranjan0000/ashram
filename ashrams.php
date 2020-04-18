@@ -30,7 +30,7 @@
         <div class="row">
             <div class="inner-slide-com-cot clearfix">
                 <div class="col-lg-6">
-                    <h1>Oshodhara Nanak Dham, Murthal</h1>
+                    <h2>Oshodhara Nanak Dham, Murthal</h2>
                     <p>Surrounded by legendry Yamuna River towards east, GT road towards west, Kurukshetra, the land of Gita, towards north and Delhi the capital of India, towards south, this Ashram with a gorgeous Buddha Hall, is Headquarter of Oshodhara and Osho Nanak Dhyan Mandir Trusts.</p>
                     <br>
 
@@ -79,7 +79,7 @@
 
                 </div>
                 <div class="col-lg-6">
-                    <h1>Oshodhara Anand Dham, Madhopur</h1>
+                    <h2>Oshodhara Anand Dham, Madhopur</h2>
                     <p>It is the Headquarter of International Institute of Self Realization (IISR) registered under Trust Act of India. Lying at an elevation of 450 meters, it provides gateway to the hills of Himachal Pradesh, Jammu and Kashmir. It gives a thrill to watch Ravi River emerging against background of ice capped peaks of Kashmir Himalayas.</p>
                     <br>
 
@@ -108,7 +108,7 @@
             <div class="tpp-orgl21"></div>
             <div class="inner-slide-com-cot clearfix">
                 <div class="col-lg-6">
-                    <h1>Oshodhara Sahajanand Dham, Karma</h1>
+                    <h2>Oshodhara Sahajanand Dham, Karma</h2>
                     <p>Being Birth Place of Osho Siddharthaji, this Dham is principally being developed as a regional center to meet the requiement of seekers from Bihar, Jharkhand , Eastern UP, MP, Chhattisgarh, West Bengal and Orissa.</p>
                     <br>
 

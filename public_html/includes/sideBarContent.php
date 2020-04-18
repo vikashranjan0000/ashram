@@ -349,8 +349,10 @@
                     <ul class="treeview-menu">
                         <li><a href="faq.php"><i class="fa fa-angle-right"></i> General Question</a></li>
                         <li><a href="guideline.php"><i class="fa fa-angle-right"></i> Reservation Guideline</a></li>
-                        <li><a href="contact.php"><i class="fa fa-angle-right"></i>Contact Us</a></li>
                     </ul>
+                </li>
+                <li id="contactUsHeaderView" class="treeview">
+                    <a href="contact.php"> <span>Contact Us</span></a>
                 </li>
 
             </ul>

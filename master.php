@@ -78,49 +78,6 @@
             </div>
         </div>
 
-        <div class="qt-mgr1">
-
-            <div class="owl-carousel main-slides first-slides" data-plugin-options='{"items": 1, "autoPlay": true, "navigation": true}'>
-                <div class="slide-item">
-                    <div class="qt-mgr">
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <blockquote>I Am A Threat - Certainly !<br> If you dont understand what I am saying, I am a threat, certainly. But if they understand what I am saying, they will rejoice, there is no threat. In fact, I want to make these people contemporaries. </blockquote>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="slide-item">
-                    <div class="qt-mgr">
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <blockquote>I Am A Threat - Certainly !<br> If you dont understand what I am saying, I am a threat, certainly. But if they understand what I am saying, they will rejoice, there is no threat. In fact, I want to make these people contemporaries. </blockquote>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="slide-item">
-                    <div class="qt-mgr">
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <blockquote>I Am A Threat - Certainly !<br> If you dont understand what I am saying, I am a threat, certainly. But if they understand what I am saying, they will rejoice, there is no threat. In fact, I want to make these people contemporaries. </blockquote>
-                            </div>
-                        </div>
-
-                        <div class="qt-mgr">
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
         <?php include_once 'public_html/includes/footerPage.php'; ?>
         <?php include_once 'public_html/includes/footerScript.php';?>
         <script src="assets/script/js/master.js"></script>
