@@ -14,12 +14,8 @@ class MailService {
     {
 		$this->mail->isSMTP();
 		$this->mail->SMTPDebug = 2;
-/*	
 		$this->mail->Host = 'localhost';
-		$this->mail->Port = 25;*/
-		
-		$this->mail->Host = 'smtp.gmail.com';
-		$this->mail->Port = 587;
+		$this->mail->Port = 25;
 
 		$this->mail->protocol = 'mail';
 		$this->mail->SMTPAuth = true;
@@ -32,14 +28,10 @@ class MailService {
 		    )
 		);
 
-		$this->mail->Username = 'vikashranjan0000@gmail.com';
-		$this->mail->Password = 'vivekJAY00.';
-		$this->mail->setFrom('vikashranjan0000@gmail.com', 'Vikash Kumar');
-		$this->mail->addReplyTo('vikashranjan0000@gmail.com', 'Vikash Kumar');
-/*		$this->mail->Username = 'booking@oshodhara.org.in';
+		$this->mail->Username = 'booking@oshodhara.org.in';
 		$this->mail->Password = 'vivekJAY00.';
 		$this->mail->setFrom('booking@oshodhara.org.in', 'Oshodhara');
-		$this->mail->addReplyTo('booking@oshodhara.org.in', 'Oshodhara');*/
+		$this->mail->addReplyTo('booking@oshodhara.org.in', 'Oshodhara');
 
 		$this->mail->Subject = $subject;
 		if($mailid){
