@@ -142,3 +142,30 @@ div#masterAccordionHolder {
 .thumb-item-img.gallery {
     height: 186px;
 }
+
+.contentWhiteBG .img-responsive {
+    /* display: block; */
+    /* max-width: 100%; */
+    /* max-width: 100%; */
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+}
+
+.owl-item .col-md-12 {
+    padding: 0px 10px;
+}
+
+
+.multi-slides .img-responsive {
+    /* display: block; */
+    /* max-width: 100%; */
+    /* max-width: 100%; */
+    object-fit: cover;
+    width: 230px;
+    height: 230px;
+}
+
+.owl-item .col-md-12 {
+    padding: 0px 10px;
+}

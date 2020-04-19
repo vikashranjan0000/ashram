@@ -71,7 +71,29 @@ class ScheduleService {
         return $response;
     }
 
-       function findbyId($programid)
+
+    function findOnline($reqData)
+    {
+        $query="SELECT * FROM tb_od_programschedule  WHERE `start_date` > now() and status = 4 ";
+        $queryparam = "";
+        $response=array();
+        $queryparam.=" ORDER BY start_date ASC";
+
+        $query.=$queryparam;
+        $result=mysqli_query($this->connection, $query);
+        if($result){            
+            while($row=mysqli_fetch_array($result))
+            {
+                $response[]=$row;
+            }
+        }else{
+            
+            $response =[];
+        }
+        return $response;
+    }
+
+    function findbyId($programid)
     {
         $query="SELECT * FROM tb_od_programschedule  WHERE  ";
         $queryparam = "";

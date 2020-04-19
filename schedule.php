@@ -84,7 +84,7 @@
                                         <option value="TR">Tripura</option>
                                         <option value="UK">Uttarakhand</option>
                                         <option value="UP">Uttar Pradesh</option>
-                                        <option value 3WB">West Bengal</option>
+                                        <option value="WB">West Bengal</option>
 
                                     </select>
                                 </div>
@@ -164,7 +164,6 @@
         
     </div>
     
-    <?php include_once 'public_html/includes/footerScript.php'; ?>
     <?php include_once 'public_html/includes/footerScript.php';?>
     <script src="assets/script/libs/jquery-ui.min.js"></script>
     <script src="assets/script/js/schedule.js"></script>

@@ -303,6 +303,11 @@
                 </li>
                 <li id="scheduleHeaderView" class="treeview">
                     <a href="schedule.php"> <span> Program Schedule</span></a>
+                    <ul class="treeview-menu">
+                        <li><a href="schedule.php"><i class="fa fa-angle-right"></i> Program Schedule</a></li>
+                        <li><a href="onlineSchedule.php"><i class="fa fa-angle-right"></i> Online Program</a></li>
+                    </ul>
+
                 </li>
                 <li id="centerHeaderView" class="treeview">
                     <a href="centers.php">Centers</span> 
