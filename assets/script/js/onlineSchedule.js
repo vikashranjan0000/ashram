@@ -147,7 +147,7 @@ function loadScheduleOnlineListData(searchdata) {
 function renderScheduleData(renderData) {
     var scheduleOnlineFragment = $(scheduleOnlineTemplates).find('#programScheduleOnlineContent').html();
     var bookNowModalfragment = $(scheduleOnlineTemplates).filter('#bookOnlineModalContent').html();
-    var scheduleModalfragment = $(headerTemplates).filter('#programScheduleModalContent').html();
+    var scheduleModalfragment = $(scheduleOnlineTemplates).filter('#progOnlineSchModalContent').html();
 
     var languageCode = window.localStorage.languageCode ? window.localStorage.languageCode : "en";
     $('#programOnlineScheduleHolder').empty();
@@ -225,8 +225,8 @@ function handlerBookProgram(id) {
             }
         });
     } else {
-        id
-        alert('Please upload payment receipt');
+        data.paymentRecipt ="No Files uploadedFileURLResponse";
+        callProgramBooking(data);
     }
 }
 

@@ -91,9 +91,9 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a href="#collapseOne" class="collapsed" data-parent="#accordion" data-toggle="collapse"><p>How can I register for a Program?</p></a> </h4>
+                                    <h4 class="panel-title"> <a href="#collapse5" class="collapsed" data-parent="#accordion" data-toggle="collapse"><p>How can I register for a Program?</p></a> </h4>
                                 </div>
-                                <div class="panel-collapse collapse" id="collapseOne">
+                                <div class="panel-collapse collapse" id="collapse5">
                                     <div class="panel-body">
 
                                         <p>For Samadhi Programs at Murthal, you can contact the Reception at the following numbers 9671400196/3 Alternatively</p>
@@ -102,9 +102,9 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a class="collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse"><p>What are the charges for joining Oshodhara?</p></a> </h4>
+                                    <h4 class="panel-title"> <a class="collapsed" href="#collapse6" data-parent="#accordion" data-toggle="collapse"><p>What are the charges for joining Oshodhara?</p></a> </h4>
                                 </div>
-                                <div class="panel-collapse collapse" id="collapseTwo">
+                                <div class="panel-collapse collapse" id="collapse6">
                                     <div class="panel-body">
 
                                         <p>There are no charges for joining Oshodahra. The charges need to be paid when you enrol for a program at Oshodhara. These charges are mainly for food and accomodation at the Ashram. The charges would depend on the type of Accomodation facility chosen by you.</p>
@@ -113,9 +113,9 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a class="collapsed" href="#collapseThree" data-parent="#accordion" data-toggle="collapse"><p>What is the duration of Oshodhara programs?</p></a> </h4>
+                                    <h4 class="panel-title"> <a class="collapsed" href="#collapse7" data-parent="#accordion" data-toggle="collapse"><p>What is the duration of Oshodhara programs?</p></a> </h4>
                                 </div>
-                                <div class="panel-collapse collapse" id="collapseThree">
+                                <div class="panel-collapse collapse" id="collapse7">
                                     <div class="panel-body">
 
                                         <p>Pragya/Wisdom Programs are for 3 days, Samadhi Programs are for 6 days. Dhyan Shivirs are normally of 1 day/ half day </p>
@@ -124,9 +124,9 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a class="collapsed" href="#collapse4" data-parent="#accordion" data-toggle="collapse"><p>Where can I stay?</p></a> </h4>
+                                    <h4 class="panel-title"> <a class="collapsed" href="#collapse8" data-parent="#accordion" data-toggle="collapse"><p>Where can I stay?</p></a> </h4>
                                 </div>
-                                <div class="panel-collapse collapse" id="collapse4">
+                                <div class="panel-collapse collapse" id="collapse8">
                                     <div class="panel-body">
 
                                         <p>All our ashrams have accommodation facilities ranging from dormitories to AC rooms. All 3 & 6 day programs are residential programs, where you have to stay in the ashram itself.</p>
@@ -135,12 +135,12 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a href="#collapseOne" class="collapsed" data-parent="#accordion" data-toggle="collapse"><p>
+                                    <h4 class="panel-title"> <a href="#collapse9" class="collapsed" data-parent="#accordion" data-toggle="collapse"><p>
                                         
                                     
                                     What about food?</p></a> </h4>
                                 </div>
-                                <div class="panel-collapse collapse" id="collapseOne">
+                                <div class="panel-collapse collapse" id="collapse9">
                                     <div class="panel-body">
 
                                         <p>Nutritious & healthy food will be available in all Ashrams including breakfast, lunch, dinner and tea.</p>
@@ -149,9 +149,9 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a class="collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse"><p>Can I join Oshodhara if I have already had a Guru?</p></a> </h4>
+                                    <h4 class="panel-title"> <a class="collapsed" href="#collapse10" data-parent="#accordion" data-toggle="collapse"><p>Can I join Oshodhara if I have already had a Guru?</p></a> </h4>
                                 </div>
-                                <div class="panel-collapse collapse" id="collapseTwo">
+                                <div class="panel-collapse collapse" id="collapse10">
                                     <div class="panel-body">
 
                                         <p>Yes, definitely. Oshodhara is by the Seekers, of the Seekers and for the Seekers. It does not practice or promote any specific Religion. It is open for seekers of all Religions and cults.</p>
@@ -161,9 +161,9 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a class="collapsed" href="#collapseThree" data-parent="#accordion" data-toggle="collapse"><p>Is there any program for children or teenagers?</p></a> </h4>
+                                    <h4 class="panel-title"> <a class="collapsed" href="#collapse11" data-parent="#accordion" data-toggle="collapse"><p>Is there any program for children or teenagers?</p></a> </h4>
                                 </div>
-                                <div class="panel-collapse collapse" id="collapseThree">
+                                <div class="panel-collapse collapse" id="collapse11">
                                     <div class="panel-body">
 
                                         <p>Yes, we have Bal Pragya program children whereas Kishore Pragya program is for teenagers and youngsters. Further details about these programs are available in our Programs section on the website.</p>
@@ -172,9 +172,9 @@
                             </div>
                             <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"> <a class="collapsed" href="#collapse4" data-parent="#accordion" data-toggle="collapse"><p>How can I ask a question to Master? When can I meet the Master?</p></a> </h4>
+                                    <h4 class="panel-title"> <a class="collapsed" href="#collapse12" data-parent="#accordion" data-toggle="collapse"><p>How can I ask a question to Master? When can I meet the Master?</p></a> </h4>
                                 </div>
-                                <div class="panel-collapse collapse" id="collapse4">
+                                <div class="panel-collapse collapse" id="collapse12">
                                     <div class="panel-body">
 
                                         <p>You can ask a Question to the Master when you attend the Program at the Murthal Ashram. The Master is available to personally answer your questions and queries on spiritualism in the Ashram. Participants can meet the Master by seeking an appointment in the Ashram.</p>

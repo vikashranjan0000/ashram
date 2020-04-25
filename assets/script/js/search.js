@@ -3,6 +3,13 @@
 $(document).ready(function() {
 	$('#mainSearchBtn').on('click', handlerMainSearch);
 	$('#mainSearchInput').on('change', handlerMainSearchReset);
+	$('#mainSearchInput').keypress(function(event){
+	    var keycode = (event.keyCode ? event.keyCode : event.which);
+	    if(keycode == '13'){
+	    	event.preventDefault();
+	       handlerMainSearch(); 
+	    }
+	});
 	handlerMainSearchReset();
 });
 
@@ -11,6 +18,19 @@ function handlerMainSearch(){
 	if(data.length > 0){
 		callSerachApi(data);
 	}
+}
+$('#searchMainDialog').on('click', function(e){
+  e.stopPropagation();
+});
+$(document.body).on('click', function(e){
+  	mainSearchReset()
+});
+
+function mainSearchReset(){
+	$('#mainSearchInput').val(''); 
+	$('#programListData').empty();    
+		$('#programCategoryHolder').empty();   	
+	$('#searchMainDialog').css("display", "none");
 }
 
 function handlerMainSearchReset(){

@@ -31,20 +31,20 @@
 
                             <div class="col-md-4">
                                 <span class="titleLabel">Program Category </span>
-                                <div class="controls">
+                                <div class="controls  controlarrow">
                                     <input name="programCate_SPG" id="programCate_SPG" placeholder="Program Category" required class="form-control">
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <span class="titleLabel">Program  </span>
-                                <div class="controls customInputDiv">
+                                <div class="controls customInputDiv controlarrow">
                                    <input name="programNameAuto_SPG" id="programNameAuto_SPG" placeholder="Program Name" required class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <span class="titleLabel">Venue  </span>
-                                <div class="controls customInputDiv">
+                                <div class="controls customInputDiv controlarrow">
                                     <input name="venueNameAuto_SPG" id="venueNameAuto_SPG" placeholder="Venue Name" required class="form-control">
                                 </div>
                             </div>

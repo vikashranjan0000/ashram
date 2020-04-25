@@ -28,7 +28,7 @@
                         <div class="form-group clearfix scheduleFormGroup">
                             <div class="col-md-4">
                                 <span class="titleLabel">Program  </span>
-                                <div class="controls customInputDiv">
+                                <div class="controls customInputDiv controlarrow">
                                    <input name="programNameOnline" id="programNameOnline" placeholder="Program Name" required class="form-control">
                                 </div>
                             </div>

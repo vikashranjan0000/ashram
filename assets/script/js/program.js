@@ -176,8 +176,8 @@ function handlerProBookProgram(id) {
             }
         });
     } else {
-        id
-        alert('Please upload payment receipt');
+        data.paymentRecipt = uploadedFileURLResponse;
+        callProgramBooking(data);
     }
 }
 
