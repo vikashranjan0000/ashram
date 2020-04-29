@@ -62,8 +62,8 @@ class MailService {
 		$mailid        		= array_key_exists('emailId', $data) ? $data['emailId']:"";
 		$subject            = $programName." Booking Confirmation for Ref. No. :".$bookingId;
 
-		$officeMailid  		="vikashranjan0000@gmail.com";
-		$bodyTampate = "Dear Team,<br /> Requesting you to address the booking from ".$UserName ." to ".$programName.". <br />Please check booking and payment receipt attched.<br />Booking Ref No. :".$bookingId ."<br />User name  :".$UserName .".<br />Phone No. :".$phoneNumber .".<br />Enmailid :".$EmailId ."<br />Dairy Number :".$DairyNumber ."<br />Start Date:".$StartDate ."<br />Program Name :".$programName ."<br />Payment receipt :".$PaymentDocs."<br />Program Location :".$programLocation;
+		$officeMailid  		="booking@oshodhara.org.in";
+		$bodyTampate = "Dear Team,<br /> Requesting you to address the booking from ".$UserName ." to ".$programName.". <br />Please check booking and payment receipt attched.<br />Booking Ref No. :".$bookingId ."<br />User name  :".$UserName .".<br />Phone No. :".$phoneNumber .".<br />Emailid :".$EmailId ."<br />Dairy Number :".$DairyNumber ."<br />Start Date:".$StartDate ."<br />Program Name :".$programName ."<br />Payment receipt :".$PaymentDocs."<br />Program Location :".$programLocation;
 		return $this->processRequest($officeMailid, $bodyTampate, $subject, $UserName);
 	}
 
@@ -72,7 +72,7 @@ class MailService {
 		$UserName           = array_key_exists('userName', $data)? $data['userName']:"";
 		$programName        = array_key_exists('programName', $data) ? $data['programName']:"";
 		$mailid        		= array_key_exists('emailId', $data) ? $data['emailId']:"";
-		$Subject            = "Booking Confirmation Mail";
+		$subject            = "Booking Confirmation Mail";
 		$bodyTampate = "Dear ".$UserName.",<br /> Thank you for booking to ".$programName.". Your booking and payment receipt has been received.<br />Please use the booking reference number :".$bookingId ." while contacting to reception.<br /> <br /> You can query with us on this email: booking.query@oshodhara.org.in. <br /> Kind Regards, <br /> Oshodhara <br />Oshodhara Nanak Dham, Murthal <br /> N.H.1, 50th Milestone, GT Road, <br /> Murthal Sonepat, <br /> Haryana - 131027 (India) <br /> Mobile No.- 09671400196/3 <br />  Land line No. - 0130-2483911/12 <br /> Email: info@oshodhara.org.in <br />";
 		return $this->processRequest($mailid, $bodyTampate, $subject, $UserName);
 	}

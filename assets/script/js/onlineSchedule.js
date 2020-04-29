@@ -162,14 +162,14 @@ function renderScheduleData(renderData) {
         $('#programOnlineScheduleHolder').append(Mustache.render(scheduleOnlineFragment, renderData[key]));
         $('#myOnlineModal').append(Mustache.render(scheduleModalfragment, renderData[key]));
         $('#proOnlineBookingHolder').append(Mustache.render(bookNowModalfragment, renderData[key]));
-        $('#bookNow_' + renderData[key].programid + "_" + renderData[key].scheduleid).off('click');
-        $('#bookNow_' + renderData[key].programid + "_" + renderData[key].scheduleid).on('click', handlerBookProgram);
+        $('#bookOnlineButton_' + renderData[key].programid + "_" + renderData[key].scheduleid).off('click');
+        $('#bookOnlineButton_' + renderData[key].programid + "_" + renderData[key].scheduleid).on('click', handlerBookProgram);
     }
 }
 
 function handlerBookProgram(id) {
     var id = this.id;
-    id = id.replace("bookNow_", "")
+    id = id.replace("bookOnlineButton_", "")
     var data = {};
     var proAndSchId = id.split("_");
     data.programId = proAndSchId[0];
@@ -218,7 +218,7 @@ function handlerBookProgram(id) {
                     alert(uploadedFileURLResponse); // display response from the PHP script, if any
                 } else {
                     data.paymentRecipt = uploadedFileURLResponse;
-                    $('#bookNowModal_' + id).modal('hide');
+                    $('#bookOnlineModal_' + id).modal('hide');
                     $('.modal-backdrop').remove();
                     callProgramBooking(data);
                 }
@@ -226,6 +226,8 @@ function handlerBookProgram(id) {
         });
     } else {
         data.paymentRecipt ="No Files uploadedFileURLResponse";
+        $('#bookOnlineModal_' + id).modal('hide');
+        $('.modal-backdrop').remove();
         callProgramBooking(data);
     }
 }

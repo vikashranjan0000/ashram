@@ -64,7 +64,7 @@ class FileUploadController {
                 $mytime=gettimeofday();
                 $timeData = "$mytime[sec].$mytime[usec]";
     		    $name = "ProgramReceipt" . $timeData .'.'.$extension;
-    		    $location = '../../uploads/'.$name;
+    		    $location = '/home/osho/public_html/Oshodhara/uploads/'.$name;
     		    move_uploaded_file($_FILES['file']['tmp_name'], $location);
     		    return 'http://oshodhara.org.in/'.$name;        
             }else{

@@ -109,7 +109,8 @@ select#languageSelector {
 
 .titleContent {
     vertical-align: middle;
-    padding: 34px 25px;
+    padding: 30px 25px;
+    display: inline-block;
     heigh: 80px;
 }
 
@@ -168,4 +169,11 @@ div#masterAccordionHolder {
 
 .owl-item .col-md-12 {
     padding: 0px 10px;
+}
+
+
+.call-action2 {background-color: white;margin: 15px 0px;}
+
+.titleContent h1 {
+    margin: auto;
 }

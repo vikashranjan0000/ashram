@@ -306,6 +306,7 @@
                     <ul class="treeview-menu">
                         <li><a href="schedule.php"><i class="fa fa-angle-right"></i> Program Schedule</a></li>
                         <li><a href="onlineSchedule.php"><i class="fa fa-angle-right"></i> Online Program</a></li>
+                        <li><a href="programDesc.php"><i class="fa fa-angle-right"></i> Online Program Details</a></li>
                     </ul>
 
                 </li>
@@ -333,9 +334,16 @@
                                         <li><a href="gallery.php?folderid=1586719665"><i class="fa fa-angle-right"></i> Sadguru Osho Siddharth Aulia</a></li>
                                         <li><a href="gallery.php?folderid=1586712318"><i class="fa fa-angle-right"></i> Param Guru Osho </a></li>
                                         <li><a href="gallery.php?folderid=1586719267"><i class="fa fa-angle-right"></i> Sufi Baba Shah Qalandar</a></li>
-                                        </a></li>
                                         <li><a href="gallery.php?folderid=1586719351"><i class="fa fa-angle-right"></i>Guru Nanak Dev</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="gallery.php"> <i class="fa fa-angle-right pull-left"></i> Ashram </a>
 
+                                    <ul class="treeview-menu">
+                                        <li><a href="gallery.php?folderid=1587894961"><i class="fa fa-angle-right"></i> Oshodhara Nanak Dham</a></li>
+                                        <li><a href="gallery.php?folderid=1587916779"><i class="fa fa-angle-right"></i> Oshodhara Anand Dham</a></li>
+                                        <li><a href="gallery.php?folderid=1587917258"><i class="fa fa-angle-right"></i> Oshodhara Sahajanand Dham</a></li>
                                     </ul>
                                 </li>
                             </ul>

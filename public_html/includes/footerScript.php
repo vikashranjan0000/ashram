@@ -1,9 +1,12 @@
 
+    <script type='text/javascript' src='assets/script/libs/jquery-migrate.min.js'></script>
     <script type="text/javascript" src="vendor/jquery.validation/jquery.validation.js"></script>
-    <script type="text/javascript" src="vendor/owlcarousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="assets/script/libs/owl.carousel.min.js"></script>
     <script type="text/javascript" src="vendor/flexslider/jquery.flexslider-min.js"></script>
     <script type="text/javascript" src="vendor/countdown/countdown.min.js"></script>
     <script type="text/javascript" src="vendor/chosen/chosen.jquery.min.js"></script>
+
+
     <script type="text/javascript" src="vendor/pricefilter/jquery.pricefilter.js"></script>
     <script type="text/javascript" src="vendor/masonry/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="vendor/masonry/masonry.pkgd.min.js"></script>

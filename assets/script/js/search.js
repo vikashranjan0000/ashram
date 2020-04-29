@@ -10,6 +10,12 @@ $(document).ready(function() {
 	       handlerMainSearch(); 
 	    }
 	});
+	$('#searchMainDialog').on('click', function(e){
+		  e.stopPropagation();
+		});
+		$('#content').on('click', function(e){
+		  	mainSearchReset()
+		});
 	handlerMainSearchReset();
 });
 
@@ -19,12 +25,7 @@ function handlerMainSearch(){
 		callSerachApi(data);
 	}
 }
-$('#searchMainDialog').on('click', function(e){
-  e.stopPropagation();
-});
-$(document.body).on('click', function(e){
-  	mainSearchReset()
-});
+
 
 function mainSearchReset(){
 	$('#mainSearchInput').val(''); 

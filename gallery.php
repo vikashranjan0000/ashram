@@ -29,7 +29,14 @@
             <div class="row">
                 <div class="col-md-9 programTitleDiv">
                     <div class="titleContent">
-                        <h1><span class="text-colortwo">Osho </span> </h1>
+                        <?php                             
+                            $headerName = array('1586719665' => 'Sadguru Osho Siddharth Aulia', '1586712318' => 'Param Guru Osho','1586719267' => 'Sufi Baba Shah Qalandar', '1586719351' => 'Guru Nanak Dev','1587894961' => 'Oshodhara Nanak Dham', '1587916779' => 'Oshodhara Anand Dham','1587917258' => 'Oshodhara Sahajanand Dham');
+                            $folderid = $_REQUEST['folderid'];                                  
+
+                                             
+                        ?>  
+                        
+                    <h1><span class="text-colortwo"><?php echo $headerName[$folderid]; ?> </span> </h1>
                     </div>
                 </div>
             </div>
