@@ -51,7 +51,7 @@
     max-height: 180px;
     z-index: 10;
     padding: 10px 0px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .row.clearfix.video-item {
@@ -207,7 +207,7 @@
 }
 
 img.iamgeHolder {
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 span.customKnowusButton {
@@ -222,3 +222,12 @@ span.customKnowusButton {
 .col-lg-12.newsletter.ft-bg-bl.text-center {
     padding: 10px;
 }
+
+#indexExploreMore .large-button {
+    margin: auto;
+    margin: 22px 30px;
+    vertical-align: middle;
+}
+
+
+div#indexExploreMore {margin-top: 10px;margin-bottom: 30px;}

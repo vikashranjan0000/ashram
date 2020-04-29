@@ -1,5 +1,5 @@
 <div id="categoryContent">	
-    <li>
+    <li id="programCateView_{{categoryid}}">
         <a href="programe.php">{{categoryname}}<i class="fa fa-angle-right pull-left"></i></a>
         <ul id="programListHolder_{{categoryid}}" class="treeview-menu">            
 
@@ -8,7 +8,7 @@
 </div>
 
 <div id="programListContent">
-    <li><a href="programe.php?programid={{programid}}"><i class="fa fa-angle-right"></i>
+    <li id=programNameView_{{programid}}_{{categoryid}}><a href="programe.php?programIndex={{programid}}&categoryIndex={{categoryid}}"><i class="fa fa-angle-right"></i>
         {{#customlabel}}
         {{customCounter}}. 
         {{/customlabel}} 

@@ -31,8 +31,8 @@
             <div class="inner-slide-com-cot clearfix">
                 <div class="col-lg-6">
                     <h2>Oshodhara Nanak Dham, Murthal</h2>
-					<h3>“Agar firdaus bar roo-e zameen ast,<br>
-						Hameen ast-o hameen ast-o hameen ast”
+					<h3>"गर फ़िरदौस बर रूये ज़मी अस्त ,<br>
+                        हमी अस्तो हमी अस्तो हमी अस्त" 
 					</h3>
                     <p>“If there is a paradise on earth, it is this, it is this, it is this”.</p>
                     
@@ -43,7 +43,7 @@
 					<p>All 28 Samadhi Programs and 21 Pragya Programs are conducted at this Ashram in the divine presence of Sadguru.</p>
 					</br></br>
 
-                    <a href="#" class="large-button">
+                    <a  href="gallery.php?folderid=1587894961" class="large-button">
 
                         <span>View Gallery</span>
 
@@ -79,7 +79,7 @@
                     <p>Regular One Day Meditation Camps are conducted at the Madhopur Ashram along with Samadhis from Level 1( Dhyan Samadhi) to Level 9(Gyan Samadhi) by Senior Acharyas.</p>
                     <p>Sadguru himself enjoys being at this Ashram and hence travels regularly to this place for conducting Samadhi Programs. </p>
 					</br></br>
-                    <a href="#" class="large-button">
+                    <a  href="gallery.php?folderid=1587916779" class="large-button">
 
                         <span>View Gallery</span>
 
@@ -93,15 +93,15 @@
             <div class="inner-slide-com-cot clearfix">
                 <div class="col-lg-6">
                     <h2>Oshodhara Sahajanand Dham, Karma</h2>
-                    <p>Oshodhara Sahajanand Dham Ashram has a special importance as it is the birth place of  Sadguru Osho Siddharthji.
-This Dham is principally being developed as a regional center to meet the requirement of seekers from Bihar, Jharkhand , Eastern UP, MP, Chhattisgarh, West Bengal and Orissa.
-</p>
+                        <p>Oshodhara Sahajanand Dham Ashram has a special importance as it is the birth place of  Sadguru Osho Siddharthji.
+                        This Dham is principally being developed as a regional center to meet the requirement of seekers from Bihar, Jharkhand , Eastern UP, MP, Chhattisgarh, West Bengal and Orissa.
+                    </p>
                     <p>It is approachable by road from Arah (50 Km), Patna (125 Km) and Banaras (150 Km). It is about 7 Km North of Bikram Ganj, the nearest railway station.</p>
 					<p>Samadhis from Level 1( Dhyan Samadhi) to Level 9(Gyan Samadhi) are conducted by Senior Acharyas at the Ashram.</p>
 					<p>Sadguru travels frequently to this Ashram too to conduct Samadhi programs. During this time, it's time for Celebration every evening as Sadguru conducts satsang for all and addresses the questions of the seekers and the nearby villagers who come over there.</p>
 					<p>Oshodhara’s first  Trivir Public School  is established close to the Karma Dham.</p>
 					</br></br>
-                        <a href="#" class="large-button">
+                        <a  href="gallery.php?folderid=1587917258" class="large-button">
 
                             <span>View Gallery</span>
 

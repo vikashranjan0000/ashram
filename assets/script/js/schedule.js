@@ -3,6 +3,8 @@ var scheduleTemplates = "";
 
 $(document).ready(function() {
     $('#scheduleHeaderView').addClass('active');
+    $('#scheduleListView').addClass('active');
+    
     loadCategory()
     if (!window.localStorage.languageCode) {
         window.localStorage.languageCode = 'en';

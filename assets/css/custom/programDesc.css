@@ -118,3 +118,5 @@ div.required-field span::after {
     height: 20px;
     width: 20px;
 }
+
+.form-mgr.clearfix.searchHolder p {text-align: justify;}

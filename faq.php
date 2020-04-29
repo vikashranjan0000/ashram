@@ -35,7 +35,7 @@
                     <div class="col-md-12  ">
 
                         <div id="accordion" class="panel-group">
-                       <div class="panel panel-default pgl-panel">
+                            <div class="panel panel-default pgl-panel">
                                 <div class="panel-heading">
                                     <h4 class="panel-title"> <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse"><p>
                                         
