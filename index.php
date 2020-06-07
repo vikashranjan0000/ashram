@@ -54,7 +54,7 @@
 
                     <div id="programContentHolder0" class="thumb-item-content1">
                         <div class="sp11">
-                            <h3><a href="programe.php?programid=1">Samadhi Programs</a></h3></div>
+                            <h3><a href="programe.php?programIndex=1">Samadhi Programs</a></h3></div>
                         <div class="thumb-item-img text-center">
 
                             <img class="iamgeHolder" src="images/Samadhi.jpg" alt="">
@@ -62,7 +62,7 @@
                         </div>
                         <p>Give yourself a fresh start with our Samadhi programs where you can embark a beautiful spiritual journey by building a heightened state of awareness within you. It eventually leads you to the path of self-transformation. </p>
                         <div ccontentlass="lefi-vedio-sp11 text-right">
-                            <span class="customKnowusButton"><a href="programe.php?programid=1">Know More</a> </span>
+                            <span class="customKnowusButton"><a href="programe.php?programIndex=1">Know More</a> </span>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
 
                     <div id="programContentHolder1" class="thumb-item-content1">
                         <div class="sp11">
-                            <h3><a href="programe.php?programid=100">Pragya Programs</a></h3></div>
+                            <h3><a href="programe.php?programIndex=100">Pragya Programs</a></h3></div>
                         <div class="thumb-item-img text-center">
 
                             <img class="iamgeHolder" src="images/pragya.png" alt="">
@@ -80,7 +80,7 @@
                         </div>
                         <p>Reconnect with your roots and find the secret within you by joining our unique segment of pragya programs. These are specially designed to unlock your emotional blockage and enable you to enjoy the present. </p>
                         <div ccontentlass="lefi-vedio-sp11 text-right">
-                            <span class="customKnowusButton"><a href="programe.php?programid=100">Know More</a> </span>
+                            <span class="customKnowusButton"><a href="programe.php?programIndex=100">Know More</a> </span>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
 
                     <div id="programContentHolder2" class="thumb-item-content1">
                         <div class="sp11">
-                            <h3><a href="programe.php?programid=60">Health Programs</a></h3></div>
+                            <h3><a href="programe.php?programIndex=60">Health Programs</a></h3></div>
                         <div class="thumb-item-img text-center">
 
                             <img class="iamgeHolder" src="images/health.jpg" alt="">
@@ -98,7 +98,7 @@
                         </div>
                         <p>Priorities your health first before it’s too late! Our health programs are designed to encourage a healthy lifestyle that leads to promote your well-being. </p>
                         <div ccontentlass="lefi-vedio-sp11 text-right">
-                            <span class="customKnowusButton"><a href="programe.php?programid=60">Know More</a> </span>
+                            <span class="customKnowusButton"><a href="programe.php?programIndex=60">Know More</a> </span>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
 
                     <div id="programContentHolder3" class="thumb-item-content1">
                         <div class="sp11">
-                            <h3><a href="programe.php?programid=15">Sumiran Programs</a></h3></div>
+                            <h3><a href="programe.php?programIndex=15">Sumiran Programs</a></h3></div>
                         <div class="thumb-item-img text-center">
 
                             <img class="iamgeHolder" src="images/sumiran.jpg" alt="">
@@ -116,7 +116,7 @@
                         </div>
                         <p>The higher level of spiritual journey starts with devotion, when one enters in this stage they gets to experience the liveliness of this universe that is way beyond to the enlightenment. </p>
                         <div ccontentlass="lefi-vedio-sp11 text-right">
-                            <span class="customKnowusButton"><a href="programe.php?programid=15">Know More</a> </span>
+                            <span class="customKnowusButton"><a href="programe.php?programIndex=15">Know More</a> </span>
                         </div>
                     </div>
                 </div>

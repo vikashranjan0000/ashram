@@ -85,7 +85,7 @@
                                             <p>                                                
  
                                             2. Yearly SMS service is also available. To avail it, Please contact - 9671400196
-                                            </p>
+                                            </p>z
                                     </div>
                                 </div>
                             </div>

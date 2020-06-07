@@ -66,7 +66,7 @@ class FileUploadController {
     		    $name = "ProgramReceipt" . $timeData .'.'.$extension;
     		    $location = '/home/osho/public_html/Oshodhara/uploads/'.$name;
     		    move_uploaded_file($_FILES['file']['tmp_name'], $location);
-    		    return 'http://oshodhara.org.in/'.$name;        
+    		    return 'http://oshodhara.org.in/upload/'.$name;        
             }else{
                 return "File type Not allowed";
             } 

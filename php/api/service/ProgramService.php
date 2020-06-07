@@ -27,7 +27,7 @@ class ProgramService {
         {
             $query.=" WHERE programid=".$id." LIMIT 1";
         }
-        $response;
+        $response =array();
         $result=mysqli_query($this->connection, $query);
         if($result){            
             while($row=mysqli_fetch_array($result))

@@ -32,7 +32,7 @@ class ScheduleController {
     public function processRequest()
     {
         switch ($this->requestMethod) {
-        case 'GET':
+            case 'GET':
                 $data = json_decode(file_get_contents('php://input'), TRUE);
                 if (!empty($_GET["search"]=="online")) {
                     $response = $this->getScheduleOnlineSearch(($_GET));

@@ -74,7 +74,7 @@ class ScheduleService {
 
     function findOnline($reqData)
     {
-        $query="SELECT * FROM tb_od_programschedule  WHERE `start_date` > now() and status = 4 ";
+        $query="SELECT * FROM tb_od_programschedule  WHERE `start_date` > now() and programMode = 'Online' ";
         $queryparam = "";
         $response=array();
         $queryparam.=" ORDER BY start_date ASC";

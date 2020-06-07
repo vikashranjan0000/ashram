@@ -27,9 +27,9 @@ function eventListenerOnline() {
 
 function programAutoOnlineComplete() {
     $(function() {
-        $("#programNameAuto_SPG").autocomplete({
+        $("#programNameOnline").autocomplete({
             source: function(request, response) {
-                $("#programNameAuto_SPG").attr("programid", '');
+                $("#programNameOnline").attr("programid", '');
                 if (window.localStorage.catProResponse) {
                     var programAC = JSON.parse(window.localStorage.catProResponse);
                     programAC = JSON.parse(programAC);
@@ -48,8 +48,8 @@ function programAutoOnlineComplete() {
                 }
             },
             select: function(event, ui) {
-                $("#programNameAuto_SPG").val(ui.item.label); //ui.item is your object from the array
-                $("#programNameAuto_SPG").attr("programid", ui.item.value); //ui.item is your object from the array
+                $("#programNameOnline").val(ui.item.label); //ui.item is your object from the array
+                $("#programNameOnline").attr("programid", ui.item.value); //ui.item is your object from the array
                 return false;
             }
 
@@ -58,13 +58,13 @@ function programAutoOnlineComplete() {
 }
 
 function setProgramName() {
-	if(window.localStorage.catProResponse){		
+/*	if(window.localStorage.catProResponse){		
 	    var programName_SPG = JSON.parse(window.localStorage.catProResponse);
 	    programName_SPG = JSON.parse(programName_SPG);
 	    for (var pronameAutokey in programName_SPG) {
 	        planProgramData[programName_SPG[pronameAutokey].programid] = programName_SPG[pronameAutokey];
 	    }
-	}
+	}*/
 }
 
 function setLangaugeCode() {
@@ -82,20 +82,17 @@ function resetSearchOnlineField() {
 
 
 function handlerSearchOnlineSchedule() {
-    var serchInput = {}
-    serchInput.categoryid = $('#programCate_SPG').attr("categoryid");
-    serchInput.programid = $('#programNameAuto_SPG').attr("programid");
-    serchInput.venueId = $('#venueNameAuto_SPG').attr("venueId");
-    serchInput.startDate = $('#startDate_SPG').val();
+    var serchInput = {} 
+    serchInput.programid = $('#programNameOnline').attr("programid");
+    serchInput.startDate = $('#startDate_Online').val();
     if (serchInput.startDate) {
         serchInput.startDate = moment(serchInput.startDate).format('YYYY-MM-DD');
     }
-    serchInput.endDate = $('#endDate_SPG').val();
+    serchInput.endDate = $('#endDate_Online').val();
     if (serchInput.endDate) {
         serchInput.endDate = moment(serchInput.endDate).format('YYYY-MM-DD');
     }
     loadScheduleOnlineListData(serchInput);
-
 }
 
 function callScheduleFragment() {
@@ -104,15 +101,10 @@ function callScheduleFragment() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             scheduleOnlineTemplates = xhttp.responseText;
-            loadInitialOnlineData();
         }
     };
-    xhttp.open("GET", "public_html/fragments/scheduleFragment.html", true);
+    xhttp.open("GET", "public_html/fragments/onlineScheduleFragment.html", true);
     xhttp.send();
-}
-
-function loadInitialOnlineData() {
-    loadScheduleOnlineListData();
 }
 
 function loadScheduleOnlineListData(searchdata) {
@@ -124,15 +116,19 @@ function loadScheduleOnlineListData(searchdata) {
                 fd.append(key, searchdata[key]);
             }
         }
+        fd.append("searchView", "OnlineSearch");
+    }else{
+        fd.append("searchView", "Online");
     }
-    fd.append("search", "online");
 
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var response = xhttp.responseText;
+            response = response.replace(/0000-00-00/gi, "")
+            response = response.replace(/0000-00-00/gi, "")
             var scheduleData = JSON.parse(response);
             if (scheduleData) {
-                renderScheduleData(scheduleData);
+                renderOnlineScheduleData(scheduleData);
             } else {
 
             }
@@ -140,13 +136,13 @@ function loadScheduleOnlineListData(searchdata) {
 
         }
     };
-    xhttp.open("POST", "php/api/controller/ScheduleController.php", true);
+    xhttp.open("POST", "php/api/controller/ScheduleViewController.php", true);
     xhttp.send(fd);
 }
 
 
-function renderScheduleData(renderData) {
-    var scheduleOnlineFragment = $(scheduleOnlineTemplates).find('#programScheduleOnlineContent').html();
+function renderOnlineScheduleData(renderData) {
+    var scheduleOnlineFragment = $(scheduleOnlineTemplates).filter('#programScheduleOnlineContent').html();
     var bookNowModalfragment = $(scheduleOnlineTemplates).filter('#bookOnlineModalContent').html();
     var scheduleModalfragment = $(scheduleOnlineTemplates).filter('#progOnlineSchModalContent').html();
 
@@ -155,17 +151,37 @@ function renderScheduleData(renderData) {
     $('#myOnlineModal').empty();
     $('#proOnlineBookingHolder').empty();
     for (var key in renderData) {
-        renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM');
-        renderData[key].bookingStart_date = moment(renderData[key].start_date).format('DD MMM, YYYY');
-        renderData[key].end_date = moment(renderData[key].end_date).format('DD MMM, YYYY');
-        renderData[key].programData = planProgramData[renderData[key].programid]
-        renderData[key].locationData = scheuleLocationData[renderData[key].dhyankendraid]      
+        if(renderData[key].session3 && renderData[key].session3.length >3 ){
+            renderData[key].isSamadhi = "Samadhi";
+            renderData[key].bookingStart_date2 = moment(renderData[key].start_date2).format('DD MMM');
+            renderData[key].start_date2 = moment(renderData[key].start_date2).format('DD MMM, YYYY');
+            renderData[key].end_date2 = moment(renderData[key].end_date2).format('DD MMM, YYYY');    
+        }        
+        renderData[key].bookingStart_date = moment(renderData[key].start_date).format('DD MMM');
+        renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM, YYYY');
+        renderData[key].end_date = moment(renderData[key].end_date).format('DD MMM, YYYY');    
         $('#programOnlineScheduleHolder').append(Mustache.render(scheduleOnlineFragment, renderData[key]));
         $('#myOnlineModal').append(Mustache.render(scheduleModalfragment, renderData[key]));
         $('#proOnlineBookingHolder').append(Mustache.render(bookNowModalfragment, renderData[key]));
         $('#bookOnlineButton_' + renderData[key].programid + "_" + renderData[key].scheduleid).off('click');
         $('#bookOnlineButton_' + renderData[key].programid + "_" + renderData[key].scheduleid).on('click', handlerBookProgram);
     }
+}
+
+function handlerClearBookingForm(id){
+    $('#bookNow_programName_' + id).val()
+    $('#bookNow_programLocation_' + id).val()
+    $('#bookNow_StartDate_' + id).val()
+    $('#bookNow_EndDate_' + id).val()
+    $('#bookNow_userName_' + id).val()
+    $('#bookNow_dairyNumber_' + id).val()
+    $('#bookNow_userState' + id).val()
+    $('#bookNow_Comments_' + id).val()
+    $('#bookNow_city' + id).val()
+    $('#bookNow_phoneNumber_' + id).val()
+    $('#bookNow_emailId_' + id).val()
+    $('#bookNow_GraduationLevel_' + id).val()
+    $('#bookNow_paymentRecipt_' + id).val()
 }
 
 function handlerBookProgram(id) {
@@ -181,6 +197,11 @@ function handlerBookProgram(id) {
     data.StartDate = moment($('#bookNow_StartDate_' + id).val()).format('YYYY-MM-DD');
     data.EndDate = moment($('#bookNow_EndDate_' + id).val()).format('YYYY-MM-DD');
     data.userName = $('#bookNow_userName_' + id).val();
+    data.bankName = $('#bookNow_BankName_' + id).val();
+    data.transferType = $('#bookNow_TransferType_' + id).val();
+    data.transactionId = $('#bookNow_TransactionId_' + id).val();
+    data.comments = $('#bookNow_Comments_' + id).val();
+
     if (!data.userName) {
         alert("Please enter your name !")
         return
@@ -219,7 +240,8 @@ function handlerBookProgram(id) {
                     alert(uploadedFileURLResponse); // display response from the PHP script, if any
                 } else {
                     data.paymentRecipt = uploadedFileURLResponse;
-                    $('#bookOnlineModal_' + id).modal('hide');
+                    handlerClearBookingForm(id);
+                    $('#openBookOnlineModal_' + id).modal('hide');
                     $('.modal-backdrop').remove();
                     callProgramBooking(data);
                 }
@@ -227,7 +249,8 @@ function handlerBookProgram(id) {
         });
     } else {
         data.paymentRecipt ="No Files uploadedFileURLResponse";
-        $('#bookOnlineModal_' + id).modal('hide');
+        handlerClearBookingForm(id);
+        $('#openBookOnlineModal_' + id).modal('hide');
         $('.modal-backdrop').remove();
         callProgramBooking(data);
     }
@@ -252,12 +275,10 @@ function callProgramBooking(bookingData) {
             var response = xhttp.responseText;
             var scheduleData = JSON.parse(response);
             if (scheduleData) {
-                renderScheduleData(scheduleData);
+                window.confirm("Thanks for Booking, Your booking reference number : Ref_"+scheduleData.bookingDetail+"\n Please contact to OshoDhara reception and confirm your booking.");
             } else {
-
+                window.confirm("Thanks for Booking, Your booking is pending,  Please contact to OshoDhara reception");
             }
-        } else {
-
         }
     };
     xhttp.open("POST", "php/api/controller/BookingController.php", true);

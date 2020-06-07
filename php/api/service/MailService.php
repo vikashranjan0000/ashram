@@ -49,6 +49,7 @@ class MailService {
 	}
 	
 	public function sendToReceptionMessage($data, $bookingId){
+
 		$StartDate          = array_key_exists('StartDate', $data)? $data['StartDate']:"";
 		$programName        = array_key_exists('programName', $data) ? $data['programName']:"";
 		$programLocation    = array_key_exists('programLocation', $data) ? $data['programLocation']:"";
@@ -60,10 +61,14 @@ class MailService {
 		$UserName           = array_key_exists('userName', $data)? $data['userName']:"";
 		$programName        = array_key_exists('programName', $data) ? $data['programName']:"";
 		$mailid        		= array_key_exists('emailId', $data) ? $data['emailId']:"";
+		$bankName           = array_key_exists('bankName', $data)? $data['bankName']:"";
+        $transferType       = array_key_exists('transferType', $data)? $data['transferType']:"";
+        $transactionId      = array_key_exists('transactionId', $data)? $data['transactionId']:"";
+        $comments           = array_key_exists('comments', $data)? $data['comments']:"";
 		$subject            = $programName." Booking Confirmation for Ref. No. :".$bookingId;
 
 		$officeMailid  		="booking@oshodhara.org.in";
-		$bodyTampate = "Dear Team,<br /> Requesting you to address the booking from ".$UserName ." to ".$programName.". <br />Please check booking and payment receipt attched.<br />Booking Ref No. :".$bookingId ."<br />User name  :".$UserName .".<br />Phone No. :".$phoneNumber .".<br />Emailid :".$EmailId ."<br />Dairy Number :".$DairyNumber ."<br />Start Date:".$StartDate ."<br />Program Name :".$programName ."<br />Payment receipt :".$PaymentDocs."<br />Program Location :".$programLocation;
+		$bodyTampate = "Dear Team,<br /> Requesting you to address the booking from ".$UserName ." to ".$programName.". <br />Please check booking and payment receipt attched.<br />Booking Ref No. :".$bookingId ."<br />User name  :".$UserName .".<br />Phone No. :".$phoneNumber .".<br />Emailid :".$EmailId ."<br />Dairy Number :".$DairyNumber ."<br />Start Date:".$StartDate ."<br />Program Name :".$programName ."<br />Payment receipt :".$PaymentDocs."<br />Program Location :".$programLocation."<br />Payment Bank Name :".$bankName ."<br />Payment Transfer Type :".$transferType."<br />Payment Tranasction Id :".$transactionId."<br />Comment  :".$comments;
 		return $this->processRequest($officeMailid, $bodyTampate, $subject, $UserName);
 	}
 

@@ -100,8 +100,8 @@ function renderProgramIntake(programListData) {
             } else {
                 renderData[key].programLevel = "Pragya"
             }
-            renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM');
-            renderData[key].bookingStart_date = moment(renderData[key].start_date).format('DD MMM, YYYY');
+            renderData[key].bookingStart_date = moment(renderData[key].start_date).format('DD MMM');
+            renderData[key].start_date = moment(renderData[key].start_date).format('DD MMM, YYYY');
             renderData[key].end_date = moment(renderData[key].end_date).format('DD MMM, YYYY');
             renderData[key].locationData = scheuleLocationData[renderData[key].dhyankendraid]
             renderData[key].programData = programListData['programData'][0];

@@ -1,13 +1,14 @@
 .myButton {
   background-color: #41bd62;
-  border-radius: 14px;
+  border-radius: 50px;
   border: 1px solid #10821d;
   display:inline-block;
   cursor:pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size:17px;
-  padding: 5px 15px;
+  font-size: 14px;
+  padding: 5px 12px;
+  margin: 5px;
   text-decoration:none;
   text-shadow: 1px 1px 0px #2F6626;
 }

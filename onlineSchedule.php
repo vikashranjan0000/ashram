@@ -5,7 +5,7 @@
 
     <?php include_once 'public_html/includes/commonHeader.php'; ?>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href='assets/css/custom/schedule.css' media='all' rel='stylesheet' type='text/css' />
+    <link href='assets/css/custom/onlineSchedule.css' media='all' rel='stylesheet' type='text/css' />
 </head>
 
 <body class="front">
@@ -67,20 +67,30 @@
                         <table class="table table-striped ">
                             <thead class="tb-bg-text">
                                 <tr>
-                                    <th class="scheduleTableHeader" width="20%">Program</th>
-                                    <th class="scheduleTableHeader" width="18%">Session</th>
-                                    <th class="scheduleTableHeader" width="20%">Date</th>
-                                    <th class="scheduleTableHeader" width="24%">Acharya</th>
-                                    <th class="scheduleTableHeader" width="18%">
-                                        <span id="viewButton"  class="pull-left">View</span>
-                                        <span id="bookButton" class="pull-right">Book</span>
+                                    <th class="scheduleTableHeader" width="14%">Program</th>
+                                    <th class="scheduleTableHeader" width="14%">Date</th>
+                                    <th class="scheduleTableHeader" width="10%">Morning Session</th>
+                                    <th class="scheduleTableHeader" width="11%">Morning Acharya</th>
+                                    <th class="scheduleTableHeader" width="10%">Evening Session</th>
+                                    <th class="scheduleTableHeader" width="11%">Evening Acharya</th>
+                                    <th class="scheduleTableHeader" width="10%">
+                                        <div>
+                                            <span id="bookButton" class="pull-left">Book</span>
+                                            
+                                        </div>
+
+                                        <div>
+                                            <span id="viewButton" class="pull-right">Details</span>
+                                            
+                                        </div>
                                     </th>
+
                                 </tr>
                             </thead>
-                            <tbody id="programOnlineScheduleHolder">
-
-                            </tbody>
                         </table>
+                        <div id="programOnlineScheduleHolder" class="row secheduleStrippedRowDiv">
+
+                        </div>
                     </form>
                 </div>
             </div>
