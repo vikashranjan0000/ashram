@@ -13,9 +13,9 @@ $(document).ready(function() {
     } else {
         $('#languageSelector').val(window.localStorage.languageCode);
     }
-    callBookingFragment();
+    callBookingFragment(scheduleid);
     eventListenerOnline();
-    loadScheduleData(scheduleid);
+    
 });
 
 function eventListenerOnline() {
@@ -27,12 +27,13 @@ function setLangaugeCode() {
     window.localStorage.languageCode = $('#languageSelector').val();
 }
 
-function callBookingFragment() {
+function callBookingFragment(scheduleid) {
     var fragment = '';
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             bookingTemplates = xhttp.responseText;
+            loadScheduleData(scheduleid);
         }
     };
     xhttp.open("GET", "public_html/fragments/bookingFragment.html", true);
@@ -70,6 +71,7 @@ function loadScheduleData(searchdata) {
 function renderBookingData(renderData) {
     var bookingDetailForm = $(bookingTemplates).filter('#bookingDetailsFragment').html();
     var bookingPageTitle = $(bookingTemplates).filter('#bookingPageTitleFragment').html();
+    var bookingMandatory = $(bookingTemplates).filter('#bookingMandatoryFragment').html();
     $('#bookingDetailsFragmentHolder').empty();
     $('#bookingPageTitleFragmentHolder').empty();
     var key = 0;
@@ -88,7 +90,33 @@ function renderBookingData(renderData) {
     $('#paymentViaRazorPay_' + renderData[key].programid + "_" + renderData[key].scheduleid).off('click');
     $('#bookOfflineButton_' + renderData[key].programid + "_" + renderData[key].scheduleid).on('click', handlerBookProgram);
     $('#paymentViaRazorPay_' + renderData[key].programid + "_" + renderData[key].scheduleid).on('click', handlerCreateOrderProgram);
+    $('#cancelOnlineButton_' + renderData[key].programid + "_" + renderData[key].scheduleid).on('click', handlerCancelOrderProgram);
 
+    
+    if(renderData[key].mandatoryProgrom && renderData[key].mandatoryProgrom.length > 0){
+        $('#bookingMandatoryFragment_'+renderData[key].programid +"_" +renderData[key].scheduleid).empty();
+        var programList = JSON.parse(window.localStorage.catProResponse);
+        programList = JSON.parse(programList);
+        var mandatory = renderData[key].mandatoryProgrom.split(",")
+        for(var mandKey in mandatory){
+            
+            renderData[key].mandatoryId = mandatory[mandKey];
+            var progromReq = programList.filter(program => {
+                  return program.programid === mandatory[mandKey];    
+              })
+            renderData[key].requiredProgramName = progromReq[0].programname;
+            $('#bookingMandatoryFragment_'+renderData[key].programid +"_" +renderData[key].scheduleid).append(Mustache.render(bookingMandatory, renderData[key]));
+        }
+
+    }
+
+}
+
+function handlerCancelOrderProgram(){
+     var id = this.id;
+     scheduleIndex = id.replace("cancelOnlineButton_", "");
+     handlerClearBookingForm(scheduleIndex);
+     window.location.back();
 }
 
 function handlerClearBookingForm(id){
@@ -118,14 +146,13 @@ function handlerCreateOrderProgram(id) {
     data.scheduleId = proAndSchId[2];
     data.programName = $('#booking_programName_' + scheduleIndex).val();
     data.programLocation = $('#booking_programLocation_' + scheduleIndex).val();
+    data.ContributionAmount = $('#booking_Contribution_' + scheduleIndex).val();
+    
+
     data.StartDate = moment($('#booking_StartDate_' + scheduleIndex).val()).format('YYYY-MM-DD');
     data.EndDate = moment($('#booking_EndDate_' + id).val()).format('YYYY-MM-DD');
+    
     data.userName = $('#booking_userName_' + scheduleIndex).val();
-    data.bankName = $('#booking_BankName_' + scheduleIndex).val();
-    data.transferType = $('#booking_TransferType_' + scheduleIndex).val();
-    data.transactionId = $('#booking_TransactionId_' + scheduleIndex).val();
-    data.comments = $('#booking_Comments_' + scheduleIndex).val();
-
     if (!data.userName) {
         alert("Please enter your name !")
         return
@@ -143,7 +170,17 @@ function handlerCreateOrderProgram(id) {
         alert("Please enter your emailId !")
         return
     }*/
-    data.GraduationLevel = $('#booking_GraduationLevel_' + scheduleIndex).val();
+    var requiredProg = [];
+    var pendingProg = [];
+    $('.mandatoryId').each(function (index, obj) {
+        if (this.checked === true) {
+            requiredProg.push(this.name);
+        }else{
+            pendingProg.push(this.name);
+        }
+    });
+    data.GraduationLevel =requiredProg.toString();
+    data.pendingProg =pendingProg.toString();
     callCreateBookingOrder(data);
 }
 
@@ -160,6 +197,7 @@ function callCreateBookingOrder(bookingData) {
         if (bookfd.has.length > 0) {
             bookfd.append("createOrder", "createOrder");
         }
+        window.localStorage.bookingInfo = JSON.stringify(bookingData);
     }
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {

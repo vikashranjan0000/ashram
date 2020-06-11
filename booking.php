@@ -26,6 +26,7 @@
     <div class="form-mgr">
       <div class="col-md-12 col-sm-12 animate fadeInRight">
         <div id="bookingDetailsFragmentHolder" class="row ">
+          
 
         </div>
       </div>

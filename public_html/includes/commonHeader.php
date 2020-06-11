@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/libs/jquery-ui.css?v=22" media="screen">
     <link rel="stylesheet" href="assets/css/libs/theme.css?v=22">
     <link rel="stylesheet" href="assets/css/libs/theme-animate.css?v=22">
-     <link rel="stylesheet" href="assets/css/libs/magnific-popup.css?v=22">
+    <link rel="stylesheet" href="assets/css/libs/magnific-popup.css?v=22">
     <link rel='stylesheet' href='assets/css/libs/SidebarNav.min.css?v=22' media='all' type='text/css'/>
     <link rel='stylesheet' href='assets/css/custom/sideBarContent.css?v=22' media='all' type='text/css'/>
 

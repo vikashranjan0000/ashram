@@ -13,7 +13,7 @@
       <div class="header-bg" style="background-image:url(images/banner.jpg)">
         <div class=" header-content">
           <div class="main-title">
-            <h1 class="bold mb-30 a-f ">Online Dhyan Samadhi 5-14 May 2020</h1>
+            <h1  id="bookingDetailsprogramNameTitle" class="bold mb-30 a-f ">Online Dhyan Samadhi 5-14 May 2020</h1>
           </div>
         </div>
       </div>  
@@ -29,125 +29,50 @@
                                 <div class="col-md-6">
                                     <span class="titleLabel">Program</span>
                                     <div class="controls customInputDiv">
-                                        <input id="bookNow_programName_{{programid}}_{{scheduleid}}" name="programName" required class="form-control customInput" value="{{programname}} {{eligibility}}" disabled="true">
+                                        <input id="bookingDetailsprogramName" name="programName" required class="form-control customInput"  disabled="true">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
-                                    <span class="titleLabel">Location</span>
+                                    <span class="titleLabel">Name</span>
                                     <div class="controls customInputDiv">
-                                        <input id="bookNow_programLocation_{{programid}}_{{scheduleid}}" name="programName" required class="form-control customInput" value="Online" disabled="true">
+                                        <input id="bookingDetailsuserName" name="Name" required class="form-control customInput" value="Online" disabled="true">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group clearfix scheduleFormGroup">
 
                                 <div class="col-md-6 required-field">
-                                    <span class="titleLabel">Start Date</span>
+                                    <span class="titleLabel">Email Id</span>
                                     <div class="controls customInputDiv">
-                                        <input id="bookNow_StartDate_{{programid}}_{{scheduleid}}" placeholder="Program Category"  name="start date" required class="form-control customInput" value="{{start_date}}" disabled="true">
+                                        <input id="bookingDetailsemailId" placeholder="Email Id"  name="Email Id" required class="form-control customInput disabled="true">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
-                                    <span class="titleLabel">End Date</span>
-                                    <div class="controls customInputDiv">
-                                        <input id="bookNow_EndDate_{{programid}}_{{scheduleid}}" placeholder="Program Category"  name="programName" required class="form-control customInput" value="{{end_date}}" disabled="true">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group clearfix scheduleFormGroup">
-
-                                <div class="col-md-6 required-field">
-                                    <span class="titleLabel">Participant Name</span>
-                                    <div class="controls customInputDiv">
-                                        <input id="bookNow_userName_{{programid}}_{{scheduleid}}" placeholder="Participant Name"  name="userName" required class="form-control customInput">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <span class="titleLabel">Dairy Number</span>
-                                    <div class="controls customInputDiv">
-                                        <input id="bookNow_dairyNumber_{{programid}}_{{scheduleid}}" placeholder="Dairy Number" type="number" name="dairyNumber" required class="form-control customInput">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group clearfix scheduleFormGroup">
-
-                                <div class="col-md-6 required-field">
                                     <span class="titleLabel">Phone Number</span>
                                     <div class="controls customInputDiv">
-                                        <input id="bookNow_phoneNumber_{{programid}}_{{scheduleid}}" type="number" placeholder="Phone Number"  name="phoneNumber" required class="form-control customInput">
+                                        <input id="bookingDetailsphoneNumber" placeholder="Phone Number"  name="Phone Number" required class="form-control customInput"  disabled="true">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="form-group clearfix scheduleFormGroup">
 
                                 <div class="col-md-6 required-field">
-                                    <span class="titleLabel">EmailID</span>
+                                    <span class="titleLabel">Contribution Amount</span>
                                     <div class="controls customInputDiv">
-                                        <input id="bookNow_emailId_{{programid}}_{{scheduleid}}" placeholder="EmailID" type="email" name="emailId" required class="form-control customInput">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group clearfix scheduleFormGroup">
-                                <div class="col-md-6">
-                                    <span class="titleLabel">State</span>
-                                    <div class="controls customInputDiv">
-                                        <input id="bookNow_userState_{{programid}}_{{scheduleid}}" type="text" placeholder="State"  name="State" required class="form-control customInput">
+                                        <input id="bookingDetailsContributionAmount" placeholder="Contribution Amount"  name="Contribution Amount" disabled="true" class="form-control customInput">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
-                                    <span class="titleLabel">City</span>
+                                    <span class="titleLabel">Order Id</span>
                                     <div class="controls customInputDiv">
-                                        <input id="bookNow_city_{{programid}}_{{scheduleid}}" placeholder="City" type="city" name="city" required class="form-control customInput">
+                                        <input id="bookingDetailsOrderId" placeholder="OrderId" type="text" name="OrderId" disabled="true" class="form-control customInput">
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group clearfix scheduleFormGroup">
-                                <div class="col-md-6">
-                                    <span class="titleLabel">Graduate Program</span>
-                                    <div class="controls customInputDiv">
-                                        <input id="bookNow_GraduationLevel_{{programid}}_{{scheduleid}}" type="text" placeholder="Graguated Program"  name="graduationLevel"  class="form-control customInput">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <span class="titleLabel">Payment Receipt</span>
-                                    <div class="controls customInputDiv">
-                                        <input id="bookNow_paymentRecipt_{{programid}}_{{scheduleid}}" placeholder="Payment receipt" type="file" name="paymentReceipt"  class="form-control customInput">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group clearfix scheduleFormGroup">
-                                <div class="col-md-6">
-                                    <span class="titleLabel">Bank Name</span>
-                                    <div class="controls customInputDiv">
-                                        <input id="bookNow_BankName_{{programid}}_{{scheduleid}}" type="text" placeholder="Bank Name"  name="bankName" class="form-control customInput">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <span class="titleLabel">Transfer Type</span>
-                                    <div class="controls customInputDiv">
-                                        <input id="bookNow_TransferType_{{programid}}_{{scheduleid}}" type="text" placeholder="Transfer Type"  name="transferType" class="form-control customInput">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group clearfix scheduleFormGroup">
-                                <div class="col-md-6">
-                                    <span class="titleLabel">Transaction Id</span>
-                                    <div class="controls customInputDiv">
-                                        <input id="bookNow_TransactionId_{{programid}}_{{scheduleid}}" type="text" placeholder="Transaction Id"  name="transactionId" class="form-control customInput">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <span class="titleLabel">Comments</span>
-                                    <div class="controls customInputDiv">
-                                        <input id="bookNow_Comments_{{programid}}_{{scheduleid}}" type="text" placeholder="Comments"  name="comments" class="form-control customInput">
-                                    </div>
-                                </div>
-                            </div>
-
+                           
                             <div class="col-md-12">
                                 <div class="text-xs-right">
                                     <button id="rzpPaymentButton" ids="bookOnlineButton_{{programid}}_{{scheduleid}}" type="button" class="btn myButton" data-text="Submit">Submit</button> 
