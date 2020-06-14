@@ -37,22 +37,9 @@ class PaymentController {
     public function processRequest()
     {
         switch ($this->requestMethod) {
-        case 'GET':
-                if (!empty($_GET["orderId"])) {
-                    $response = $this->getPaymentOrderId($_GET["orderId"]);
-                }else if(!empty($data["programid"])){
-                    $response = $this->getPaymentOrderId(($data["programid"]));
-                }else {
-                    $response = $this->getPaymentOrderId();
-                };
-                break;
             case 'POST':
-                if (!empty($_POST["programList"])) {
-                    $response = $this->getProgramWithSchedule(($_POST["programid"]));
-                }else if(!empty($data["programid"])){
-                    $response = $this->getPackage(($data["programid"]));
-                } else {
-                    $response = $this->getAllPackages();
+                if (!empty($_POST["updatePayment"])) {
+                    $response = $this->updatePaymentOrderId(($_POST));
                 };
                 break;
             default:
@@ -65,26 +52,10 @@ class PaymentController {
         }
     }
 
-    private function getAllPackages()
-    {
-        $result = $this->programService->findAll();
-        $response['body'] = $result;
-        return $response;
-    }
 
-    private function getPackage($id)
+    private function updatePaymentOrderId($respdata)
     {
-        $result = $this->programService->find($id);
-        if (! $result) {
-            return $this->notFoundResponse();
-        }
-        $response['body'] = $result;
-        return $response;
-    }
-
-    private function getPaymentOrderId($id)
-    {
-        $result = $this->paymentGatewayService->getOrderId($id);
+        $result = $this->paymentGatewayService->updatePaymentResp($respdata);
         if (! $result) {
             return $this->notFoundResponse();
         }
@@ -92,19 +63,6 @@ class PaymentController {
         return $response;
     }
     
-
-    private function getProgramWithSchedule($id)
-    {
-        $result['programData'] = $this->programService->find($id);
-        if (!$result && !$result['programData']) {
-            return $this->notFoundResponse();
-        }else{
-            $result['programList'] = $this->scheduleService->findbyId($id);
-        }
-        $response['body'] = $result;
-        return $response;
-    }
-
     private function unprocessableEntityResponse()
     {
         $response['status_code_header'] = 'HTTP/1.1 422 Unprocessable Entity';

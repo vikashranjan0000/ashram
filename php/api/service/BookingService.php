@@ -71,7 +71,6 @@ class BookingService {
         $bookingRef         = 'bookingRef';
         $Booking_Time   = time();
 
-
         $ScheduleId         = array_key_exists('scheduleId', $data)? $data['scheduleId']:"";
         $programid          = array_key_exists('programId', $data)? $data['programId']:0;
         $StartDate          = array_key_exists('StartDate', $data)? $data['StartDate']:"";

@@ -31,7 +31,7 @@ function processPaymentHandler() {
         "currency": "INR",
         "name": "Oshodhara",
         "description": paymentInfo.programName,
-        "image": "https://example.com/your_logo",
+        "image": "http://oshodhara.org.in/images/logo.png",
         "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
         "handler": handlerPaymentProcessed,
         "prefill": {
@@ -50,12 +50,32 @@ function processPaymentHandler() {
     rzp1.open();
 }
 
+function handlerPaymentProcessed(bookingData) {
 
+    var xhttp = new XMLHttpRequest();
+    let bookfd = new FormData();
+    if (bookingData) {
+        bookfd.append("razorpay_payment_id", bookingData["razorpay_payment_id"]);
+        bookfd.append("razorpay_order_id", bookingData["razorpay_order_id"]);
+        bookfd.append("razorpay_signature", bookingData["razorpay_signature"]);
+        bookfd.append("orderId", "orderId");  
+        bookfd.append("updatePayment", "updatePayment");      
+    }
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var response = xhttp.responseText;
+            var scheduleData = JSON.parse(response);
+            if (scheduleData) {
+                window.localStorage.bookingData = JSON.stringify(bookingData);
+                window.location.href = "/onlineSchedule.php";
+            } else {
 
-function handlerPaymentProcessed(response) {
-    alert("Payment Successful, Please Not the payment Id "+response.razorpay_payment_id);
-    alert(", Please Not the OrderId "+response.razorpay_order_id);
-  //  alert(response.razorpay_signature)
+            }
+        }
+
+    }
+    xhttp.open("POST", "php/api/controller/PaymentController.php", true);
+    xhttp.send(bookfd);
 }
 
 function setLangaugeCode() {

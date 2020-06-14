@@ -147,7 +147,11 @@ function handlerCreateOrderProgram(id) {
     data.programName = $('#booking_programName_' + scheduleIndex).val();
     data.programLocation = $('#booking_programLocation_' + scheduleIndex).val();
     data.ContributionAmount = $('#booking_Contribution_' + scheduleIndex).val();
-    
+    data.ContributionAmount = data.ContributionAmount.replace("Rs", "");
+    data.ContributionAmount = data.ContributionAmount.replace("$", "");
+    data.ContributionAmount = data.ContributionAmount.replace("/-", "");    
+    data.ContributionAmount = data.ContributionAmount.replace(",", "")
+
 
     data.StartDate = moment($('#booking_StartDate_' + scheduleIndex).val()).format('YYYY-MM-DD');
     data.EndDate = moment($('#booking_EndDate_' + id).val()).format('YYYY-MM-DD');
@@ -215,6 +219,7 @@ function callCreateBookingOrder(bookingData) {
     xhttp.open("POST", "php/api/controller/BookingController.php", true);
     xhttp.send(bookfd);
 }
+
 function handlerBookProgram(id) {
     var id = this.id;
     id = id.replace("bookOnlineButton_", "")
